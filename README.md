@@ -6,3 +6,6 @@ Go Projects:
 
 Java Projects:
 - https://junit.org/junit5/docs/current/user-guide/
+
+C# Projects: 
+- https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/overview?view=aspnetcore-7.0
