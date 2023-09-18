@@ -8,7 +8,7 @@ import org.example.classes.StripeExample;
 public class Main {
     public static void main(String[] args) {
         GetDotNetValues dotNetValues = new GetDotNetValues();
-        var valueOne = dotNetValues.getValue("MY_ENV_VAR1");
+        var valueOne = dotNetValues.getValue("stripeKey");
         System.out.println(valueOne);
 
         //StripeExample stripe = new StripeExample();
