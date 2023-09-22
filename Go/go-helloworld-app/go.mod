@@ -1,4 +1,4 @@
-module example/myfirstapp
+module example.com/myfirstapp
 
 go 1.21.0
 
