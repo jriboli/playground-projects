@@ -4,7 +4,7 @@ services:
 ### MySQL Container
   mysql:
     build:
-      context: /home/tools/bael/dung/B015
+      context: .
       args:
         - MYSQL_DATABASE=${MYSQL_DATABASE}
         - MYSQL_USER=${MYSQL_USER}
