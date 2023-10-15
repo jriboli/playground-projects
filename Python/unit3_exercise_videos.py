@@ -102,3 +102,41 @@ def applyEachTo(L, x):
     return result
 
 print("------------------------------------------------------------")
+
+# ----------------------------------------------------------------------------
+
+animals = {'a': 'aardvark', 'b': 'baboon', 'c': 'coati'}
+
+animals['d'] = 'donkey'
+
+print("------------------------------------------------------------")
+
+print(animals)
+print(animals.values())
+
+# ----------------------------------------------------------------------------
+
+animals = { 'a': ['aardvark'], 'b': ['baboon'], 'c': ['coati']}
+
+animals['d'] = ['donkey']
+animals['d'].append('dog')
+animals['d'].append('dingo')
+
+print("------------------------------------------------------------")
+
+print(animals)
+print(len(animals))
+counter = 0
+for e in animals.values():
+    print(e)
+    counter += len(e)
+print(counter)
+
+print(max(animals))
+
+print("------------------------------------------------------------")
+aDict = {'a': [15, 2], 'c': [18, 13, 10, 11, 10], 'b': [7, 3, 14, 1, 18, 5, 13, 10, 2, 11], 'd': [18]}
+
+my_dict = {}
+for e in aDict:
+    my_dict[e] = len(aDict[e])
