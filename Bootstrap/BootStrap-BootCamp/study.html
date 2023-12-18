@@ -12,7 +12,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <!-- Puts a container, spacing around everything-->
       <div class="container">
-        <a href="#" class="navbar-brand">Clinical Study Assistant</a>
+        <a href="./index.html" class="navbar-brand">Clinical Study Assistant</a>
 
         <button
           class="navbar-toggler"
@@ -35,12 +35,31 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navmenu">
-          <!-- ms-auto = Margin Start Auto, which aligns right-->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#learn" class="navbar-link">What you Learn</a>
-              <a href="#questions" class="navbar-link">Questions</a>
-              <a href="#instructors" class="navbar-link">Intructors</a>
+              <a
+                href="./index.html"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Home</a
+              >
+              <span class="fw-bold">|</span>
+              <a
+                href="./discover.html"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Studies</a
+              >
+              <span class="fw-bold">|</span>
+              <a
+                href="./pricing.html"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Pricing</a
+              >
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link btn btn-primary">Login</a>
             </li>
           </ul>
         </div>
@@ -50,26 +69,216 @@
     <!-- DISCOVER SPEECH -->
     <!-- p-lg-0 = Padding on LG screen is 0 -->
     <section
-      class="bg-primary text-white p-5 p-lg-0 pt-lg-5 text-center text-md-start"
+      class="bg-dark text-white p-5 p-lg-0 pt-lg-5 text-center text-md-start"
     >
       <div class="container">
         <!-- d-flex will aline the elements in a row
         the MD will make it happen until MD size, after which it will stack vertically -->
         <div class="d-md-flex align-items-center justify-content-center">
           <div>
-            <h1 class="">{Brief Title}</h1>
+            <h3 class="">Details veiw for study - NCT05885737</h3>
             <p class="lead my-4">
-              "The real voyage of discovery consists not in seeking new
-              landscapes, but in having new eyes"
+              Phase 3 Study of Difelikefalin in Haemodialysis Chinese Adult
+              Subjects With Moderate-to-Severe Pruritus
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- STUDIES -->
+    <!-- PLACEHOLDER-->
     <section class="p-5">
-      <div class="container"></div>
+      <div class="container">
+        <div class="d-md-flex align-items-center justify-content-center">
+          <div>
+            <h3 class="">NCT05885737</h3>
+            <p class="lead my-4">
+              Phase 3 Study of Difelikefalin in Haemodialysis Chinese Adult
+              Subjects With Moderate-to-Severe Pruritus
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDY INFO  -->
+    <section class="p-5 bg-light">
+      <div class="container">
+        <!-- HIGHLIGHTS -->
+        <div class="row">
+          <div class="col">
+            <div class="fs-3 my-3">
+              <i class="bi bi-brightness-alt-high-fill"> Highlights</i>
+            </div>
+            <div class="card rounded-3 shadow-sm">
+              <div class="card-body">
+                <div class="row mt-2">
+                  <div class="col">
+                    <div class="fs-5">Recruitement objectives</div>
+                    <p>1569</p>
+                  </div>
+                  <div class="col">
+                    <div class="fs-5">Study Type</div>
+                    <p>Drug</p>
+                  </div>
+                  <div class="col">
+                    <div class="fs-5">Study Status</div>
+                    <p>Recruiting</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ORGANIZATION -->
+        <div class="row pt-5">
+          <div class="col">
+            <div class="fs-3 my-3">
+              <i class="bi bi-person-vcard-fill"> Organization</i>
+            </div>
+            <div class="card rounded-3 shadow-sm">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <h5>Vifor Fresenius Medical Care Renal Pharma</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="col">
+            <div class="card rounded-3 shadow-sm">
+              <div class="card-body">
+                <div class="row mt-2">
+                  <div class="col border-bottom">
+                    <span class="text-capitalize fs-5">Contact</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="bi bi-person-fill fs-4"> </i>KOR-CHINA-301
+                    Clinical Study Team
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="bi bi-telephone-fill fs-4"></i>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <i class="bi bi-envelope-fill fs-4"> </i
+                    >kor-china-301.study@viforpharma.com
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PARTICIPANTS -->
+        <div class="row pt-5">
+          <div class="col">
+            <div class="fs-3 my-3">
+              <i class="bi bi-people-fill"> Participants</i>
+            </div>
+            <div class="card rounded-3 shadow-sm">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">Age Requirements: 17-65</div>
+                </div>
+                <div class="row">
+                  <div class="col">Sex Eligibiliy: Male, Female</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STUDY DETAILS -->
+        <div class="row pt-5">
+          <div class="col">
+            <div class="fs-3 my-3">
+              <i class="bi bi-clipboard2-pulse-fill"> Study Details</i>
+            </div>
+            <div class="card rounded-3 shadow-sm">
+              <div class="card-body">
+                <div class="row mt-2">
+                  <div class="col border-bottom">
+                    <span class="text-capitalize fs-5">Dates</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">Start Data:</div>
+                </div>
+                <div class="row">
+                  <div class="col">Completion Date:</div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col border-bottom">
+                    <span class="text-capitalize fs-5">Conditions</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">Completion Date:</div>
+                </div>
+
+                <div class="row mt-2">
+                  <div class="col border-bottom">
+                    <span class="text-capitalize fs-5">Summary</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">Completion Date:</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STUDY DETAILS -->
+        <div class="row pt-5">
+          <div class="col">
+            <div class="fs-3 my-3">
+              <i class="bi bi-sliders"> Criteria</i>
+            </div>
+            <div class="card rounded-3 shadow-sm">
+              <div class="card-body">
+                <div class="row mt-2">
+                  <div class="col border-bottom">
+                    <span class="text-capitalize fs-5">Inclusions</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit ullam repellendus dolores. Dolores nobis pariatur rem
+                    laboriosam? Autem, neque nihil quia fugiat quae, recusandae,
+                    possimus velit animi dignissimos voluptas aliquam. Modi rem
+                    minima placeat molestias veniam at! Dignissimos repellat
+                    nihil autem fuga quam aliquid distinctio, architecto velit
+                    officiis fugiat eius.
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col border-bottom">
+                    <span class="text-capitalize fs-5">Exclusions</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eveniet, quasi dolorem quidem et voluptates veritatis.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
@@ -81,6 +290,7 @@
         </a>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
