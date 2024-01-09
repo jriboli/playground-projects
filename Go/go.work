@@ -1,4 +1,0 @@
-go 1.21.0
-
-use ./go-web-service-gorillamux
-use ./go-helloworld-app
