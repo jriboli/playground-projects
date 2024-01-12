@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clinical Study Assistant - Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <!-- navbar-expand-lg = The lg means that the links will show for large, but any size under that will show the hamburger
+    Bootstrap documation > Breakpoints > shows the dimensions of each size-->
+    <!-- fixed-top = Locks the navbar to top or page, even when scrolling -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <!-- Puts a container, spacing around everything-->
+      <div class="container">
+        <a href="./index.html" class="navbar-brand">Clinical Study Assistant</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <!-- COMMENTED OUT - OLD PAGE NAV TO MOVE BETWEEN PAGES-->
+          <!-- ms-auto = Margin Start Auto, which aligns right-->
+          <!-- <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#learn" class="navbar-link">What you Learn</a>
+                <a href="#questions" class="navbar-link">Questions</a>
+                <a href="#instructors" class="navbar-link">Intructors</a>
+              </li>
+            </ul> -->
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                href="./index.html"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Home</a
+              >
+              <span class="fw-bold">|</span>
+              <a
+                href="./discover.html"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Discover</a
+              >
+              <span class="fw-bold">|</span>
+              <a
+                href="./starred.html"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >My Studies</a
+              >
+              <span class="fw-bold">|</span>
+              <a
+                href="./account.html"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Account</a
+              >
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link btn btn-primary">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ACCOUNT SPEECH -->
+    <!-- p-lg-0 = Padding on LG screen is 0 -->
+    <section
+      class="bg-dark text-white p-5 p-lg-0 pt-lg-5 text-center text-md-start"
+    >
+      <div class="container">
+        <!-- d-flex will aline the elements in a row
+        the MD will make it happen until MD size, after which it will stack vertically -->
+        <div class="d-md-flex align-items-center justify-content-center">
+          <!-- <img
+            class="img-fluid w-25 d-none d-md-block"
+            src="img/undraw_file_searching_re_3evy.svg"
+            alt=""
+          /> -->
+          <div>
+            <h1 class="">
+              <span class="text-info">Profile</span>
+              settings
+            </h1>
+            <p class="lead my-4">
+              "To understand yourself if the beginning of wisdomw."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section class="p-5">
+      <div class="container">
+        <!-- Left Column -->
+        <div class="row mb-4">
+          <!-- Account Information Card -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Account Information</h5>
+                <button class="btn btn-link">
+                  Edit <i class="bi bi-pencil"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <form>
+                  <!-- Form fields for Account Information -->
+                  <div class="form-group">
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="John Doe"
+                      disabled
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Address</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="123 Main St"
+                      disabled
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Account Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="123456789"
+                      disabled
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Language Preference</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="English"
+                      disabled
+                    />
+                  </div>
+                  <!-- Add more fields as needed -->
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notification Settings Card -->
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Notification Settings</h5>
+                <button class="btn btn-link">
+                  Edit <i class="bi bi-pencil"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <!-- Notification settings content -->
+                <div class="custom-control custom-switch mb-2">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="serviceAlertsSwitch"
+                    checked
+                    disabled
+                  />
+                  <label class="custom-control-label" for="serviceAlertsSwitch"
+                    >Service Alerts</label
+                  >
+                </div>
+                <div class="custom-control custom-switch mb-2">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="billingUpdatesSwitch"
+                    checked
+                    disabled
+                  />
+                  <label class="custom-control-label" for="billingUpdatesSwitch"
+                    >Billing & Account Updates</label
+                  >
+                </div>
+                <div class="custom-control custom-switch">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="announcementsSwitch"
+                    disabled
+                  />
+                  <label class="custom-control-label" for="announcementsSwitch"
+                    >Announcements</label
+                  >
+                </div>
+                <!-- Add more notification settings as needed -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="row">
+          <!-- Contact Information Card -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Contact Information</h5>
+                <button class="btn btn-link">
+                  Edit <i class="bi bi-pencil"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <!-- Contact information content -->
+                <p>Phone Number: (555) 123-4567</p>
+                <p>Email: john@example.com</p>
+                <!-- Add more contact information as needed -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Sign in Credentials Card -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Sign-in Credentials</h5>
+                <button class="btn btn-link">
+                  Edit <i class="bi bi-pencil"></i>
+                </button>
+              </div>
+              <div class="card-body">
+                <!-- Sign-in credentials content -->
+                <p>Email: john@example.com</p>
+                <p>Password: **********</p>
+                <!-- Add more sign-in credentials as needed -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Billing Preferences Card -->
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Billing Preferences</h5>
+                <a href="#" class="btn btn-link"
+                  >Go to Billing <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+              <div class="card-body">
+                <!-- Billing preferences content -->
+                <!-- Add billing preferences content as needed -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2023 Clinical Study Assistant</p>
+        <a href="" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
