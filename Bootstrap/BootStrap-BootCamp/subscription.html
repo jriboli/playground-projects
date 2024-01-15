@@ -15,14 +15,75 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      /* Custom CSS for styling */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+      }
+
+      .subscription-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .plan-card,
+      .addons-card {
+        width: 65%;
+        margin-right: 20px;
+      }
+
+      .cost-card {
+        position: sticky;
+        top: 200px;
+        width: 300px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .addons-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .addon-box {
+        width: calc(33.33% - 10px);
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+      }
+
+      .addon-box img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .addon-box.selected {
+        border: 2px solid #007bff; /* Highlight color */
+      }
+
+      .update-plan-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <!-- NAVBAR -->
-    <!-- navbar-expand-lg = The lg means that the links will show for large, but any size under that will show the hamburger
-    Bootstrap documation > Breakpoints > shows the dimensions of each size-->
-    <!-- fixed-top = Locks the navbar to top or page, even when scrolling -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-      <!-- Puts a container, spacing around everything-->
       <div class="container">
         <a href="./index.html" class="navbar-brand">Clinical Study Assistant</a>
 
@@ -34,45 +95,94 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navmenu">
-          <!-- COMMENTED OUT - OLD PAGE NAV TO MOVE BETWEEN PAGES-->
-          <!-- ms-auto = Margin Start Auto, which aligns right-->
-          <!-- <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a href="#learn" class="navbar-link">What you Learn</a>
-                <a href="#questions" class="navbar-link">Questions</a>
-                <a href="#instructors" class="navbar-link">Intructors</a>
-              </li>
-            </ul> -->
 
-          <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse" id="navmenu">
+          <!-- Horizontal list on medium and large screens -->
+          <ul class="navbar-nav ms-auto d-none d-lg-flex">
             <li class="nav-item">
               <a
                 href="./index.html"
-                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                 >Home</a
               >
-              <span class="fw-bold">|</span>
+            </li>
+            <li class="nav-item">
               <a
                 href="./discover.html"
-                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                 >Discover</a
               >
-              <span class="fw-bold">|</span>
+            </li>
+            <li class="nav-item">
               <a
                 href="./starred.html"
-                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                 >My Studies</a
               >
-              <span class="fw-bold">|</span>
+            </li>
+            <li class="nav-item">
               <a
                 href="./account.html"
-                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Account</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./profile.html"
+                class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Profile</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./subscription.html"
+                class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Subscription</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./cookie-policy.html"
+                class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Cookie Policy</a
+              >
+            </li>
+          </ul>
+
+          <!-- Vertical list on small screens -->
+          <ul class="navbar-nav ms-auto d-lg-none flex-column">
+            <li class="nav-item">
+              <a
+                href="./index.html"
+                class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./discover.html"
+                class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >Discover</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./starred.html"
+                class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                >My Studies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./account.html"
+                class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                 >Account</a
               >
             </li>
           </ul>
 
+          <!-- Button for login -->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a href="#" class="nav-link btn btn-primary">Login</a>
@@ -83,197 +193,134 @@
     </nav>
 
     <!-- PRICING SPEECH -->
-    <section class="p-5">
+    <section
+      class="bg-dark text-white p-5 p-lg-0 pt-lg-5 text-center text-md-start"
+    >
       <div class="container">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal">Pricing</h1>
-          <p class="fs-5 text-muted">
-            Quickly build an effective pricing table for your potential
-            customers with this Bootstrap example. It’s built with default
-            Bootstrap components and utilities with little customization.
-          </p>
+        <div class="d-md-flex align-items-center justify-content-center">
+          <div>
+            <h1 class="">
+              Your
+              <span class="text-info">Subscription</span>
+            </h1>
+            <p class="lead my-4">
+              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              laboriosam!""
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- STUDIES -->
+    <!-- SUBSCRIPTION -->
     <section class="p-5">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Free</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  $0<small class="text-muted fw-light">/mo</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
-                  <li>2 GB of storage</li>
-                  <li>Email support</li>
-                  <li>Help center access</li>
-                </ul>
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  Sign up for free
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Pro</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  $15<small class="text-muted fw-light">/mo</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>20 users included</li>
-                  <li>10 GB of storage</li>
-                  <li>Priority email support</li>
-                  <li>Help center access</li>
-                </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary">
-                  Get started
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="row">
+          <!-- LEFT SIDE -->
+          <div class="col-md-9">
+            <!-- PLAN -->
+            <div class="card my-4">
               <div
-                class="card-header py-3 text-white bg-primary border-primary"
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
               >
-                <h4 class="my-0 fw-normal">Enterprise</h4>
+                <h5 class="mb-0">Plan</h5>
+                <div class="d-flex align-items-center"></div>
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
-                  $29<small class="text-muted fw-light">/mo</small>
+                  $@subscription.unit_amount<small class="text-muted fw-light"
+                    >/month</small
+                  >
                 </h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>30 users included</li>
-                  <li>15 GB of storage</li>
-                  <li>Phone and email support</li>
-                  <li>Help center access</li>
+                  <li>All access to Discover Studies</li>
+                  <li>Includes 1 specialty</li>
+                  <li>Each additional specialty $5</li>
+                  <li>Email support</li>
                 </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary">
-                  Contact us
-                </button>
+              </div>
+            </div>
+
+            <!-- SPECIALTIES -->
+            <div class="card my-4">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
+                <h5 class="mb-0">Specialty AddOns</h5>
+                <div class="d-flex align-items-center"></div>
+              </div>
+              <div class="card-body">
+                <div
+                  class="row row-cols-auto mb-5 text-center justify-content-center"
+                >
+                  <div class="col">
+                    <div
+                      id="card-@subscription.name"
+                      class="card text-center mb-4 rounded-3 shadow-lg border border-5 border-info"
+                      id="customCard_@subscription.name"
+                    >
+                      <div class="card-body">
+                        <a
+                          id="customBtn-@subscription.name"
+                          href="#"
+                          class="btn stretched-link"
+                          onclick="myToggleSelection('@subscription.name')"
+                          data-selected="true"
+                        >
+                          <i
+                            class="@subscription.specialtyInfo.fontAwesomeName fa-2xl"
+                          ></i>
+                        </a>
+                      </div>
+                      <div class="card-footer text-muted">
+                        @subscription.name
+                      </div>
+                    </div>
+                    <div class="addon-box" onclick="toggleAddon(this)">
+                      <img
+                        src="img/undraw_file_searching_re_3evy.svg"
+                        alt="Addon 1"
+                      />
+                    </div>
+                    <div class="addon-box" onclick="toggleAddon(this)">
+                      <img
+                        src="img/undraw_file_searching_re_3evy.svg"
+                        alt="Addon 1"
+                      />
+                    </div>
+                    <div class="addon-box" onclick="toggleAddon(this)">
+                      <img
+                        src="img/undraw_file_searching_re_3evy.svg"
+                        alt="Addon 1"
+                      />
+                    </div>
+                    <div class="addon-box" onclick="toggleAddon(this)">
+                      <img
+                        src="img/undraw_file_searching_re_3evy.svg"
+                        alt="Addon 1"
+                      />
+                    </div>
+                    <div class="addon-box" onclick="toggleAddon(this)">
+                      <img
+                        src="img/undraw_file_searching_re_3evy.svg"
+                        alt="Addon 1"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- COMPARISON -->
-        <div class="table-responsive">
-          <table class="table text-center">
-            <thead>
-              <tr>
-                <th style="width: 34%"></th>
-                <th style="width: 22%">Free</th>
-                <th style="width: 22%">Pro</th>
-                <th style="width: 22%">Enterprise</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="text-start">Public</th>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Private</th>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
-
-            <tbody>
-              <tr>
-                <th scope="row" class="text-start">Permissions</th>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Sharing</th>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Unlimited members</th>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Extra security</th>
-                <td></td>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check"></use>
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="col-md-3">
+            <!-- RIGHT SIDE -->
+            <div class="cost-card card my-4">
+              <div class="card-body">
+                <!-- Monthly cost details -->
+                <h5 class="card-title">Monthly Cost</h5>
+                <!-- Add cost details here -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -293,5 +340,11 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // JavaScript for handling addon box selection
+      function toggleAddon(element) {
+        element.classList.toggle("selected");
+      }
+    </script>
   </body>
 </html>

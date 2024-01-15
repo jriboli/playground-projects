@@ -32,6 +32,30 @@
       .custom-link:hover {
         color: #007bff; /* Change color on hover if needed */
       }
+
+      /* New Stats Section Styling */
+      .stats-section {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+      }
+
+      .stat {
+        text-align: center;
+        flex: 1;
+      }
+
+      .stat-number {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .stat-label {
+        font-size: 14px;
+      }
     </style>
   </head>
   <body>
@@ -109,16 +133,11 @@
         <!-- d-flex will aline the elements in a row
         the MD will make it happen until MD size, after which it will stack vertically -->
         <div class="d-md-flex align-items-center justify-content-center">
-          <!-- <img
-            class="img-fluid w-25 d-none d-md-block"
-            src="img/undraw_file_searching_re_3evy.svg"
-            alt=""
-          /> -->
           <div>
             <h1 class="">
-              Manage your
+              Welcome to your
               <span class="text-info">Account</span>
-              and related details
+              dashboard
             </h1>
             <p class="lead my-4">
               "To understand yourself is the beginning of wisdom."
@@ -128,14 +147,13 @@
       </div>
     </section>
 
-    <!-- ACCOUNT AND BILLS INFO-->
+    <!-- PROFILE CARDS -->
     <section class="p-5">
       <div class="container">
-        <!-- My Profile and My Bills Cards -->
         <div class="row mb-4">
-          <!-- My Profile Card -->
           <div class="col-md-6">
-            <div class="card">
+            <!-- My Profile -->
+            <div class="card my-4">
               <div
                 class="card-header custom-card-header d-flex justify-content-between align-items-center"
               >
@@ -155,13 +173,78 @@
                     <p><strong>Email:</strong> john@example.com</p>
                   </div>
                 </div>
+                <div class="stats-section">
+                  <div class="stat">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">Sites</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">Doctors</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Active Studies</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sites -->
+            <div class="card my-4">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
+                <h5>Sites</h5>
+                <div class="d-flex align-items-center">
+                  <a href="./profile.html" class="btn btn-link custom-link">
+                    <strong>Go to Sites</strong>
+                  </a>
+                  <i class="bi bi-arrow-right ml-2"></i>
+                </div>
+              </div>
+              <div class="card-body">
+                <!-- FILL IN WITH SITE(S) INFO-->
+                <hr />
+                <div class="row">
+                  <div class="col">
+                    <p><strong>Site Name:</strong> Krypton</p>
+                    <p>
+                      <strong>Site Location:</strong> 123 Main St, Nowhere CA
+                      91111
+                    </p>
+                    <p><strong>Site Specialties:</strong></p>
+                    <ul>
+                      <li>Addon 1</li>
+                      <li>Addon 2</li>
+                      <!-- Add more addons as needed -->
+                    </ul>
+                  </div>
+                </div>
+                <hr />
+                <hr />
+                <div class="row">
+                  <div class="col">
+                    <p><strong>Site Name:</strong> ASGARD</p>
+                    <p>
+                      <strong>Site Location:</strong> 456 Second St., Somewhere
+                      CA 92222
+                    </p>
+                    <p><strong>Site Specialties:</strong></p>
+                    <ul>
+                      <li>Addon 1</li>
+                      <li>Addon 2</li>
+                      <!-- Add more addons as needed -->
+                    </ul>
+                  </div>
+                </div>
+                <hr />
               </div>
             </div>
           </div>
-
-          <!-- My Bills Card -->
           <div class="col-md-6">
-            <div class="card">
+            <!-- Billing -->
+            <div class="card my-4">
               <div
                 class="card-header custom-card-header d-flex justify-content-between align-items-center"
               >
@@ -185,32 +268,35 @@
                 <button class="btn btn-primary btn-block">Pay Bill</button>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Your Subscription Card -->
-        <div class="card">
-          <div
-            class="card-header custom-card-header d-flex justify-content-between align-items-center"
-          >
-            <h5 class="mb-0">Your Subscription</h5>
-            <div class="d-flex align-items-center">
-              <a href="./subscription.html" class="btn btn-link custom-link">
-                <strong>Go to Subscription</strong>
-              </a>
-              <i class="bi bi-arrow-right ml-2"></i>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="row">
-              <div class="col">
-                <p><strong>Subscription Plan:</strong> Premium</p>
-                <p><strong>Subscription Addons:</strong></p>
-                <ul>
-                  <li>Addon 1</li>
-                  <li>Addon 2</li>
-                  <!-- Add more addons as needed -->
-                </ul>
+            <!-- Subscription-->
+            <div class="card my-4">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
+                <h5 class="mb-0">Your Subscription</h5>
+                <div class="d-flex align-items-center">
+                  <a
+                    href="./subscription.html"
+                    class="btn btn-link custom-link"
+                  >
+                    <strong>Go to Subscription</strong>
+                  </a>
+                  <i class="bi bi-arrow-right ml-2"></i>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <p><strong>Subscription Plan:</strong> Premium</p>
+                    <p><strong>Subscription Addons:</strong></p>
+                    <ul>
+                      <li>Addon 1</li>
+                      <li>Addon 2</li>
+                      <!-- Add more addons as needed -->
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
