@@ -87,8 +87,8 @@ body {
 }
 
 .progress-circle {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #ccc; /* Circle color */
   display: flex;
@@ -111,6 +111,25 @@ body {
   flex-grow: 1;
   height: 5px; /* Adjust as needed */
   background-color: #007bff; /* Line color */
+}
+
+/* Specific style for .progress-circle under section.bg-primary */
+section.bg-primary .progress-circle {
+  background-color: #000; /* Change to the desired color */
+  color: #fff; /* Change to the desired text color */
+}
+
+section.bg-primary .active {
+  background-color: #ffc107; /* Active circle color */
+  color: #000; /* Active text color */
+}
+
+section.bg-primary .progress-line {
+  background-color: #000; /* Line color */
+}
+
+section.bg-primary .progress-line-active {
+  background-color: #ffc107; /* Line color */
 }
 
 /* ACCOUNT DASHBOARD */
