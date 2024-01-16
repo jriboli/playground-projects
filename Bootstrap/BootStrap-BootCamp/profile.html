@@ -16,6 +16,40 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/custom-style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ed6a53e8fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Custom CSS for accordion */
+      .accordion-button {
+        color: #000; /* Set the text color to black */
+        text-decoration: none; /* Remove underline */
+        padding-right: 1.25rem; /* Add space to the right for the arrow icon */
+      }
+
+      /* Custom CSS for expand arrow */
+      .accordion-button[aria-expanded="true"]::after {
+        content: "\25BC"; /* Unicode character for down arrow */
+      }
+
+      .accordion-button[aria-expanded="false"]::after {
+        content: "\25B6"; /* Unicode character for right arrow */
+      }
+
+      /* Custom CSS for the green leaf icon */
+      .green-leaf {
+        color: #00cc00; /* Green color */
+      }
+    </style>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -159,16 +193,20 @@
     <!-- PROFILE -->
     <section class="p-5">
       <div class="container">
-        <!-- Left Column -->
         <div class="row mb-4">
-          <!-- Account Information Card -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-header d-flex justify-content-between">
+          <!-- LEFT SIDE -->
+          <div class="col-md-6">
+            <!-- Account Information Card -->
+            <div class="card my-4 rounded-3 shadow-sm">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
                 <h5>Account Information</h5>
-                <button class="btn btn-link">
-                  Edit <i class="bi bi-pencil"></i>
-                </button>
+                <div class="d-flex align-items-center">
+                  <div class="btn btn-primary">
+                    <i class="bi bi-pencil-fill"></i>
+                  </div>
+                </div>
               </div>
               <div class="card-body">
                 <form>
@@ -213,70 +251,17 @@
                 </form>
               </div>
             </div>
-          </div>
-
-          <!-- Notification Settings Card -->
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-header d-flex justify-content-between">
-                <h5>Notification Settings</h5>
-                <button class="btn btn-link">
-                  Edit <i class="bi bi-pencil"></i>
-                </button>
-              </div>
-              <div class="card-body">
-                <!-- Notification settings content -->
-                <div class="custom-control custom-switch mb-2">
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    id="serviceAlertsSwitch"
-                    checked
-                    disabled
-                  />
-                  <label class="custom-control-label" for="serviceAlertsSwitch"
-                    >Service Alerts</label
-                  >
-                </div>
-                <div class="custom-control custom-switch mb-2">
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    id="billingUpdatesSwitch"
-                    checked
-                    disabled
-                  />
-                  <label class="custom-control-label" for="billingUpdatesSwitch"
-                    >Billing & Account Updates</label
-                  >
-                </div>
-                <div class="custom-control custom-switch">
-                  <input
-                    type="checkbox"
-                    class="custom-control-input"
-                    id="announcementsSwitch"
-                    disabled
-                  />
-                  <label class="custom-control-label" for="announcementsSwitch"
-                    >Announcements</label
-                  >
-                </div>
-                <!-- Add more notification settings as needed -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="row">
-          <!-- Contact Information Card -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-header d-flex justify-content-between">
+            <!-- Contact Information Card -->
+            <div class="card my-4 rounded-3 shadow-sm">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
                 <h5>Contact Information</h5>
-                <button class="btn btn-link">
-                  Edit <i class="bi bi-pencil"></i>
-                </button>
+                <div class="d-flex align-items-center">
+                  <div class="btn btn-primary">
+                    <i class="bi bi-pencil-fill"></i>
+                  </div>
+                </div>
               </div>
               <div class="card-body">
                 <!-- Contact information content -->
@@ -285,16 +270,17 @@
                 <!-- Add more contact information as needed -->
               </div>
             </div>
-          </div>
-
-          <!-- Sign in Credentials Card -->
-          <div class="col-md-6 mb-4">
-            <div class="card">
-              <div class="card-header d-flex justify-content-between">
+            <!-- Sign in Credentials Card -->
+            <div class="card my-4 rounded-3 shadow-sm">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
                 <h5>Sign-in Credentials</h5>
-                <button class="btn btn-link">
-                  Edit <i class="bi bi-pencil"></i>
-                </button>
+                <div class="d-flex align-items-center">
+                  <div class="btn btn-primary">
+                    <i class="bi bi-pencil-fill"></i>
+                  </div>
+                </div>
               </div>
               <div class="card-body">
                 <!-- Sign-in credentials content -->
@@ -305,18 +291,176 @@
             </div>
           </div>
 
-          <!-- Billing Preferences Card -->
+          <!-- RIGHT SIDE -->
           <div class="col-md-6">
-            <div class="card">
-              <div class="card-header d-flex justify-content-between">
+            <!-- Notification Settings Card -->
+            <div class="card my-4 rounded-3 shadow-sm">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
+                <h5>Notification Settings</h5>
+                <div class="d-flex align-items-center">
+                  <div class="btn btn-primary">
+                    <i class="bi bi-pencil-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- Service Alerts -->
+              <div class="card-header" id="alertsAccordion">
+                <h5
+                  class="mb-0 d-flex justify-content-between align-items-center"
+                >
+                  <button
+                    class="btn btn-link accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseAlerts"
+                    aria-expanded="true"
+                    aria-controls="collapseAlerts"
+                  >
+                    Service Alerts
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseAlerts"
+                class="collapse"
+                aria-labelledby="alertsAccordion"
+              >
+                <div class="card-body">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emailAlerts"
+                    />
+                    <label class="form-check-label" for="emailAlerts"
+                      >Email</label
+                    >
+                  </div>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="textAlerts"
+                    />
+                    <label class="form-check-label" for="textAlerts"
+                      >Text/SMS</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Billing and Account Alerts -->
+              <div class="card-header" id="alertsAccordion">
+                <h5
+                  class="mb-0 d-flex justify-content-between align-items-center"
+                >
+                  <button
+                    class="btn btn-link accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseAlerts"
+                    aria-expanded="true"
+                    aria-controls="collapseAlerts"
+                  >
+                    Billing & Account Updates
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseAlerts"
+                class="collapse"
+                aria-labelledby="alertsAccordion"
+              >
+                <div class="card-body">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emailAlerts"
+                    />
+                    <label class="form-check-label" for="emailAlerts"
+                      >Email</label
+                    >
+                  </div>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="textAlerts"
+                    />
+                    <label class="form-check-label" for="textAlerts"
+                      >Text/SMS</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Announcements -->
+              <div class="card-header" id="alertsAccordion">
+                <h5
+                  class="mb-0 d-flex justify-content-between align-items-center"
+                >
+                  <button
+                    class="btn btn-link accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseAlerts"
+                    aria-expanded="true"
+                    aria-controls="collapseAlerts"
+                  >
+                    Announcements
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseAlerts"
+                class="collapse"
+                aria-labelledby="alertsAccordion"
+              >
+                <div class="card-body">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emailAlerts"
+                    />
+                    <label class="form-check-label" for="emailAlerts"
+                      >Email</label
+                    >
+                  </div>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="textAlerts"
+                    />
+                    <label class="form-check-label" for="textAlerts"
+                      >Text/SMS</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Billing Preferences Card -->
+            <div class="card my-4 rounded-3 shadow-sm">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
                 <h5>Billing Preferences</h5>
-                <a href="#" class="btn btn-link"
-                  >Go to Billing <i class="bi bi-arrow-right"></i
-                ></a>
+                <div class="d-flex align-items-center">
+                  <div class="btn btn-primary">
+                    <i class="bi bi-pencil-fill"></i>
+                  </div>
+                </div>
               </div>
               <div class="card-body">
-                <!-- Billing preferences content -->
-                <!-- Add billing preferences content as needed -->
+                <!-- Sign-in credentials content -->
+                <p>
+                  <strong>Default payment:</strong> You do not have a save
+                  default payment method
+                </p>
+                <p>
+                  <strong>Paperless billing:</strong>
+                  <i class="fa-solid fa-leaf green-leaf"></i> Enrolled
+                </p>
+                <!-- Add more sign-in credentials as needed -->
               </div>
             </div>
           </div>
@@ -326,13 +470,31 @@
 
     <!-- FOOTER -->
     <footer class="p-5 bg-dark text-white text-center position-relative">
-      <div class="container">
-        <p class="lead">Copyright &copy; 2023 Clinical Study Assistant</p>
-        <a href="" class="position-absolute bottom-0 end-0 p-5">
-          <i class="bi bi-arrow-up-circle h1"></i>
-        </a>
-      </div>
-    </footer>
+        <div class="container">
+          <p class="lead">
+            Copyright &copy; 2023 Clinical Study Assistant. All Rights Reserved.
+          </p>
+          <!-- Privacy Policy and Cookie Policy links -->
+          <p class="mb-0">
+            <a href="#" class="small me-2" style="text-decoration: none">Home</a>
+            <a href="#" class="small me-2" style="text-decoration: none"
+              >Policies & Notifications</a
+            >
+            <a href="#" class="small me-2" style="text-decoration: none"
+              >Terms & Conditions</a
+            >
+            <a href="#" class="small me-2" style="text-decoration: none"
+              >Privacy Policy</a
+            >
+            <a href="#" class="small" style="text-decoration: none"
+              >Cookie Policy</a
+            >
+          </p>
+          <a href="" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+        </div>
+      </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
