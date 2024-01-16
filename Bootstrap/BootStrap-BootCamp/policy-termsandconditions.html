@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CSA - My Subscription</title>
+    <title>CSA - Terms and Conditions</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -133,132 +133,20 @@
       class="bg-dark text-white p-5 p-lg-0 pt-lg-5 text-center text-md-start"
     >
       <div class="container">
+        <!-- d-flex will aline the elements in a row
+        the MD will make it happen until MD size, after which it will stack vertically -->
         <div class="d-md-flex align-items-center justify-content-center">
           <div>
-            <h1 class="">
-              My
-              <span class="text-info">Subscription</span>
-            </h1>
-            <p class="lead my-4">
-              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias,
-              laboriosam!""
-            </p>
+            <h3 class="">Clinical Study Assist Terms and Conditions</h3>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SUBSCRIPTION -->
+    <!-- INFO  -->
     <section class="p-5">
-      <div class="container">
-        <div class="row">
-          <!-- LEFT SIDE -->
-          <div class="col-md-9">
-            <!-- PLAN -->
-            <div class="card my-4">
-              <div
-                class="card-header custom-card-header d-flex justify-content-between align-items-center"
-              >
-                <h5 class="mb-0">Plan</h5>
-                <div class="d-flex align-items-center"></div>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  $@subscription.unit_amount<small class="text-muted fw-light"
-                    >/month</small
-                  >
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>All access to Discover Studies</li>
-                  <li>Includes 1 specialty</li>
-                  <li>Each additional specialty $5</li>
-                  <li>Email support</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- SPECIALTIES -->
-            <div class="card my-4">
-              <div
-                class="card-header custom-card-header d-flex justify-content-between align-items-center"
-              >
-                <h5 class="mb-0">Specialty AddOns</h5>
-                <div class="d-flex align-items-center"></div>
-              </div>
-              <div class="card-body">
-                <div
-                  class="row row-cols-auto mb-5 text-center justify-content-center"
-                >
-                  <div class="col">
-                    <div
-                      id="card-@subscription.name"
-                      class="card text-center mb-4 rounded-3 shadow-lg border border-5 border-info"
-                      id="customCard_@subscription.name"
-                    >
-                      <div class="card-body">
-                        <a
-                          id="customBtn-@subscription.name"
-                          href="#"
-                          class="btn stretched-link"
-                          onclick="myToggleSelection('@subscription.name')"
-                          data-selected="true"
-                        >
-                          <i
-                            class="@subscription.specialtyInfo.fontAwesomeName fa-2xl"
-                          ></i>
-                        </a>
-                      </div>
-                      <div class="card-footer text-muted">
-                        @subscription.name
-                      </div>
-                    </div>
-                    <div class="addon-box" onclick="toggleAddon(this)">
-                      <img
-                        src="img/undraw_file_searching_re_3evy.svg"
-                        alt="Addon 1"
-                      />
-                    </div>
-                    <div class="addon-box" onclick="toggleAddon(this)">
-                      <img
-                        src="img/undraw_file_searching_re_3evy.svg"
-                        alt="Addon 1"
-                      />
-                    </div>
-                    <div class="addon-box" onclick="toggleAddon(this)">
-                      <img
-                        src="img/undraw_file_searching_re_3evy.svg"
-                        alt="Addon 1"
-                      />
-                    </div>
-                    <div class="addon-box" onclick="toggleAddon(this)">
-                      <img
-                        src="img/undraw_file_searching_re_3evy.svg"
-                        alt="Addon 1"
-                      />
-                    </div>
-                    <div class="addon-box" onclick="toggleAddon(this)">
-                      <img
-                        src="img/undraw_file_searching_re_3evy.svg"
-                        alt="Addon 1"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- RIGHT SIDE -->
-          <div class="col-md-3">
-            <div class="cost-card card my-4">
-              <div class="card-body">
-                <!-- Monthly cost details -->
-                <h5 class="card-title">Monthly Cost</h5>
-                <!-- Add cost details here -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <span class="fw-block">TBD</span>
+      <p>To Be Decided...</p>
     </section>
 
     <!-- FOOTER -->
@@ -276,11 +164,5 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // JavaScript for handling addon box selection
-      function toggleAddon(element) {
-        element.classList.toggle("selected");
-      }
-    </script>
   </body>
 </html>

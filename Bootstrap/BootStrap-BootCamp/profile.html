@@ -38,16 +38,25 @@
 
       /* Custom CSS for expand arrow */
       .accordion-button[aria-expanded="true"]::after {
-        content: "\25BC"; /* Unicode character for down arrow */
+        content: "\25B2"; /* Unicode character for down arrow */
       }
 
       .accordion-button[aria-expanded="false"]::after {
-        content: "\25B6"; /* Unicode character for right arrow */
+        content: "\25BC"; /* Unicode character for right arrow */
+      }
+
+      .accordion-button:hover[aria-expanded="true"]::after,
+      .accordion-button:hover[aria-expanded="false"]::after {
+        color: #007bff; /* Blue color on hover for both states */
       }
 
       /* Custom CSS for the green leaf icon */
       .green-leaf {
         color: #00cc00; /* Green color */
+      }
+
+      .card-body small {
+        font-size: 70%; /* Set the font size for small text */
       }
     </style>
   </head>
@@ -201,54 +210,85 @@
               <div
                 class="card-header custom-card-header d-flex justify-content-between align-items-center"
               >
-                <h5>Account Information</h5>
+                <h4>Account Information</h4>
                 <div class="d-flex align-items-center">
-                  <div class="btn btn-primary">
+                  <div class="btn btn-primary" onclick="toggleEditMode()">
                     <i class="bi bi-pencil-fill"></i>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <form>
-                  <!-- Form fields for Account Information -->
-                  <div class="form-group">
-                    <label>Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      value="John Doe"
-                      disabled
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label>Address</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      value="123 Main St"
-                      disabled
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label>Account Number</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      value="123456789"
-                      disabled
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label>Language Preference</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      value="English"
-                      disabled
-                    />
-                  </div>
-                  <!-- Add more fields as needed -->
-                </form>
+                <div id="viewSection">
+                  <!-- Top section (visible by default) -->
+                  <p><strong>User Name:</strong> John Doe</p>
+                  <p>
+                    <strong>Address:</strong> 123 Main St, Somewhere CA 91111
+                  </p>
+                  <p><strong>Account Number:</strong> 123456789</p>
+                  <p><strong>Language Preferences:</strong> English</p>
+                </div>
+                <div id="editSection" style="display: none">
+                  <!-- Form section (hidden by default) -->
+                  <form>
+                    <div class="mb-3">
+                      <label for="userName" class="form-label"
+                        >User Name:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="userName"
+                        value="John Doe"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="Address" class="form-label">Address:</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="Address"
+                        value="123 Main St, Somewhere CA 91111"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="AccountNum" class="form-label"
+                        >Account Number:</label
+                      >
+                      <input
+                        type="AccountNum"
+                        class="form-control"
+                        id="AccountNum"
+                        value="123456789"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="language" class="form-label"
+                        >Language Preference:</label
+                      >
+                      <select class="form-select" id="language">
+                        <option value="english" selected>English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                        <!-- Add more languages as needed -->
+                      </select>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-success"
+                      onclick="saveChanges()"
+                    >
+                      Save
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      onclick="cancelEdit()"
+                    >
+                      Cancel
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
             <!-- Contact Information Card -->
@@ -331,7 +371,11 @@
                 aria-labelledby="alertsAccordion"
               >
                 <div class="card-body">
-                  <div class="form-check form-switch">
+                  <p class="mb-0">
+                    Time-sensitive notifications related to appointments,
+                    outages, trouble tickets and order updates.
+                  </p>
+                  <div class="form-check form-switch mt-4">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -341,7 +385,7 @@
                       >Email</label
                     >
                   </div>
-                  <div class="form-check form-switch">
+                  <div class="form-check form-switch mb-4">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -351,6 +395,16 @@
                       >Text/SMS</label
                     >
                   </div>
+
+                  <p>
+                    <small class="text-muted">
+                      By toggling on, you're agreeing to receive text
+                      notifications related to your Clincial Study Assistant
+                      services. Message and data rates may apply, and the
+                      frequency varies. To get help or opt-out , text HELP for
+                      help or STOP to cancel.
+                    </small>
+                  </p>
                 </div>
               </div>
               <!-- Billing and Account Alerts -->
@@ -375,7 +429,11 @@
                 aria-labelledby="alertsAccordion"
               >
                 <div class="card-body">
-                  <div class="form-check form-switch">
+                  <p class="mb-0">
+                    Essential notifications related to billing, payments and
+                    your account.
+                  </p>
+                  <div class="form-check form-switch mt-4">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -385,7 +443,7 @@
                       >Email</label
                     >
                   </div>
-                  <div class="form-check form-switch">
+                  <div class="form-check form-switch mb-4">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -395,6 +453,15 @@
                       >Text/SMS</label
                     >
                   </div>
+                  <p>
+                    <small class="text-muted">
+                      By toggling on, you're agreeing to receive text
+                      notifications related to your Clincial Study Assistant
+                      services. Message and data rates may apply, and the
+                      frequency varies. To get help or opt-out , text HELP for
+                      help or STOP to cancel.
+                    </small>
+                  </p>
                 </div>
               </div>
               <!-- Announcements -->
@@ -419,7 +486,10 @@
                 aria-labelledby="alertsAccordion"
               >
                 <div class="card-body">
-                  <div class="form-check form-switch">
+                  <p class="mb-0">
+                    Notifications related to products, marketing and promotions.
+                  </p>
+                  <div class="form-check form-switch mt-4">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -429,7 +499,7 @@
                       >Email</label
                     >
                   </div>
-                  <div class="form-check form-switch">
+                  <div class="form-check form-switch mb-4">
                     <input
                       class="form-check-input"
                       type="checkbox"
@@ -439,7 +509,30 @@
                       >Text/SMS</label
                     >
                   </div>
+                  <p>
+                    <small class="text-muted">
+                      By toggling on, you're agreeing to receive text
+                      notifications related to your Clincial Study Assistant
+                      services. Message and data rates may apply, and the
+                      frequency varies. To get help or opt-out , text HELP for
+                      help or STOP to cancel.
+                    </small>
+                  </p>
                 </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  <small class="text-muted"
+                    >For more information on our terms of services visit:
+                    <a href="#" class="small" style="text-decoration: none"
+                      >SMS Terms of Service</a
+                    >
+                    and
+                    <a href="#" class="small" style="text-decoration: none"
+                      >Privacy Policy</a
+                    >
+                  </small>
+                </p>
               </div>
             </div>
             <!-- Billing Preferences Card -->
@@ -473,37 +566,39 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="p-5 bg-dark text-white text-center position-relative">
-      <div class="container">
-        <p class="lead">
-          Copyright &copy; 2023 Clinical Study Assistant. All Rights Reserved.
-        </p>
-        <!-- Privacy Policy and Cookie Policy links -->
-        <p class="mb-0">
-          <a href="#" class="small me-2" style="text-decoration: none">Home</a>
-          <a href="#" class="small me-2" style="text-decoration: none"
-            >Policies & Notifications</a
-          >
-          <a href="#" class="small me-2" style="text-decoration: none"
-            >Terms & Conditions</a
-          >
-          <a href="#" class="small me-2" style="text-decoration: none"
-            >Privacy Policy</a
-          >
-          <a href="#" class="small" style="text-decoration: none"
-            >Cookie Policy</a
-          >
-        </p>
-        <a href="" class="position-absolute bottom-0 end-0 p-5">
-          <i class="bi bi-arrow-up-circle h1"></i>
-        </a>
-      </div>
-    </footer>
+    <div id="footer-container"></div>
+    <script>
+      fetch("./shared/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-container").innerHTML = data;
+        });
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function toggleEditMode() {
+        document.getElementById("viewSection").style.display = "none";
+        document.getElementById("editSection").style.display = "block";
+      }
+
+      function saveChanges() {
+        // Add logic to save changes (e.g., post to a page)
+        // After saving, switch back to view mode
+        document.getElementById("viewSection").style.display = "block";
+        document.getElementById("editSection").style.display = "none";
+      }
+
+      function cancelEdit() {
+        // Simply switch back to view mode without saving changes
+        document.getElementById("viewSection").style.display = "block";
+        document.getElementById("editSection").style.display = "none";
+      }
+    </script>
   </body>
 </html>
