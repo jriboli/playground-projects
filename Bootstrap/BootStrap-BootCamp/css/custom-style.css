@@ -172,3 +172,9 @@ section.bg-primary .progress-line-active {
 .stat-label {
   font-size: 14px;
 }
+
+.custom-card-footer {
+  background-color: #ffffff; /* Set the header background color */
+  color: #000000; /* Set the header text color */
+  border: none; /* Remove the default border */
+}
