@@ -34,5 +34,14 @@ public class Main {
         System.out.println(test4.getPeaks(new int[]{3,2,3,6,4,1,2,3,2,1,2,3}));
         System.out.println(test4.getPeaks(new int[]{3,2,3,6,4,1,2,3,2,1,2,2,2,1}));
         System.out.println(test4.getPeaks(new int[]{2,1,3,1,2,2,2,2,1}));
+
+        //RgbToHex.rgb(-20, 275, 125);
+
+        //ROT13.rot13("uryyb");
+        //ProdFib.productFib(2932589879121L);
+
+        ConsonantValue.solve("zodiac");
+
+        AddingBigNumbers.add("100", "101");
     }
 }
