@@ -11,4 +11,17 @@ test("Login test demo", async () => {
   await page.hover("//*[@id='widget-navbar-217834']/ul/li[6]/a/div/span");
   //await page.click("text=Login");
   await page.click("'Login'"); // Use of single quotes
+
+  await page.fill("input[name='email']", "abc");
+  await page.fill("input[name='password']", "123");
+  await page.click("input[value='Login']");
+
+
+
+
+  await page.waitForTimeout(5000);
+
+  const page1 = await context.newPage();
+  
+  // bottom
 });
