@@ -1,4 +1,4 @@
-package com.qa.api.tests;
+package com.qa.api.tests.GET;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -49,7 +49,7 @@ public class GetAPICall {
         System.out.println("----- print api response with plain text -----");
         System.out.println(apiResponse.text());
     }
-    
+
     @Test
     public void getUsersApiTest(){
         APIResponse apiResponse = requestContext.get("https://gorest.co.in/public/v2/users");
@@ -66,7 +66,6 @@ public class GetAPICall {
         System.out.println(apiResponse.text());
 
         try {
-            apiResponse.body();
             ObjectMapper objectMapper = new ObjectMapper();
             JsonNode jsonResponse = objectMapper.readTree(apiResponse.body());
             String jsonPrettyResponse = jsonResponse.toPrettyString();
