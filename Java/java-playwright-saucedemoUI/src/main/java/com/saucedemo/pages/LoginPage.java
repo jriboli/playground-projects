@@ -29,9 +29,9 @@ public class LoginPage {
         return url;
     }
 
-    public boolean isForgotPwdLinkExists() {
-        return page.isVisible("forgotPasswordLink");
-    }
+//    public boolean isForgotPwdLinkExists() {
+//        return page.isVisible("forgotPasswordLink");
+//    }
 
     // Page chaining model
     public InventoryPage doLogin(String appUserName, String appPassword) {

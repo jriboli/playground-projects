@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Open Cart Test Regression Suite" verbose="4"
-       thread-count="4" parallel="tests">
+<suite name="SauceDemo.com Test Regression Suite" verbose="4" thread-count="2" parallel="tests">
 
-    <test name="Open Cart Login Page Testh_chrome_90">
+    <listeners>
+        <listener class-name="com.saucedemo.listeners.ExtentReportListener"/>
+    </listeners>
+
+    <test name="SauceDemo Login Page Test">
+        <classes>
+            <class name="com.saucedemo.tests.LoginPageTest" />
+        </classes>
+    </test>
+
+    <test name="SauceDemo Inventory Page Test">
         <classes>
             <class name="com.saucedemo.tests.InventoryPageTest" />
         </classes>

@@ -25,4 +25,10 @@ public class LoginPageTest extends BaseTest {
         inventoryPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
         Assert.assertTrue(inventoryPage.isProductsTitleExists());
     }
+
+    @Test
+    public void invalidLoginTest() {
+        inventoryPage = loginPage.doLogin("Rocket", prop.getProperty("password"));
+        Assert.assertTrue(inventoryPage.isProductsTitleExists());
+    }
 }
