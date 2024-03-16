@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Open Cart Test Regression Suite" verbose="4"
+       thread-count="4" parallel="tests">
+
+    <test name="Open Cart Login Page Testh_chrome_90">
+        <classes>
+            <class name="com.saucedemo.tests.InventoryPageTest" />
+        </classes>
+    </test>
+</suite>
