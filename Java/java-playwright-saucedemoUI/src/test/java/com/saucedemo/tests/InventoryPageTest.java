@@ -7,12 +7,17 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.util.Properties;
+
 public class InventoryPageTest extends BaseTest {
 
     @BeforeTest
     public void login() {
+        Properties localProperties = this.prop;
+        System.out.println("InventoryPageTest prop : " + localProperties.toString());
         inventoryPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
     }
+
     @Test
     public void inventoryPageTitleTest() {
         String actualTitle = inventoryPage.getInventoryPageTitle();

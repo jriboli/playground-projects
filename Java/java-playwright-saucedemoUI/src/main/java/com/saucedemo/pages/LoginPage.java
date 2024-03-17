@@ -35,7 +35,7 @@ public class LoginPage {
 
     // Page chaining model
     public InventoryPage doLogin(String appUserName, String appPassword) {
-        System.out.println("App Creds: " + appPassword + ":" + appPassword);
+        System.out.println("App Creds: " + appUserName + ":" + appPassword);
         page.fill(username, appUserName);
         page.fill(password, appPassword);
         page.click(loginBtn);

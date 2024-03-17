@@ -3,7 +3,6 @@ package com.saucedemo.tests;
 import com.saucedemo.base.BaseTest;
 import com.saucedemo.constants.AppConstants;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class LoginPageTest extends BaseTest {

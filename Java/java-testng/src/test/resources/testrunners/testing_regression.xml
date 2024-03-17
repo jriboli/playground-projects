@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG functionality" verbose="4" thread-count="1" parallel="tests">
+
+
+    <test name="Basic Functionality">
+        <classes>
+            <class name="com.tests.TestNGBasics" />
+        </classes>
+    </test>
+
+    <test name="Feature Testing">
+        <classes>
+            <class name="com.tests.TestNGFeatures" />
+        </classes>
+    </test>
+</suite>
