@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/HandlingElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/LaunchBrowser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/TestGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-saucedemoUI/src/main/resources/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/src/main/java/org/wikipedia/factory/PlaywrightFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/src/main/java/org/wikipedia/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/src/test/resources/config/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/main/java/org/example/analyzer/MyTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/main/java/org/example/analyzer/RetryAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/main/resources/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/dataproviderTests/DataProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/inheritanceTests/base/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/inheritanceTests/tests/FakeHomePageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/inheritanceTests/tests/FakeLoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/inspectorTests/inspectorWithWikipedia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/practiceTests/YahooMailTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/retryTests/RetryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/retryTests/RetryTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/simpleTests/ExceptionTimeOutTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/simpleTests/InvocationCountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/simpleTests/ParameterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/softAssertTests/SoftAssertionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/util/TestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/util/Xls_Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/resources/data/TestNG_Login_Parameters.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/resources/testrunners/testing_parameters.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/resources/testrunners/testing_retry.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-testng/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-testng/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-testng/src/test/java/com/tests/TestNGBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/simpleTests/TestNGBasicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-testng/src/test/java/com/tests/TestNGFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/simpleTests/TestNGFeatureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-testng/src/test/resources/testrunners/testing_regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-testng/src/test/resources/testrunners/testing_regression.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2e0eEeEX2UCAz3ezbiZV7hYjKut" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "onboarding.tips.debug.path": "C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG.TestGenerator.GenWikipediaTest">
+    <configuration name="HandlingElements.FirstLocator" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.HandlingElements" />
+      <option name="METHOD_NAME" value="FirstLocator" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HandlingElements.TheLocator" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.HandlingElements" />
+      <option name="METHOD_NAME" value="TheLocator" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaunchBrowser.BrowserNavigationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LaunchBrowser" />
+      <option name="METHOD_NAME" value="BrowserNavigationTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LaunchBrowser.LaunchNonIncognitoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LaunchBrowser" />
+      <option name="METHOD_NAME" value="LaunchNonIncognitoTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGenerator.GenWikipediaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.TestGenerator" />
+      <option name="METHOD_NAME" value="GenWikipediaTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestGenerator.GenWikipediaTest" />
+        <item itemvalue="TestNG.HandlingElements.TheLocator" />
+        <item itemvalue="TestNG.HandlingElements.FirstLocator" />
+        <item itemvalue="TestNG.LaunchBrowser.BrowserNavigationTest" />
+        <item itemvalue="TestNG.LaunchBrowser.LaunchNonIncognitoTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="" />
+      <created>1711045815334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711045815334</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

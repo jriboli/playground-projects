@@ -1,9 +1,9 @@
-package com.tests;
+package com.simpleTests;
 
 import org.testng.annotations.*;
 
 @Test()
-public class TestNGBasics {
+public class TestNGBasicTest {
 
     @BeforeSuite
     public void bSuite() {
