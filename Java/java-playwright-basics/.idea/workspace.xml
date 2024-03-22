@@ -5,49 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/HandlingElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/LaunchBrowser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/TestGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-saucedemoUI/src/main/resources/notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/src/main/java/org/wikipedia/factory/PlaywrightFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/src/main/java/org/wikipedia/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/src/test/resources/config/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/main/java/org/example/analyzer/MyTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/main/java/org/example/analyzer/RetryAnalyzer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/main/resources/notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/dataproviderTests/DataProviderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/inheritanceTests/base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/inheritanceTests/tests/FakeHomePageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/inheritanceTests/tests/FakeLoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/inspectorTests/inspectorWithWikipedia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/practiceTests/YahooMailTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/retryTests/RetryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/retryTests/RetryTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/simpleTests/ExceptionTimeOutTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/simpleTests/InvocationCountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/simpleTests/ParameterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/softAssertTests/SoftAssertionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/util/TestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/util/Xls_Reader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/resources/data/TestNG_Login_Parameters.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/resources/testrunners/testing_parameters.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-testng/src/test/resources/testrunners/testing_retry.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-testng/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-testng/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-testng/src/test/java/com/tests/TestNGBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/simpleTests/TestNGBasicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-testng/src/test/java/com/tests/TestNGFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-testng/src/test/java/com/simpleTests/TestNGFeatureTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-testng/src/test/resources/testrunners/testing_regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-testng/src/test/resources/testrunners/testing_regression.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/InputElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/JavascriptActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/UserGestures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/VisualElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/HandlingElements.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,8 +45,8 @@
     "onboarding.tips.debug.path": "C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.TestGenerator.GenWikipediaTest">
-    <configuration name="HandlingElements.FirstLocator" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.JavascriptActions.keyBoardTest">
+    <configuration name="JavascriptActions.javaScriptTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
@@ -91,8 +55,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandlingElements" />
-      <option name="METHOD_NAME" value="FirstLocator" />
+      <option name="MAIN_CLASS_NAME" value="org.example.JavascriptActions" />
+      <option name="METHOD_NAME" value="javaScriptTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -100,7 +64,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HandlingElements.TheLocator" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="JavascriptActions.keyBoardTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +73,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.HandlingElements" />
-      <option name="METHOD_NAME" value="TheLocator" />
+      <option name="MAIN_CLASS_NAME" value="org.example.JavascriptActions" />
+      <option name="METHOD_NAME" value="keyBoardTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -118,7 +82,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LaunchBrowser.BrowserNavigationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserGestures.dragAndDropTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
@@ -127,8 +91,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LaunchBrowser" />
-      <option name="METHOD_NAME" value="BrowserNavigationTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.UserGestures" />
+      <option name="METHOD_NAME" value="dragAndDropTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LaunchBrowser.LaunchNonIncognitoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserGestures.resizableTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
@@ -145,8 +109,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LaunchBrowser" />
-      <option name="METHOD_NAME" value="LaunchNonIncognitoTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.UserGestures" />
+      <option name="METHOD_NAME" value="resizableTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -154,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGenerator.GenWikipediaTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserGestures.sliderTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
@@ -163,8 +127,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.TestGenerator" />
-      <option name="METHOD_NAME" value="GenWikipediaTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.UserGestures" />
+      <option name="METHOD_NAME" value="sliderTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -174,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestGenerator.GenWikipediaTest" />
-        <item itemvalue="TestNG.HandlingElements.TheLocator" />
-        <item itemvalue="TestNG.HandlingElements.FirstLocator" />
-        <item itemvalue="TestNG.LaunchBrowser.BrowserNavigationTest" />
-        <item itemvalue="TestNG.LaunchBrowser.LaunchNonIncognitoTest" />
+        <item itemvalue="TestNG.JavascriptActions.keyBoardTest" />
+        <item itemvalue="TestNG.JavascriptActions.javaScriptTest" />
+        <item itemvalue="TestNG.UserGestures.dragAndDropTest" />
+        <item itemvalue="TestNG.UserGestures.resizableTest" />
+        <item itemvalue="TestNG.UserGestures.sliderTest" />
       </list>
     </recent_temporary>
   </component>
