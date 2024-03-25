@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/screenshot/screenshot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshot/screenshotOfElement.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/Capture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Capture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Capture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +46,7 @@
       <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\testFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Capture.videoCaptureTest">
+  <component name="RunManager" selected="TestNG.Capture.traceViewerTest">
     <configuration name="Authentication.authenticationInvalidTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
@@ -104,6 +101,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Capture.traceViewerTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Capture" />
+      <option name="METHOD_NAME" value="traceViewerTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Capture.videoCaptureTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
@@ -122,31 +137,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Files.uploadFile" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Files" />
-      <option name="METHOD_NAME" value="uploadFile" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Capture.videoCaptureTest" />
+        <item itemvalue="TestNG.Capture.traceViewerTest" />
         <item itemvalue="TestNG.Capture.screenCaptureTest" />
+        <item itemvalue="TestNG.Capture.videoCaptureTest" />
         <item itemvalue="TestNG.Authentication.authenticationInvalidTest" />
         <item itemvalue="TestNG.Authentication.authenticationTest" />
-        <item itemvalue="TestNG.Files.uploadFile" />
       </list>
     </recent_temporary>
   </component>

@@ -41,4 +41,24 @@ public class Capture {
 
         browserContext.close();
     }
+
+    @Test
+    public void traceViewerTest() {
+        Playwright playwright = Playwright.create();
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        BrowserContext context = browser.newContext();
+
+        context.tracing().start(new Tracing.StartOptions()
+                .setScreenshots(true)
+                .setSnapshots(true)
+                .setSources(false));
+
+        Page page = context.newPage();
+        page.navigate("http://gmail.com");
+        page.locator("[type=email]").fill("rraccoon1990@gmail.com");
+        page.click("button:has-text('Next')");
+
+        context.tracing().stop(new Tracing.StopOptions()
+                .setPath(Paths.get("traces/trace.zip")));
+    }
 }
