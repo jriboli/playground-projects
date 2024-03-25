@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testFiles/unnamed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot/screenshot.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot/screenshotOfElement.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/Capture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Files.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Authentication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +49,79 @@
       <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\testFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Files.uploadFile">
+  <component name="RunManager" selected="TestNG.Capture.videoCaptureTest">
+    <configuration name="Authentication.authenticationInvalidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Authentication" />
+      <option name="METHOD_NAME" value="authenticationInvalidTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Authentication.authenticationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Authentication" />
+      <option name="METHOD_NAME" value="authenticationTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Capture.screenCaptureTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Capture" />
+      <option name="METHOD_NAME" value="screenCaptureTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Capture.videoCaptureTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Capture" />
+      <option name="METHOD_NAME" value="videoCaptureTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Files.uploadFile" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
@@ -66,85 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavascriptActions.javaScriptTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.JavascriptActions" />
-      <option name="METHOD_NAME" value="javaScriptTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JavascriptActions.keyBoardTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.JavascriptActions" />
-      <option name="METHOD_NAME" value="keyBoardTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserGestures.dragAndDropTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.UserGestures" />
-      <option name="METHOD_NAME" value="dragAndDropTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserGestures.resizableTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.UserGestures" />
-      <option name="METHOD_NAME" value="resizableTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Capture.videoCaptureTest" />
+        <item itemvalue="TestNG.Capture.screenCaptureTest" />
+        <item itemvalue="TestNG.Authentication.authenticationInvalidTest" />
+        <item itemvalue="TestNG.Authentication.authenticationTest" />
         <item itemvalue="TestNG.Files.uploadFile" />
-        <item itemvalue="TestNG.JavascriptActions.keyBoardTest" />
-        <item itemvalue="TestNG.JavascriptActions.javaScriptTest" />
-        <item itemvalue="TestNG.UserGestures.dragAndDropTest" />
-        <item itemvalue="TestNG.UserGestures.resizableTest" />
       </list>
     </recent_temporary>
   </component>

@@ -25,3 +25,7 @@ replay_pid*
 
 # Want to ignore all .env files
 *.env
+
+#Justin for JAVA 
+**/videos/
+**/screenshots/
