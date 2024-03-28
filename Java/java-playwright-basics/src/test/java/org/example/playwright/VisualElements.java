@@ -1,7 +1,9 @@
-package org.example;
+package org.example.playwright;
 
 import com.microsoft.playwright.*;
 import org.testng.annotations.Test;
+
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 public class VisualElements {
 
@@ -47,5 +49,26 @@ public class VisualElements {
         Page popup = page.waitForPopup(() -> {
             page.locator("text=Privacy Policy").nth(0).click();
         });
+    }
+
+    @Test
+    public void webTableTest() {
+        Playwright playwright = Playwright.create();
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+
+        Page page = browser.newPage();
+        page.navigate("https://money.rediff.com/indices/nse/NIFTY-50?src=moneyhome_nseIndices");
+
+        // ROW Count
+        System.out.println(page.locator(".dataTable > tbody").locator("tr").count());
+        // COLUMN Count
+        System.out.println(page.locator(".dataTable > tbody").locator("tr:first-child").locator("td").count());
+
+        assertThat(page.locator(".dataTable > tbody").locator("tr:first-child").locator("td:nth-child(2)")).hasText("Nifty");
+
+        // PRINT Data from Table
+        page.locator(".dataTable > tbody").allInnerTexts().forEach(text -> System.out.println(text));
+
+
     }
 }

@@ -5,9 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/Assertions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/FirstTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/Listener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/Listeners/Listeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_basic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Capture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Capture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/playwright/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Capture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/Capture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/Files.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/InputElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/InputElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/JavascriptActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/JavascriptActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/LaunchBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/LaunchBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TestGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/TestGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/UserGestures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/UserGestures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/VisualElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/VisualElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright-saucedemoUI/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-saucedemoUI/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-testng/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-testng/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,30 +42,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2e0eEeEX2UCAz3ezbiZV7hYjKut" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\testFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Capture.traceViewerTest">
-    <configuration name="Authentication.authenticationInvalidTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.FirstTest.assertionSoft">
+    <configuration name="Assertions.playwrightAssertionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
@@ -56,26 +74,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Authentication" />
-      <option name="METHOD_NAME" value="authenticationInvalidTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Authentication.authenticationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Authentication" />
-      <option name="METHOD_NAME" value="authenticationTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Assertions" />
+      <option name="METHOD_NAME" value="playwrightAssertionTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -119,7 +119,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Capture.videoCaptureTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.assertionSoft" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.testng.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.testng" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testng.FirstTest" />
+      <option name="METHOD_NAME" value="assertionSoft" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VisualElements.webTableTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
@@ -128,8 +146,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Capture" />
-      <option name="METHOD_NAME" value="videoCaptureTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.VisualElements" />
+      <option name="METHOD_NAME" value="webTableTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.FirstTest.assertionSoft" />
+        <item itemvalue="TestNG.VisualElements.webTableTest" />
+        <item itemvalue="TestNG.Assertions.playwrightAssertionTest" />
         <item itemvalue="TestNG.Capture.traceViewerTest" />
         <item itemvalue="TestNG.Capture.screenCaptureTest" />
-        <item itemvalue="TestNG.Capture.videoCaptureTest" />
-        <item itemvalue="TestNG.Authentication.authenticationInvalidTest" />
-        <item itemvalue="TestNG.Authentication.authenticationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +180,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/playwright/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

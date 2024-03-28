@@ -1,4 +1,4 @@
-package org.example;
+package org.example.playwright;
 
 import com.microsoft.playwright.*;
 import java.nio.file.Paths;
@@ -60,5 +60,7 @@ public class Capture {
 
         context.tracing().stop(new Tracing.StopOptions()
                 .setPath(Paths.get("traces/trace.zip")));
+
+        // mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="show-trace trace.zip"
     }
 }

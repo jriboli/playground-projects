@@ -1,4 +1,4 @@
-package org.example;
+package org.example.playwright;
 
 import org.testng.annotations.Test;
 
