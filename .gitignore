@@ -30,3 +30,4 @@ replay_pid*
 **/videos/
 **/screenshots/
 **/traces/
+**/test-output/

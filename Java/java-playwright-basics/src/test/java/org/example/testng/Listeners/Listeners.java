@@ -3,6 +3,7 @@ package org.example.testng.Listeners;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
 public class Listeners implements ITestListener {
 
@@ -12,12 +13,13 @@ public class Listeners implements ITestListener {
 
     public void onTestSuccess(ITestResult result) {
 
-        System.out.println("Passed: TestCase - " + result.getTestName());
+        System.out.println("Passed: TestCase - " + result.getName());
     }
 
     public void onTestFailure(ITestResult result) {
 
-        System.out.println("Capturing Screenshot: For TestCase - " + result.getTestName());
+        System.out.println("Capturing Screenshot: For TestCase - " + result.getName());
+        Reporter.log("Screenshot link");
     }
 
     public void onTestSkipped(ITestResult result) {

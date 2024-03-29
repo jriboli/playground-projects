@@ -4,11 +4,18 @@
 
     <listeners>
         <listener class-name="org.example.testng.Listeners.Listeners"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
     </listeners>
 
     <test name="Listener Test">
         <classes>
-            <class name="org.example.testng.Listener" />
+            <class name="org.example.testng.ListenerTest" />
+        </classes>
+    </test>
+
+    <test name="Before After Test">
+        <classes>
+            <class name="org.example.testng.BeforeAfterChildTest" />
         </classes>
     </test>
 

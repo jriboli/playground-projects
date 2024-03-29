@@ -5,27 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/Assertions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/FirstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/Listeners/Listeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_basic.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/main/java/com/api/data/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/main/java/com/api/data/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/data/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/java/com/qa/api/tests/DELETE/DeleteUserCall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/java/com/qa/api/tests/GET/GetAPICall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/java/com/qa/api/tests/POST/CreateUserPostAPICall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/java/com/qa/api/tests/POST/CreateUserPostCallWithPOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/java/com/qa/api/tests/PUT/UpdateUserPutCall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/BeforeAfterChildTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/BeforeAfterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/ForceSkipTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/playwright/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/Authentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Capture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/Capture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/Files.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/InputElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/InputElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/JavascriptActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/JavascriptActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/LaunchBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/LaunchBrowser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TestGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/TestGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/UserGestures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/UserGestures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/VisualElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/playwright/VisualElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-saucedemoUI/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-saucedemoUI/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testng/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/ListenerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testng/Listeners/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/Listeners/Listeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testrunners/testng_basic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_with_listener.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-testng/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-testng/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/src/main/java/com/api/data/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/src/main/java/com/api/data/Users.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/data/user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/java/com/qa/api/tests/DELETE/DeleteUserCall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/java/com/qa/api/tests/GET/GetAPICall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/java/com/qa/api/tests/POST/CreateUserPostAPICall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/java/com/qa/api/tests/POST/CreateUserPostCallWithPOJO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/java/com/qa/api/tests/PUT/UpdateUserPutCall.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,69 +72,81 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright",
+    "onboarding.tips.debug.path": "C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\testFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.FirstTest.assertionSoft">
-    <configuration name="Assertions.playwrightAssertionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/testrunners/testng_with_listener.xml">
+    <configuration name="BeforeAfterChildTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.testng.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Assertions" />
-      <option name="METHOD_NAME" value="playwrightAssertionTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.example.testng" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testng.BeforeAfterChildTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Capture.screenCaptureTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BeforeAfterTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.testng.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Capture" />
-      <option name="METHOD_NAME" value="screenCaptureTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.example.testng" />
+      <option name="MAIN_CLASS_NAME" value="org.example.testng.BeforeAfterTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Capture.traceViewerTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/testrunners/testng_with_listener.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Capture" />
-      <option name="METHOD_NAME" value="traceViewerTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testrunners/testng_with_listener.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -155,13 +189,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/testrunners/testng_with_listener.xml" />
+      <item itemvalue="TestNG.BeforeAfterChildTest" />
+      <item itemvalue="TestNG.BeforeAfterTest" />
+      <item itemvalue="TestNG.FirstTest.assertionSoft" />
+      <item itemvalue="TestNG.VisualElements.webTableTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/testrunners/testng_with_listener.xml" />
+        <item itemvalue="TestNG.BeforeAfterChildTest" />
+        <item itemvalue="TestNG.BeforeAfterTest" />
         <item itemvalue="TestNG.FirstTest.assertionSoft" />
         <item itemvalue="TestNG.VisualElements.webTableTest" />
-        <item itemvalue="TestNG.Assertions.playwrightAssertionTest" />
-        <item itemvalue="TestNG.Capture.traceViewerTest" />
-        <item itemvalue="TestNG.Capture.screenCaptureTest" />
       </list>
     </recent_temporary>
   </component>

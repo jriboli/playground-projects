@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44943ba1-a415-48b4-bc6b-d944b7e6fa3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/playwright/Assertions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/testng/FirstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/testng/Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/testng/Listeners/Listeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/resources/testrunners/testng_basic.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/playwright/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/playwright/Authentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/Capture.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/playwright/Capture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/playwright/Files.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/InputElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/playwright/InputElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/JavascriptActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/playwright/JavascriptActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/LaunchBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/playwright/LaunchBrowser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/TestGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/playwright/TestGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/UserGestures.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/playwright/UserGestures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/VisualElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/playwright/VisualElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-saucedemoUI/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-saucedemoUI/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-testng/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-testng/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
