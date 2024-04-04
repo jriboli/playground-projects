@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44943ba1-a415-48b4-bc6b-d944b7e6fa3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/assignments/entity/FlightCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/assignments/entity/FlightInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/assignments/factory/PlaywrightFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/assignments/makemytrip/ResultsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/assignments/makemytrip/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/AutomatedCodeGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/ResultsPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/SearchPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/testng/DataProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/testng/dataproviders/LoginInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/testng/util/TestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/testng/util/Xls_Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/resources/config/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/resources/data/TestNG_Login_Parameters.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/testng/Listeners/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/testng/listeners/Listeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/resources/testrunners/testng_with_listener.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/resources/testrunners/testng_with_listener.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -3,7 +3,7 @@
 <suite name="TestNG Retry" verbose="4" thread-count="1" parallel="tests">
 
     <listeners>
-        <listener class-name="org.example.testng.Listeners.Listeners"></listener>
+        <listener class-name="org.example.testng.listeners.Listeners"></listener>
         <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
     </listeners>
 

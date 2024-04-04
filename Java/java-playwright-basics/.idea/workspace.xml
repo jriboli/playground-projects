@@ -5,49 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/main/java/com/api/data/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/main/java/com/api/data/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/data/user.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/java/com/qa/api/tests/DELETE/DeleteUserCall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/java/com/qa/api/tests/GET/GetAPICall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/java/com/qa/api/tests/POST/CreateUserPostAPICall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/java/com/qa/api/tests/POST/CreateUserPostCallWithPOJO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-api/src/test/java/com/qa/api/tests/PUT/UpdateUserPutCall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/BeforeAfterChildTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/BeforeAfterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/ForceSkipTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/entity/FlightCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/entity/FlightInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/factory/PlaywrightFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/ResultsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/AutomatedCodeGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/ResultsPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/SearchPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/DataProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/dataproviders/LoginInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/util/TestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/util/Xls_Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data/TestNG_Login_Parameters.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testng/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/ListenerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testng/Listeners/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/Listeners/Listeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testrunners/testng_basic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_with_listener.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testng/Listeners/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/listeners/Listeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testrunners/testng_with_listener.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_with_listener.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/src/main/java/com/api/data/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/src/main/java/com/api/data/Users.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/data/user.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/java/com/qa/api/tests/DELETE/DeleteUserCall.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/java/com/qa/api/tests/GET/GetAPICall.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/java/com/qa/api/tests/POST/CreateUserPostAPICall.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/java/com/qa/api/tests/POST/CreateUserPostCallWithPOJO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright/src/test/java/com/qa/api/tests/PUT/UpdateUserPutCall.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,92 +55,31 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright",
+    "last_opened_file_path": "C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/data",
     "onboarding.tips.debug.path": "C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\data" />
+      <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\java\org\example\testng" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\testFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/testrunners/testng_with_listener.xml">
-    <configuration name="BeforeAfterChildTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.testng.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.example.testng" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testng.BeforeAfterChildTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="true" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BeforeAfterTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.testng.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.example.testng" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testng.BeforeAfterTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/testrunners/testng_with_listener.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testrunners/testng_with_listener.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTest.assertionSoft" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ResultsPageTest.checkFirstFlightDetail">
+    <configuration name="ResultsPageTest.LAXtoNYCFlight" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.testng.*" />
+          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.testng" />
-      <option name="MAIN_CLASS_NAME" value="org.example.testng.FirstTest" />
-      <option name="METHOD_NAME" value="assertionSoft" />
+      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.ResultsPageTest" />
+      <option name="METHOD_NAME" value="LAXtoNYCFlight" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -171,17 +87,71 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VisualElements.webTableTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ResultsPageTest.checkFirstFlightDetail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.VisualElements" />
-      <option name="METHOD_NAME" value="webTableTest" />
+      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.ResultsPageTest" />
+      <option name="METHOD_NAME" value="checkFirstFlightDetail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResultsPageTest.checkFirstFlightDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.ResultsPageTest" />
+      <option name="METHOD_NAME" value="checkFirstFlightDetails" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchPageTest.LAXtoNYCFlight" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.SearchPageTest" />
+      <option name="METHOD_NAME" value="LAXtoNYCFlight" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchPageTest.setDepartureDate" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.SearchPageTest" />
+      <option name="METHOD_NAME" value="setDepartureDate" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -190,19 +160,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/testrunners/testng_with_listener.xml" />
-      <item itemvalue="TestNG.BeforeAfterChildTest" />
-      <item itemvalue="TestNG.BeforeAfterTest" />
-      <item itemvalue="TestNG.FirstTest.assertionSoft" />
-      <item itemvalue="TestNG.VisualElements.webTableTest" />
+      <item itemvalue="TestNG.ResultsPageTest.LAXtoNYCFlight" />
+      <item itemvalue="TestNG.ResultsPageTest.checkFirstFlightDetail" />
+      <item itemvalue="TestNG.ResultsPageTest.checkFirstFlightDetails" />
+      <item itemvalue="TestNG.SearchPageTest.LAXtoNYCFlight" />
+      <item itemvalue="TestNG.SearchPageTest.setDepartureDate" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/testrunners/testng_with_listener.xml" />
-        <item itemvalue="TestNG.BeforeAfterChildTest" />
-        <item itemvalue="TestNG.BeforeAfterTest" />
-        <item itemvalue="TestNG.FirstTest.assertionSoft" />
-        <item itemvalue="TestNG.VisualElements.webTableTest" />
+        <item itemvalue="TestNG.ResultsPageTest.checkFirstFlightDetail" />
+        <item itemvalue="TestNG.ResultsPageTest.checkFirstFlightDetails" />
+        <item itemvalue="TestNG.ResultsPageTest.LAXtoNYCFlight" />
+        <item itemvalue="TestNG.SearchPageTest.LAXtoNYCFlight" />
+        <item itemvalue="TestNG.SearchPageTest.setDepartureDate" />
       </list>
     </recent_temporary>
   </component>
@@ -224,6 +194,25 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/playwright/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/SearchPage.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/SearchPage.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/SearchPageTest.java</url>
+          <line>44</line>
+          <properties class="org.example.assignments.makemytrip.SearchPageTest" method="LAXtoNYCFlight">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
