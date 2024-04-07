@@ -45,6 +45,11 @@ public class ResultsPageTest extends BaseTest {
 
     @Test
     public void checkFirstFlightDetail() {
-        resultsPage.getFlightAtIndex(0);
+        resultsPage.getFlightInfoAtIndex(0);
+    }
+
+    @Test
+    public void bookFlightTest() {
+        resultsPage.bookFlightAtIndex(0);
     }
 }

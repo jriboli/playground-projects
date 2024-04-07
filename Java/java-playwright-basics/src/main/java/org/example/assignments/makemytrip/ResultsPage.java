@@ -1,14 +1,13 @@
 package org.example.assignments.makemytrip;
 
-import com.microsoft.playwright.ElementHandle;
-import com.microsoft.playwright.JSHandle;
-import com.microsoft.playwright.Locator;
-import com.microsoft.playwright.Page;
+import com.microsoft.playwright.*;
 import org.example.assignments.entity.FlightCard;
 import org.example.assignments.entity.FlightInfo;
 
+import java.awt.print.Book;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 public class ResultsPage {
 
@@ -47,36 +46,14 @@ public class ResultsPage {
         return fcList;
     }
 
-    public FlightCard getFlightAtIndex(int index) {
-        page.waitForSelector("div.clusterContent");
+    public FlightCard getFlightInfoAtIndex(int index) {
 
-        Locator content = page.locator("div.clusterContent");
-        List<ElementHandle> flightCards = page.querySelectorAll("div.listingCard");
-
-        System.out.println("Listing Count: " + flightCards.size());
-        if(index > flightCards.size()) {
-            throw new IndexOutOfBoundsException("The index you have provided is out of bounds: " + index);
-        }
-
-        ElementHandle record = flightCards.get(index);
         FlightCard fc = new FlightCard();
+        ElementHandle record = findFlightCardAtIndex(index);
         fc.flightPrice = record.querySelector("div.clusterViewPrice").innerText();
-
-        // Expand Flight Details
-        record.querySelector("span.viewFltDtlsCta").click();
-
-        page.waitForTimeout(5000);
-        List<ElementHandle> test = page.querySelectorAll("div.collapse.show");
-
-        System.out.println("Test Count: " + test.size());
-
-        // The Flight Details tab
-        List<ElementHandle> detailTabs = test.get(0).querySelectorAll("div.tab-content");
-        System.out.println("Detail Count: " + detailTabs.size());
-
-        List<ElementHandle> flights = detailTabs.get(0).querySelector("div#flightDetailsTab-undefined-tabpane-1").querySelectorAll("div.flightDetails");
         fc.flights = new ArrayList<>();
 
+        List<ElementHandle> flights = findFlightDetailsAtIndex(index);
         System.out.println("Flight Count: " + flights.size());
         for(ElementHandle flight : flights) {
             FlightInfo fi = new FlightInfo();
@@ -88,7 +65,59 @@ public class ResultsPage {
             fc.flights.add(fi);
             System.out.println("FlightInfo: " + fi);
         }
-
         return fc;
+    }
+
+    private List<ElementHandle> findFlightDetailsAtIndex(int index) {
+        ElementHandle record = findFlightCardAtIndex(index);
+
+        // Expand Flight Details
+        record.querySelector("span.viewFltDtlsCta").click();
+        List<ElementHandle> test = page.querySelectorAll("div.collapse.show");
+
+        // The Flight Details tab
+        List<ElementHandle> detailTabs = test.get(0).querySelectorAll("div.tab-content");
+        return detailTabs.get(0).querySelector("div#flightDetailsTab-undefined-tabpane-1").querySelectorAll("div.flightDetails");
+    }
+
+    private ElementHandle findFlightCardAtIndex(int index) {
+        page.waitForSelector("div.clusterContent");
+
+        List<ElementHandle> flightCards = page.querySelectorAll("div.listingCard");
+
+//        System.out.println("Listing Count: " + flightCards.size());
+        if(index > flightCards.size()) {
+            throw new IndexOutOfBoundsException("The index you have provided is out of bounds: " + index);
+        }
+
+        return flightCards.get(index);
+    }
+
+    public BookPage bookFlightAtIndex(int index) {
+        CompletableFuture<Page> newPageFuture = new CompletableFuture<>();
+        BrowserContext browserContext = page.context();
+        browserContext.onPage(newPageFuture::complete);
+
+
+        ElementHandle record = findFlightCardAtIndex(index);
+        record.querySelector("(//button[contains(@class,'lato-black button')])[1]").click();
+
+        page.waitForTimeout(5000);
+
+//        System.out.println("Visible: " + page.locator("div.multifareOuter").isVisible());
+//        Locator multifarePopup = page.locator("div.multifareOuter");
+//
+//        List<ElementHandle> fares = page.querySelectorAll("div.multifareCard");
+//        System.out.println("Multifare Counter: " + fares.size());
+//
+//        for(ElementHandle fare : fares) {
+//            System.out.println("Info: " + fare.querySelector("label.pointer").innerText());
+//        }
+
+
+
+        //newPageFuture.join();
+
+        return new BookPage(newPageFuture.join());
     }
 }

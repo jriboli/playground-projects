@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/entity/FlightCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/entity/FlightInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/factory/PlaywrightFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/ResultsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/SearchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/AutomatedCodeGen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/ResultsPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/SearchPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/DataProviderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/dataproviders/LoginInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/util/TestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/util/Xls_Reader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data/TestNG_Login_Parameters.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/BookPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/BookPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testng/Listeners/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testng/listeners/Listeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testrunners/testng_with_listener.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_with_listener.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/ResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/ResultsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/ResultsPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,8 +54,61 @@
       <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\testFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ResultsPageTest.checkFirstFlightDetail">
-    <configuration name="ResultsPageTest.LAXtoNYCFlight" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.BookPageTest.checkFlightDetails">
+    <configuration name="BookPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.BookPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookPageTest.checkFlightDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.BookPageTest" />
+      <option name="METHOD_NAME" value="checkFlightDetails" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookPageTest.checkTitleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.BookPageTest" />
+      <option name="METHOD_NAME" value="checkTitleTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResultsPageTest.bookFlightTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
@@ -79,7 +118,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
       <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.ResultsPageTest" />
-      <option name="METHOD_NAME" value="LAXtoNYCFlight" />
+      <option name="METHOD_NAME" value="bookFlightTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -105,74 +144,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultsPageTest.checkFirstFlightDetails" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
-      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.ResultsPageTest" />
-      <option name="METHOD_NAME" value="checkFirstFlightDetails" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchPageTest.LAXtoNYCFlight" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
-      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.SearchPageTest" />
-      <option name="METHOD_NAME" value="LAXtoNYCFlight" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchPageTest.setDepartureDate" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
-      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.SearchPageTest" />
-      <option name="METHOD_NAME" value="setDepartureDate" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="TestNG.ResultsPageTest.LAXtoNYCFlight" />
+      <item itemvalue="TestNG.BookPageTest" />
+      <item itemvalue="TestNG.BookPageTest.checkFlightDetails" />
+      <item itemvalue="TestNG.BookPageTest.checkTitleTest" />
+      <item itemvalue="TestNG.ResultsPageTest.bookFlightTest" />
       <item itemvalue="TestNG.ResultsPageTest.checkFirstFlightDetail" />
-      <item itemvalue="TestNG.ResultsPageTest.checkFirstFlightDetails" />
-      <item itemvalue="TestNG.SearchPageTest.LAXtoNYCFlight" />
-      <item itemvalue="TestNG.SearchPageTest.setDepartureDate" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BookPageTest.checkFlightDetails" />
+        <item itemvalue="TestNG.BookPageTest.checkTitleTest" />
+        <item itemvalue="TestNG.BookPageTest" />
+        <item itemvalue="TestNG.ResultsPageTest.bookFlightTest" />
         <item itemvalue="TestNG.ResultsPageTest.checkFirstFlightDetail" />
-        <item itemvalue="TestNG.ResultsPageTest.checkFirstFlightDetails" />
-        <item itemvalue="TestNG.ResultsPageTest.LAXtoNYCFlight" />
-        <item itemvalue="TestNG.SearchPageTest.LAXtoNYCFlight" />
-        <item itemvalue="TestNG.SearchPageTest.setDepartureDate" />
       </list>
     </recent_temporary>
   </component>
@@ -213,6 +198,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/ResultsPage.java</url>
+          <line>17</line>
+          <properties class="org.example.assignments.makemytrip.ResultsPage" method="getTitle">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
