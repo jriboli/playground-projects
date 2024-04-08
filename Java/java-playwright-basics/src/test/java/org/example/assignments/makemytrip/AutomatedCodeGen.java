@@ -3,12 +3,12 @@ package org.example.assignments.makemytrip;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
-import org.example.assignments.BaseTest;
+import org.example.assignments.MakeMyTripBaseTest;
 import org.testng.annotations.Test;
 
 import java.util.regex.Pattern;
 
-public class AutomatedCodeGen extends BaseTest {
+public class AutomatedCodeGen extends MakeMyTripBaseTest {
 
     @Test
     public void searchWithCodeGen() {

@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/BookPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/BookPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/tizag/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/TizagBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/tizag/HomePageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/tizagConfig.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/ResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assignments/factory/PlaywrightFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/factory/PlaywrightFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignments/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/MakeMyTripBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/AutomatedCodeGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/AutomatedCodeGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/BookPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/BookPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/ResultsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/ResultsPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/SearchPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/SearchPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +60,7 @@
       <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\testFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.BookPageTest.checkFlightDetails">
+  <component name="RunManager" selected="TestNG.HomePageTest.checkBoxesTest">
     <configuration name="BookPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
@@ -108,17 +114,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultsPageTest.bookFlightTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.checkBoxesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
+          <option name="PATTERN" value="org.example.assignments.tizag.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
-      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.ResultsPageTest" />
-      <option name="METHOD_NAME" value="bookFlightTest" />
+      <option name="PACKAGE_NAME" value="org.example.assignments.tizag" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.tizag.HomePageTest" />
+      <option name="METHOD_NAME" value="checkBoxesTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -126,17 +132,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultsPageTest.checkFirstFlightDetail" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePageTest.checkTitle" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
+          <option name="PATTERN" value="org.example.assignments.tizag.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
-      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.ResultsPageTest" />
-      <option name="METHOD_NAME" value="checkFirstFlightDetail" />
+      <option name="PACKAGE_NAME" value="org.example.assignments.tizag" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.tizag.HomePageTest" />
+      <option name="METHOD_NAME" value="checkTitle" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,16 +154,16 @@
       <item itemvalue="TestNG.BookPageTest" />
       <item itemvalue="TestNG.BookPageTest.checkFlightDetails" />
       <item itemvalue="TestNG.BookPageTest.checkTitleTest" />
-      <item itemvalue="TestNG.ResultsPageTest.bookFlightTest" />
-      <item itemvalue="TestNG.ResultsPageTest.checkFirstFlightDetail" />
+      <item itemvalue="TestNG.HomePageTest.checkBoxesTest" />
+      <item itemvalue="TestNG.HomePageTest.checkTitle" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomePageTest.checkBoxesTest" />
+        <item itemvalue="TestNG.HomePageTest.checkTitle" />
         <item itemvalue="TestNG.BookPageTest.checkFlightDetails" />
         <item itemvalue="TestNG.BookPageTest.checkTitleTest" />
         <item itemvalue="TestNG.BookPageTest" />
-        <item itemvalue="TestNG.ResultsPageTest.bookFlightTest" />
-        <item itemvalue="TestNG.ResultsPageTest.checkFirstFlightDetail" />
       </list>
     </recent_temporary>
   </component>

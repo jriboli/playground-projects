@@ -1,9 +1,9 @@
 package org.example.assignments.makemytrip;
 
-import org.example.assignments.BaseTest;
+import org.example.assignments.MakeMyTripBaseTest;
 import org.testng.annotations.Test;
 
-public class SearchPageTest extends BaseTest {
+public class SearchPageTest extends MakeMyTripBaseTest {
 
     @Test
     public void searchDefaultCities() {

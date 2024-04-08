@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44943ba1-a415-48b4-bc6b-d944b7e6fa3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/assignments/makemytrip/BookPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/BookPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/assignments/tizag/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/TizagBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/tizag/HomePageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/resources/config/tizagConfig.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/assignments/makemytrip/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/assignments/makemytrip/ResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/assignments/factory/PlaywrightFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/main/java/org/example/assignments/factory/PlaywrightFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/MakeMyTripBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/AutomatedCodeGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/AutomatedCodeGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/BookPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/BookPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/ResultsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/ResultsPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/SearchPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-basics/src/test/java/org/example/assignments/makemytrip/SearchPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

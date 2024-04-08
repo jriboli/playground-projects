@@ -1,10 +1,10 @@
 package org.example.assignments.makemytrip;
 
-import org.example.assignments.BaseTest;
+import org.example.assignments.MakeMyTripBaseTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class ResultsPageTest extends BaseTest {
+public class ResultsPageTest extends MakeMyTripBaseTest {
 
     private ResultsPage resultsPage;
 
