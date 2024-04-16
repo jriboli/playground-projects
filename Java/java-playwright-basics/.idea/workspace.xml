@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/tizag/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/TizagBaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/tizag/HomePageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config/tizagConfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/controller/StratagemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/entity/Stratagem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/entity/StratagemFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/model/StratagemData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/service/StratagemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/test/java/com/helldivers/JPAExampleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assignments/factory/PlaywrightFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/factory/PlaywrightFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignments/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/MakeMyTripBaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/AutomatedCodeGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/AutomatedCodeGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/BookPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/BookPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/ResultsPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/ResultsPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/SearchPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/SearchPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,16 +40,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/data",
-    "onboarding.tips.debug.path": "C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/data&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\data" />
@@ -208,7 +207,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/ResultsPage.java</url>
           <line>17</line>
-          <properties class="org.example.assignments.makemytrip.ResultsPage" method="getTitle">
+          <properties class="org.example.assignments.makemytrip.ResultsPage">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
