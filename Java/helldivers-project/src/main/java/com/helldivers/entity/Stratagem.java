@@ -15,6 +15,7 @@ public class Stratagem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long stratagemId;
+    @Column(unique = true)
     private String name;
     @Column(length = 1000)
     private String description;

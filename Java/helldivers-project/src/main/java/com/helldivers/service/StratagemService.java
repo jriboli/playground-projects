@@ -9,26 +9,24 @@ import com.helldivers.repository.StratagemRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 @Service
 @Slf4j
 public class StratagemService {
 
-    private StratagemRepository stmRepo;
-    private FlagRepository flgRepo;
+    private StratagemRepository stratagemRepository;
+    private FlagRepository flagRepository;
 
     public StratagemService(StratagemRepository stmRepo, FlagRepository flgRepo) {
-        this.flgRepo = flgRepo;
-        this.stmRepo = stmRepo;
+        this.flagRepository = flgRepo;
+        this.stratagemRepository = stmRepo;
     }
 
     public List<StratagemData> getAllStratagems() {
-        List<Stratagem> stratagems = stmRepo.findAll();
+        List<Stratagem> stratagems = stratagemRepository.findAll();
         log.info("Stratagems: " + stratagems.toString());
 
         return stratagems.stream()
@@ -37,7 +35,7 @@ public class StratagemService {
     }
 
     public List<StratagemData> getAllStratagemsByCategory(String category) {
-        List<Stratagem> stratagems = stmRepo.findByCategory(category);
+        List<Stratagem> stratagems = stratagemRepository.findByCategory(category);
         log.info("Stratagems: " + stratagems.toString());
 
         return stratagems.stream()
@@ -46,8 +44,8 @@ public class StratagemService {
     }
 
     public List<StratagemData> getAllStratagemsByFlag(String flagName) {
-        StratagemFlag flag = flgRepo.findByName(flagName).orElseThrow(() -> new NoSuchElementException("No Flag found with that name."));
-        List<Stratagem> stratagems = stmRepo.findByFlags(flag);
+        StratagemFlag flag = findFlagByName(flagName);
+        List<Stratagem> stratagems = stratagemRepository.findByFlags(flag);
         log.info("Stratagems: " + stratagems.toString());
 
         return stratagems.stream()
@@ -65,17 +63,17 @@ public class StratagemService {
         Stratagem stratagem = findOrCreateStratagem(stratagemId);
 
         setFieldsInStratagem(stratagem, data);
-        return new StratagemData(stmRepo.save(stratagem));
+        return new StratagemData(stratagemRepository.save(stratagem));
     }
 
     public void deleteStratagem(Long stratagemId) {
         Stratagem stratagem = findOrCreateStratagem(stratagemId);
 
-        stmRepo.delete(stratagem);
+        stratagemRepository.delete(stratagem);
     }
 
     public List<StratagemFlagData> getAllFlags() {
-        List<StratagemFlag> stratagemFlags = flgRepo.findAll();
+        List<StratagemFlag> stratagemFlags = flagRepository.findAll();
 
         return stratagemFlags.stream()
                 .map(StratagemFlagData::new)
@@ -85,6 +83,10 @@ public class StratagemService {
     public StratagemFlagData getFlagById(Long flagId) {
         StratagemFlag stratagemFlag = findOrCreateFlag(flagId);
         return new StratagemFlagData(stratagemFlag);
+    }
+
+    public StratagemFlagData saveFlag(StratagemFlagData data) {
+        return null;
     }
 
     // PRIVATE
@@ -101,7 +103,7 @@ public class StratagemService {
     }
 
     private Stratagem findStratagemById(Long stratagemId) {
-        return stmRepo.findById(stratagemId).orElseThrow(() -> new NoSuchElementException("No Stratagem matching that Id."));
+        return stratagemRepository.findById(stratagemId).orElseThrow(() -> new NoSuchElementException("No Stratagem matching that Id."));
     }
 
     private void setFieldsInStratagem(Stratagem stratagem, StratagemData data) {
@@ -119,14 +121,8 @@ public class StratagemService {
         boolean hasFlags = !Objects.isNull(data.getFlags());
 
         if(hasFlags) {
-            List<StratagemFlagData> sortedFlags = data.getFlags().stream()
-                    .sorted(Comparator.comparing(StratagemFlagData::getFlagId))
-                    .toList();
-
-            log.info("Sorted: " + sortedFlags.toString());
-
-            for(StratagemFlagData flagData : sortedFlags) {
-                StratagemFlag flag = flgRepo.findByName(flagData.getName()).orElseThrow(() -> new NoSuchElementException("No Flag found with that name."));
+            for(StratagemFlagData flagData : data.getFlags()) {
+                StratagemFlag flag = flagRepository.findByName(flagData.getName()).orElseThrow(() -> new NoSuchElementException("No Flag found with that name."));
                 stratagem.getFlags().add(flag);
             }
         }
@@ -145,6 +141,10 @@ public class StratagemService {
     }
 
     private StratagemFlag findFlagById(Long flagId) {
-        return flgRepo.findById(flagId).orElseThrow(() -> new NoSuchElementException("No Flag matching that Id."));
+        return flagRepository.findById(flagId).orElseThrow(() -> new NoSuchElementException("No Flag matching that Id."));
+    }
+
+    private StratagemFlag findFlagByName(String flagName) {
+        return flagRepository.findByName(flagName).orElseThrow(() -> new NoSuchElementException("No Flag found with that name."));
     }
 }

@@ -3,9 +3,12 @@ package com.helldivers.controller;
 import com.helldivers.model.StratagemFlagData;
 import com.helldivers.service.StratagemService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.coyote.Response;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.helldivers.model.StratagemData;
 
+import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,8 +25,10 @@ public class StratagemController {
 
     // STRATAGEMS API
     @GetMapping("/stratagems")
-    public List<StratagemData> getAllStrategems(@RequestParam(required = false) Optional<String> category,
-                                                @RequestParam(required = false) Optional<String> flag) {
+    public List<StratagemData> getAllStrategems(
+            @RequestParam(required = false) Optional<String> category,
+            @RequestParam(required = false) Optional<String> flag) {
+
         log.info("Calling Get All Stratagems.");
 
         //The parameter is wrapped in an Optional to handle the absence of the parameter more elegantly.
@@ -39,15 +44,18 @@ public class StratagemController {
     }
 
     @GetMapping("/stratagems/{stratagemId}")
-    public StratagemData getStratagemById(@PathVariable Long stratagemId) {
+    public ResponseEntity<StratagemData> getStratagemById(@PathVariable Long stratagemId) {
         log.info("Calling Get Stratagem By Id.");
-        return stmService.getStratagemById(stratagemId);
+        return ResponseEntity.ok(stmService.getStratagemById(stratagemId));
     }
 
     @PostMapping("/stratagems")
-    public StratagemData addStrategem(@RequestBody StratagemData data) {
+    public ResponseEntity<StratagemData> addStrategem(@RequestBody StratagemData data) {
         log.info("Calling Create Stratagem.");
-        return stmService.saveStratagem(data);
+
+        StratagemData response = stmService.saveStratagem(data);
+        URI location = URI.create("/api/v1/stratagems/" + response.getStratagemId());
+        return ResponseEntity.created(location).body(response);
     }
 
     @PutMapping("/stratagems/{stratagemId}")
@@ -74,5 +82,11 @@ public class StratagemController {
     public StratagemFlagData getFlagById(@PathVariable Long flagId) {
         log.info("Calling Get Flag By Id.");
         return stmService.getFlagById(flagId);
+    }
+
+    @PostMapping("/flags")
+    public StratagemFlagData addFlag(@RequestBody StratagemFlagData data) {
+        log.info("Calling Add Flag");
+        return stmService.saveFlag(data);
     }
 }
