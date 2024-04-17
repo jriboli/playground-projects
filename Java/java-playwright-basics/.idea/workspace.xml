@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/controller/StratagemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/entity/Stratagem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/entity/StratagemFlag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/model/StratagemData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/service/StratagemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/test/java/com/helldivers/JPAExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-playwright-wikipedia/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/amazon/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assignments/amazon/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/AmazonBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignments/amazon/SearchPageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/amazonConfig.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,24 +53,7 @@
       <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\testFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomePageTest.checkBoxesTest">
-    <configuration name="BookPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java-playwright-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
-      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.BookPageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.SearchPageTest.searchForItem">
     <configuration name="BookPageTest.checkFlightDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
@@ -149,8 +126,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchPageTest.searchForItem" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.amazon" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.amazon.SearchPageTest" />
+      <option name="METHOD_NAME" value="searchForItem" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.BookPageTest" />
+      <item itemvalue="TestNG.SearchPageTest.searchForItem" />
       <item itemvalue="TestNG.BookPageTest.checkFlightDetails" />
       <item itemvalue="TestNG.BookPageTest.checkTitleTest" />
       <item itemvalue="TestNG.HomePageTest.checkBoxesTest" />
@@ -158,11 +153,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SearchPageTest.searchForItem" />
         <item itemvalue="TestNG.HomePageTest.checkBoxesTest" />
         <item itemvalue="TestNG.HomePageTest.checkTitle" />
         <item itemvalue="TestNG.BookPageTest.checkFlightDetails" />
         <item itemvalue="TestNG.BookPageTest.checkTitleTest" />
-        <item itemvalue="TestNG.BookPageTest" />
       </list>
     </recent_temporary>
   </component>

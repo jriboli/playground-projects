@@ -38,7 +38,7 @@ public class JPAExampleTest {
     }
     @Test
     public void addStratagem() {
-        Stratagem stratagem = new Stratagem("Reinforce", "A replacement for a fallen comrade.", "up,down,right,left,up", "Special", "Mission", -1, 0, 6);
+        Stratagem stratagem = new Stratagem("Reinforce", "A replacement for a fallen comrade.", "up,down,right,left,up", "Special", "Mission", -1, 0, 6, null);
         Stratagem savedStratagem = stmRepo.save(stratagem);
         System.out.println("Saved: " + savedStratagem);
 
