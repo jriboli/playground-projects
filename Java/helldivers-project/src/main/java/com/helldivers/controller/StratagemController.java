@@ -1,6 +1,7 @@
 package com.helldivers.controller;
 
 import com.helldivers.model.StratagemFlagData;
+import com.helldivers.model.StratagemResponse;
 import com.helldivers.service.StratagemService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.coyote.Response;
@@ -25,28 +26,30 @@ public class StratagemController {
 
     // STRATAGEMS API
     @GetMapping("/stratagems")
-    public List<StratagemData> getAllStrategems(
+    public ResponseEntity<StratagemResponse> getAllStrategems(
             @RequestParam(required = false) Optional<String> category,
             @RequestParam(required = false) Optional<String> flag) {
 
         log.info("Calling Get All Stratagems.");
+        StratagemResponse response;
 
         //The parameter is wrapped in an Optional to handle the absence of the parameter more elegantly.
         if(category.isPresent()) {
-            return stmService.getAllStratagemsByCategory(category.get());
+            response = new StratagemResponse(stmService.getAllStratagemsByCategory(category.get()));
+        } else if(flag.isPresent()) {
+            response = new StratagemResponse(stmService.getAllStratagemsByFlag(flag.get()));
+        } else {
+            response = new StratagemResponse(stmService.getAllStratagems());
         }
 
-        if(flag.isPresent()) {
-            return stmService.getAllStratagemsByFlag(flag.get());
-        }
-
-        return stmService.getAllStratagems();
+        return ResponseEntity.ok(response);
     }
 
     @GetMapping("/stratagems/{stratagemId}")
-    public ResponseEntity<StratagemData> getStratagemById(@PathVariable Long stratagemId) {
+    public ResponseEntity<StratagemResponse> getStratagemById(@PathVariable Long stratagemId) {
         log.info("Calling Get Stratagem By Id.");
-        return ResponseEntity.ok(stmService.getStratagemById(stratagemId));
+        StratagemResponse response = new StratagemResponse(stmService.getStratagemById(stratagemId));
+        return ResponseEntity.ok(response);
     }
 
     @PostMapping("/stratagems")
@@ -59,16 +62,20 @@ public class StratagemController {
     }
 
     @PutMapping("/stratagems/{stratagemId}")
-    public StratagemData updateStrategem(@PathVariable Long stratagemId, @RequestBody StratagemData data) {
+    public ResponseEntity<StratagemData> updateStrategem(@PathVariable Long stratagemId, @RequestBody StratagemData data) {
         log.info("Calling Update Stratagem.");
         data.setStratagemId(stratagemId);
-        return stmService.saveStratagem(data);
+
+        StratagemData response = stmService.saveStratagem(data);
+        return ResponseEntity.ok(response);
     }
 
     @DeleteMapping("/stratagems/{stratagemId}")
-    public void removeStratagem(@PathVariable Long stratagemId) {
+    public ResponseEntity<String> removeStratagem(@PathVariable Long stratagemId) {
         log.info("Calling Delete Stratagem.");
         stmService.deleteStratagem(stratagemId);
+
+        return ResponseEntity.ok("Strategem removed.");
     }
 
     // STRATAGEM FLAGS API
