@@ -25,14 +25,22 @@ public class RestAssuredTest {
     @Test
     public void getStratagemsTest() {
 
-        Response response = given().spec(requestSpecification())
-                .when().get("/stratagems")
-                .then().assertThat().statusCode(200)
+        // Given
+        RequestSpecification request = given().spec(requestSpecification());
+
+        // When
+        Response response = request.get("/stratagems");
+
+        // Then
+        response.then().assertThat().statusCode(200)
                 .header("Content-Type", "application/json")
                 .time(lessThan(5000L))
                 .extract().response();
 
         System.out.println("Response: " + response.asPrettyString());
+        JsonPath responseBody = response.jsonPath();
+        int stratagemCount = responseBody.getInt("num_of_stratagems");
+        Assert.assertEquals(stratagemCount, 17);
     }
 
     @Test

@@ -13,7 +13,9 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@DataJpaTest
+// https://examples.javacodegeeks.com/testing-spring-data-jpa-with-datajpatest/
+// properties: This attribute allows you to specify additional properties to be used in configuring the application context.
+@DataJpaTest(properties = {"spring.jpa.hibernate.ddl-auto=create", "spring.datasource.initialization-mode=never"})
 public class JPAExampleTest {
     /***
      * Note: Had to use JUnit as TestNG was not working well with Dependency Injection
