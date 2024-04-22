@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSA - My Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/custom-style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ed6a53e8fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Custom CSS for accordion */
+      .accordion-button {
+        color: #000; /* Set the text color to black */
+        text-decoration: none; /* Remove underline */
+        padding-right: 1.25rem; /* Add space to the right for the arrow icon */
+      }
+
+      /* Custom CSS for expand arrow */
+      .accordion-button[aria-expanded="true"]::after {
+        content: "\25B2"; /* Unicode character for down arrow */
+      }
+
+      .accordion-button[aria-expanded="false"]::after {
+        content: "\25BC"; /* Unicode character for right arrow */
+      }
+
+      .accordion-button:hover[aria-expanded="true"]::after,
+      .accordion-button:hover[aria-expanded="false"]::after {
+        color: #007bff; /* Blue color on hover for both states */
+      }
+
+      /* Custom CSS for the green leaf icon */
+      .green-leaf {
+        color: #00cc00; /* Green color */
+      }
+
+      .card-body small {
+        font-size: 70%; /* Set the font size for small text */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar-container"></div>
+
+    <!-- HEADER -->
+    <section
+      class="bg-dark text-white p-5 p-lg-0 pt-lg-5 text-center text-md-start"
+    >
+      <div class="container">
+        <!-- d-flex will aline the elements in a row
+        the MD will make it happen until MD size, after which it will stack vertically -->
+        <div class="d-md-flex align-items-center justify-content-center">
+          <!-- <img
+            class="img-fluid w-25 d-none d-md-block"
+            src="img/undraw_file_searching_re_3evy.svg"
+            alt=""
+          /> -->
+          <div>
+            <h1 class="">
+              My
+              <span class="text-info">Profile</span>
+              settings
+            </h1>
+            <p class="lead my-4">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+              voluptatibus"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row mb-4">
+          <!-- LEFT SIDE -->
+          <div class="col-md-6">
+            <!-- Account Information Card -->
+            <div class="card my-4 rounded-3 shadow-sm">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
+                <h4>Account Information</h4>
+                <div class="d-flex align-items-center">
+                  <div class="btn btn-primary" onclick="toggleEditMode()">
+                    <i class="bi bi-pencil-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div id="viewSection">
+                  <!-- Top section (visible by default) -->
+                  <p><strong>User Name:</strong> John Doe</p>
+                  <p>
+                    <strong>Address:</strong> 123 Main St, Somewhere CA 91111
+                  </p>
+                  <p><strong>Account Number:</strong> 123456789</p>
+                  <p><strong>Language Preferences:</strong> English</p>
+                </div>
+                <div id="editSection" style="display: none">
+                  <!-- Form section (hidden by default) -->
+                  <form>
+                    <div class="mb-3">
+                      <label for="userName" class="form-label"
+                        >User Name:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="userName"
+                        value="John Doe"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="Address" class="form-label">Address:</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="Address"
+                        value="123 Main St, Somewhere CA 91111"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="AccountNum" class="form-label"
+                        >Account Number:</label
+                      >
+                      <input
+                        type="AccountNum"
+                        class="form-control"
+                        id="AccountNum"
+                        value="123456789"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="language" class="form-label"
+                        >Language Preference:</label
+                      >
+                      <select class="form-select" id="language">
+                        <option value="english" selected>English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                        <!-- Add more languages as needed -->
+                      </select>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-success"
+                      onclick="saveChanges()"
+                    >
+                      Save
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      onclick="cancelEdit()"
+                    >
+                      Cancel
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Contact Information Card -->
+            <div class="card my-4 rounded-3 shadow-sm">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
+                <h5>Contact Information</h5>
+                <div class="d-flex align-items-center">
+                  <div class="btn btn-primary">
+                    <i class="bi bi-pencil-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <!-- Contact information content -->
+                <p>
+                  <strong>Phone Number:</strong> (555) 123-4567
+                  <span style="color: blue">Verified</span
+                  ><i class="bi bi-check2-square" style="color: blue"></i>
+                </p>
+                <p>
+                  <strong>Email:</strong> john@example.com
+                  <i class="bi bi-exclamation-triangle" style="color: red"></i>
+                  Verify
+                </p>
+                <!-- Add more contact information as needed -->
+              </div>
+            </div>
+            <!-- Sign in Credentials Card -->
+            <div class="card my-4 rounded-3 shadow-sm">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
+                <h5>Sign-in Credentials</h5>
+                <div class="d-flex align-items-center">
+                  <div class="btn btn-primary">
+                    <i class="bi bi-pencil-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <!-- Sign-in credentials content -->
+                <p>Email: john@example.com</p>
+                <p>Password: **********</p>
+                <!-- Add more sign-in credentials as needed -->
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="col-md-6">
+            <!-- Notification Settings Card -->
+            <div class="card my-4 rounded-3 shadow-sm">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
+                <h5>Notification Settings</h5>
+                <div class="d-flex align-items-center"></div>
+              </div>
+              <!-- Service Alerts -->
+              <div class="card-header" id="alertsAccordion">
+                <h5
+                  class="mb-0 d-flex justify-content-between align-items-center"
+                >
+                  <button
+                    class="btn btn-link accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseAlerts"
+                    aria-expanded="true"
+                    aria-controls="collapseAlerts"
+                  >
+                    Service Alerts
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseAlerts"
+                class="collapse"
+                aria-labelledby="alertsAccordion"
+              >
+                <div class="card-body">
+                  <p class="mb-0">
+                    Time-sensitive notifications related to appointments,
+                    outages, trouble tickets and order updates.
+                  </p>
+                  <div class="form-check form-switch mt-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emailAlerts"
+                    />
+                    <label class="form-check-label" for="emailAlerts"
+                      >Email</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="textAlerts"
+                    />
+                    <label class="form-check-label" for="textAlerts"
+                      >Text/SMS</label
+                    >
+                  </div>
+
+                  <p>
+                    <small class="text-muted">
+                      By toggling on, you're agreeing to receive text
+                      notifications related to your Clincial Study Assistant
+                      services. Message and data rates may apply, and the
+                      frequency varies. To get help or opt-out , text HELP for
+                      help or STOP to cancel.
+                    </small>
+                  </p>
+                </div>
+              </div>
+              <!-- Billing and Account Alerts -->
+              <div class="card-header" id="alertsAccordion">
+                <h5
+                  class="mb-0 d-flex justify-content-between align-items-center"
+                >
+                  <button
+                    class="btn btn-link accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseAlerts"
+                    aria-expanded="true"
+                    aria-controls="collapseAlerts"
+                  >
+                    Billing & Account Updates
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseAlerts"
+                class="collapse"
+                aria-labelledby="alertsAccordion"
+              >
+                <div class="card-body">
+                  <p class="mb-0">
+                    Essential notifications related to billing, payments and
+                    your account.
+                  </p>
+                  <div class="form-check form-switch mt-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emailAlerts"
+                    />
+                    <label class="form-check-label" for="emailAlerts"
+                      >Email</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="textAlerts"
+                    />
+                    <label class="form-check-label" for="textAlerts"
+                      >Text/SMS</label
+                    >
+                  </div>
+                  <p>
+                    <small class="text-muted">
+                      By toggling on, you're agreeing to receive text
+                      notifications related to your Clincial Study Assistant
+                      services. Message and data rates may apply, and the
+                      frequency varies. To get help or opt-out , text HELP for
+                      help or STOP to cancel.
+                    </small>
+                  </p>
+                </div>
+              </div>
+              <!-- Announcements -->
+              <div class="card-header" id="alertsAccordion">
+                <h5
+                  class="mb-0 d-flex justify-content-between align-items-center"
+                >
+                  <button
+                    class="btn btn-link accordion-button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseAlerts"
+                    aria-expanded="true"
+                    aria-controls="collapseAlerts"
+                  >
+                    Announcements
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseAlerts"
+                class="collapse"
+                aria-labelledby="alertsAccordion"
+              >
+                <div class="card-body">
+                  <p class="mb-0">
+                    Notifications related to products, marketing and promotions.
+                  </p>
+                  <div class="form-check form-switch mt-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="emailAlerts"
+                    />
+                    <label class="form-check-label" for="emailAlerts"
+                      >Email</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="textAlerts"
+                    />
+                    <label class="form-check-label" for="textAlerts"
+                      >Text/SMS</label
+                    >
+                  </div>
+                  <p>
+                    <small class="text-muted">
+                      By toggling on, you're agreeing to receive text
+                      notifications related to your Clincial Study Assistant
+                      services. Message and data rates may apply, and the
+                      frequency varies. To get help or opt-out , text HELP for
+                      help or STOP to cancel.
+                    </small>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  <small class="text-muted"
+                    >For more information on our terms of services visit:
+                    <a href="#" class="small" style="text-decoration: none"
+                      >SMS Terms of Service</a
+                    >
+                    and
+                    <a href="#" class="small" style="text-decoration: none"
+                      >Privacy Policy</a
+                    >
+                  </small>
+                </p>
+              </div>
+            </div>
+            <!-- Billing Preferences Card -->
+            <div class="card my-4 rounded-3 shadow-sm">
+              <div
+                class="card-header custom-card-header d-flex justify-content-between align-items-center"
+              >
+                <h5>Billing Preferences</h5>
+                <div class="d-flex align-items-center">
+                  <div class="btn btn-primary">
+                    <i class="bi bi-pencil-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <!-- Sign-in credentials content -->
+                <p>
+                  <strong>Default payment:</strong> You do not have a saved
+                  default payment method
+                </p>
+                <p>
+                  <strong>Paperless billing:</strong>
+                  <i class="fa-solid fa-leaf green-leaf"></i> Enrolled
+                </p>
+                <!-- Add more sign-in credentials as needed -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <script src="./js/sharedFunctions.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function toggleEditMode() {
+        document.getElementById("viewSection").style.display = "none";
+        document.getElementById("editSection").style.display = "block";
+      }
+
+      function saveChanges() {
+        // Add logic to save changes (e.g., post to a page)
+        // After saving, switch back to view mode
+        document.getElementById("viewSection").style.display = "block";
+        document.getElementById("editSection").style.display = "none";
+      }
+
+      function cancelEdit() {
+        // Simply switch back to view mode without saving changes
+        document.getElementById("viewSection").style.display = "block";
+        document.getElementById("editSection").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

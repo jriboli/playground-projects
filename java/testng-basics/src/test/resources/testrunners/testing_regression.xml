@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG functionality" verbose="4" thread-count="1" parallel="tests">
+    <!--
+    Q: WHY running by GROUPS does not trigger the other Pre and Post methods ??
+
+    A: When you run tests using groups, TestNG focuses only on the methods associated
+    with that group to optimize execution time.
+     -->
+    <test name="Basic Functionality Only - By Group">
+        <groups>
+            <run>
+                <include name="basic" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.simpleTests.TestNGBasicTest" />
+        </classes>
+    </test>
+
+    <test name="Advanced Functionality = By Method">
+        <classes>
+            <class name="com.simpleTests.TestNGBasicTest">
+                <methods>
+                    <include name="testThree" />
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+    <test name="Invocation Counter">
+        <classes>
+            <class name="com.simpleTests.InvocationCountTest" />
+        </classes>
+
+    </test>
+
+    <test name="Feature Testing">
+        <classes>
+            <class name="com.simpleTests.TestNGFeatureTest" />
+        </classes>
+    </test>
+</suite>
