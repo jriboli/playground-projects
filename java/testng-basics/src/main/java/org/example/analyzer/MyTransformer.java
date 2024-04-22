@@ -1,7 +1,6 @@
 package org.example.analyzer;
 
 import org.testng.IAnnotationTransformer;
-import org.testng.annotations.IFactoryAnnotation;
 import org.testng.annotations.ITestAnnotation;
 
 import java.lang.reflect.Constructor;
