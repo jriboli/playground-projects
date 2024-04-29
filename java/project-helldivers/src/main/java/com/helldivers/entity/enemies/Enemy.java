@@ -21,6 +21,6 @@ public class Enemy {
     @Enumerated(EnumType.STRING)
     private Type type;
 
-    @OneToMany(mappedBy = "enemy")
-    private List<Kills> kills;
+//    @OneToMany(mappedBy = "enemy")
+//    private List<Kills> kills;
 }

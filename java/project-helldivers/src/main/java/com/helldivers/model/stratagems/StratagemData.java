@@ -1,4 +1,4 @@
-package com.helldivers.model;
+package com.helldivers.model.stratagems;
 
 import com.helldivers.entity.stratagems.Stratagem;
 import com.helldivers.entity.stratagems.Flag;

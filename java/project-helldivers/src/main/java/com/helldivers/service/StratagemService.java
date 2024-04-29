@@ -2,8 +2,8 @@ package com.helldivers.service;
 
 import com.helldivers.entity.stratagems.Stratagem;
 import com.helldivers.entity.stratagems.Flag;
-import com.helldivers.model.StratagemData;
-import com.helldivers.model.FlagData;
+import com.helldivers.model.stratagems.StratagemData;
+import com.helldivers.model.stratagems.FlagData;
 import com.helldivers.repository.FlagRepository;
 import com.helldivers.repository.StratagemRepository;
 import lombok.extern.slf4j.Slf4j;

@@ -5,46 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bf6d90b-8284-4abd-8fa0-470efbbc75ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/controller/EnemiesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/controller/MatchesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/controller/PlayerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/controller/WeaponsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/enemies/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/matches/Kills.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/matches/Match.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/matches/Stats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/players/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/weapons/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/enums/enemies/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/enums/matches/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/enums/matches/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/enums/weapons/Mode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/enums/weapons/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/enums/weapons/Trait.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/enums/weapons/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/model/PlayerData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/model/PlayerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/model/WeaponData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/model/WeaponResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/repository/PlayerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/repository/WeaponRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/service/EnemyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/service/MatchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/service/PlayerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/service/WeaponService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/controller/StratagemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/controller/StratagemsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/Stratagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/stratagems/Stratagem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/StratagemFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/stratagems/Flag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/model/StratagemData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/model/StratagemData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/model/StratagemFlagData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/model/FlagData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/repository/FlagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/repository/FlagRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/repository/StratagemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/repository/StratagemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/service/StratagemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/service/StratagemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/resources/db/migration/V1__CreateTabelTasks.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/resources/db/migration/V2__TestData.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/test/java/com/helldivers/JPAExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/test/java/com/helldivers/JPAExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/controller/WeaponsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/controller/WeaponsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/weapons/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/entity/weapons/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/model/WeaponData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/model/WeaponData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/service/WeaponService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-helldivers/src/main/java/com/helldivers/service/WeaponService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +30,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2fZqEbHJNtDs3OWIjT3CXz5QlMp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -79,7 +43,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "jwt-security",
+    "git-widget-placeholder": "project-helldivers",
     "last_opened_file_path": "C:/Users/Justin/Documents/GitHub/learning-elcaminocollege/final-project"
   }
 }]]></component>

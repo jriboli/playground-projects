@@ -1,12 +1,12 @@
 package com.helldivers.controller;
 
-import com.helldivers.model.FlagData;
-import com.helldivers.model.StratagemResponse;
+import com.helldivers.model.stratagems.FlagData;
+import com.helldivers.model.stratagems.StratagemResponse;
 import com.helldivers.service.StratagemService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.helldivers.model.StratagemData;
+import com.helldivers.model.stratagems.StratagemData;
 
 import java.net.URI;
 import java.util.List;

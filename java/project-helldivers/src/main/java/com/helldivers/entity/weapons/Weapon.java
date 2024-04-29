@@ -40,6 +40,6 @@ public class Weapon {
     @Column(name = "trait")
     private Set<Trait> traits;
 
-    @OneToMany(mappedBy = "weapon")
-    private Set<Kills> kills;
+//    @OneToMany(mappedBy = "weapon")
+//    private Set<Kills> kills;
 }
