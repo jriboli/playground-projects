@@ -1,12 +1,9 @@
 package com.helldivers.controller;
 
-import com.helldivers.model.PlayerData;
-import com.helldivers.model.PlayerResponse;
 import com.helldivers.model.WeaponData;
 import com.helldivers.model.WeaponResponse;
+import com.helldivers.model.WeaponStatusData;
 import com.helldivers.service.WeaponService;
-import jakarta.persistence.Entity;
-import lombok.Data;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,7 +28,7 @@ public class WeaponsController {
     @PostMapping
     public ResponseEntity<WeaponResponse> createWeapon(@RequestBody WeaponData weaponData) {
 
-        return ResponseEntity.ok(service.createWeapon(weaponData));
+        return ResponseEntity.ok(service.saveWeapon(weaponData));
     }
 
     // Might need to replace this with a make inactive functionality

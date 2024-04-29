@@ -41,5 +41,5 @@ public class Weapon {
     private Set<Trait> traits;
 
     @OneToMany(mappedBy = "weapon")
-    private List<Kills> kills;
+    private Set<Kills> kills;
 }
