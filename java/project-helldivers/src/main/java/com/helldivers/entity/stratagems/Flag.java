@@ -1,16 +1,11 @@
-package com.helldivers.entity;
+package com.helldivers.entity.stratagems;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
-
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 @Data
-public class StratagemFlag {
+public class Flag {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long flagId;

@@ -1,10 +1,9 @@
 package com.helldivers.controller;
 
-import com.helldivers.model.StratagemFlagData;
+import com.helldivers.model.FlagData;
 import com.helldivers.model.StratagemResponse;
 import com.helldivers.service.StratagemService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.helldivers.model.StratagemData;
@@ -16,11 +15,11 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/v1")
 @Slf4j
-public class StratagemController {
+public class StratagemsController {
 
     private StratagemService stmService;
 
-    public StratagemController(StratagemService stmService) {
+    public StratagemsController(StratagemService stmService) {
         this.stmService = stmService;
     }
 
@@ -80,19 +79,19 @@ public class StratagemController {
 
     // STRATAGEM FLAGS API
     @GetMapping("/flags")
-    public List<StratagemFlagData> getAllFlags() {
+    public List<FlagData> getAllFlags() {
         log.info("Calling Get All Flags.");
         return stmService.getAllFlags();
     }
 
     @GetMapping("/flags/{flagId}")
-    public StratagemFlagData getFlagById(@PathVariable Long flagId) {
+    public FlagData getFlagById(@PathVariable Long flagId) {
         log.info("Calling Get Flag By Id.");
         return stmService.getFlagById(flagId);
     }
 
     @PostMapping("/flags")
-    public StratagemFlagData addFlag(@RequestBody StratagemFlagData data) {
+    public FlagData addFlag(@RequestBody FlagData data) {
         log.info("Calling Add Flag");
         return stmService.saveFlag(data);
     }

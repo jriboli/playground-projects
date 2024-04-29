@@ -1,6 +1,6 @@
 package com.helldivers;
 
-import com.helldivers.entity.Stratagem;
+import com.helldivers.entity.stratagems.Stratagem;
 import com.helldivers.repository.StratagemRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

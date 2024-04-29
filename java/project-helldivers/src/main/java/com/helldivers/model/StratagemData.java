@@ -1,7 +1,7 @@
 package com.helldivers.model;
 
-import com.helldivers.entity.Stratagem;
-import com.helldivers.entity.StratagemFlag;
+import com.helldivers.entity.stratagems.Stratagem;
+import com.helldivers.entity.stratagems.Flag;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -22,7 +22,7 @@ public class StratagemData{
     private int uses;
     private int spawnTime;
     private int cooldown;
-    private List<StratagemFlagData> flags;
+    private List<FlagData> flags;
 
     public StratagemData(Stratagem stratagem) {
         this.setStratagemId(stratagem.getStratagemId());
@@ -36,12 +36,12 @@ public class StratagemData{
         this.setCooldown(stratagem.getCooldown());
 
         flags = new ArrayList<>();
-        List<StratagemFlag> sortedFlags = stratagem.getFlags().stream()
-                .sorted(Comparator.comparing(StratagemFlag::getFlagId))
+        List<Flag> sortedFlags = stratagem.getFlags().stream()
+                .sorted(Comparator.comparing(Flag::getFlagId))
                 .toList();
 
-        for(StratagemFlag flag : sortedFlags) {
-            flags.add(new StratagemFlagData(flag));
+        for(Flag flag : sortedFlags) {
+            flags.add(new FlagData(flag));
         }
     }
 }

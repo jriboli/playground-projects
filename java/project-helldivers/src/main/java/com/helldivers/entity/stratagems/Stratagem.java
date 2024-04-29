@@ -1,4 +1,4 @@
-package com.helldivers.entity;
+package com.helldivers.entity.stratagems;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -6,7 +6,6 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -35,9 +34,9 @@ public class Stratagem {
             joinColumns = @JoinColumn(name = "stratagem_id"),
             inverseJoinColumns = @JoinColumn(name = "flag_id")
     )
-    private Set<StratagemFlag> flags = new HashSet<>();
+    private Set<Flag> flags = new HashSet<>();
 
-    public Stratagem(String name, String description, String code, String category, String type, int uses, int spawnTime, int cooldown, Set<StratagemFlag> flags) {
+    public Stratagem(String name, String description, String code, String category, String type, int uses, int spawnTime, int cooldown, Set<Flag> flags) {
         this.name = name;
         this.description = description;
         this.code = code;

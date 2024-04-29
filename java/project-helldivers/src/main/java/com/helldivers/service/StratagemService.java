@@ -1,9 +1,9 @@
 package com.helldivers.service;
 
-import com.helldivers.entity.Stratagem;
-import com.helldivers.entity.StratagemFlag;
+import com.helldivers.entity.stratagems.Stratagem;
+import com.helldivers.entity.stratagems.Flag;
 import com.helldivers.model.StratagemData;
-import com.helldivers.model.StratagemFlagData;
+import com.helldivers.model.FlagData;
 import com.helldivers.repository.FlagRepository;
 import com.helldivers.repository.StratagemRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -44,7 +44,7 @@ public class StratagemService {
     }
 
     public List<StratagemData> getAllStratagemsByFlag(String flagName) {
-        StratagemFlag flag = findFlagByName(flagName);
+        Flag flag = findFlagByName(flagName);
         List<Stratagem> stratagems = stratagemRepository.findByFlags(flag);
         log.info("Stratagems: " + stratagems.toString());
 
@@ -72,20 +72,20 @@ public class StratagemService {
         stratagemRepository.delete(stratagem);
     }
 
-    public List<StratagemFlagData> getAllFlags() {
-        List<StratagemFlag> stratagemFlags = flagRepository.findAll();
+    public List<FlagData> getAllFlags() {
+        List<Flag> stratagemFlags = flagRepository.findAll();
 
         return stratagemFlags.stream()
-                .map(StratagemFlagData::new)
+                .map(FlagData::new)
                 .toList();
     }
 
-    public StratagemFlagData getFlagById(Long flagId) {
-        StratagemFlag stratagemFlag = findOrCreateFlag(flagId);
-        return new StratagemFlagData(stratagemFlag);
+    public FlagData getFlagById(Long flagId) {
+        Flag stratagemFlag = findOrCreateFlag(flagId);
+        return new FlagData(stratagemFlag);
     }
 
-    public StratagemFlagData saveFlag(StratagemFlagData data) {
+    public FlagData saveFlag(FlagData data) {
         return null;
     }
 
@@ -121,17 +121,17 @@ public class StratagemService {
         boolean hasFlags = !Objects.isNull(data.getFlags());
 
         if(hasFlags) {
-            for(StratagemFlagData flagData : data.getFlags()) {
-                StratagemFlag flag = flagRepository.findByName(flagData.getName()).orElseThrow(() -> new NoSuchElementException("No Flag found with that name."));
+            for(FlagData flagData : data.getFlags()) {
+                Flag flag = flagRepository.findByName(flagData.getName()).orElseThrow(() -> new NoSuchElementException("No Flag found with that name."));
                 stratagem.getFlags().add(flag);
             }
         }
     }
 
-    private StratagemFlag findOrCreateFlag(Long flagId) {
-        StratagemFlag flag;
+    private Flag findOrCreateFlag(Long flagId) {
+        Flag flag;
         if(Objects.isNull(flagId)) {
-            flag = new StratagemFlag();
+            flag = new Flag();
         }
         else {
             flag = findFlagById(flagId);
@@ -140,11 +140,11 @@ public class StratagemService {
         return flag;
     }
 
-    private StratagemFlag findFlagById(Long flagId) {
+    private Flag findFlagById(Long flagId) {
         return flagRepository.findById(flagId).orElseThrow(() -> new NoSuchElementException("No Flag matching that Id."));
     }
 
-    private StratagemFlag findFlagByName(String flagName) {
+    private Flag findFlagByName(String flagName) {
         return flagRepository.findByName(flagName).orElseThrow(() -> new NoSuchElementException("No Flag found with that name."));
     }
 }

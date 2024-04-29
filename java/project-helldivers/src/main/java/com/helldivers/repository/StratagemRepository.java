@@ -1,7 +1,7 @@
 package com.helldivers.repository;
 
-import com.helldivers.entity.Stratagem;
-import com.helldivers.entity.StratagemFlag;
+import com.helldivers.entity.stratagems.Stratagem;
+import com.helldivers.entity.stratagems.Flag;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -12,5 +12,5 @@ public interface StratagemRepository extends JpaRepository<Stratagem, Long> {
 
     List<Stratagem> findByCategory(String category);
 
-    List<Stratagem> findByFlags(StratagemFlag flag);
+    List<Stratagem> findByFlags(Flag flag);
 }
