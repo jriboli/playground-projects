@@ -138,3 +138,6 @@ INSERT INTO enemy (name, description, type) VALUES ("Tank", "Modeled after Super
 INSERT INTO enemy (name, description, type) VALUES ("Factory Strider", "Stand by for further details...", "AUTOMATON")
 INSERT INTO enemy (name, description, type) VALUES ("Gunship", "Automatons have finally made a breakthrough: the dropships are UAVs armed to the teeth with rockets, cannons, and other artillery.", "AUTOMATON")
 INSERT INTO enemy (name, description, type) VALUES ("Dropship", "Packed to the brim with robotic infantry, Dropships serve as the vanguard of the Automatons' relentless assault.", "AUTOMATON")
+
+-- Player
+INSERT INTO player (name, email, gamer_tag, type) VALUES ("Rocket Raccoon", "rraccoon1990@gmail.com", "the1andOnly", "BEAST")

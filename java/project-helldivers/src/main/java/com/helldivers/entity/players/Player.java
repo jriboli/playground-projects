@@ -1,6 +1,7 @@
 package com.helldivers.entity.players;
 
 import com.helldivers.entity.matches.Kills;
+import com.helldivers.enums.player.Type;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -19,6 +20,9 @@ public class Player {
     @Column(unique = true)
     private String gamerTag;
 
-    @OneToMany(mappedBy = "player")
-    private List<Kills> kills;
+    @Enumerated(EnumType.STRING)
+    private Type type;
+
+//    @OneToMany(mappedBy = "player")
+//    private List<Kills> kills;
 }
