@@ -1,4 +1,4 @@
-package com.populateDB.players;
+package com.populateDB.enums;
 
 public enum PlayerType {
     NOOB,

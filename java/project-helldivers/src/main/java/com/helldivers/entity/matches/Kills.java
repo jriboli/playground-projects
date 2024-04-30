@@ -22,7 +22,7 @@ public class Kills {
     @JoinColumn(name = "player_id")
     private Player player;
 
-    private Integer timeInMatch;
+    private Integer timeOfKill;
 
     @ManyToOne
     @JoinColumn(name = "enemy_id")
