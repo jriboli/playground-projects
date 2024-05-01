@@ -1,12 +1,13 @@
 package com.helldivers.entity.matches;
 
+import com.helldivers.enums.matches.Location;
+import com.helldivers.enums.matches.Objective;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.List;
-
 @Data
 @Entity
+@Table(name = "match_records")
 public class Match {
 
     @Id
@@ -16,8 +17,11 @@ public class Match {
 //    @OneToMany(mappedBy = "match")
 //    private List<Kills> kills;
 
-    private String matchType;
-    private String location;
+    @Enumerated(EnumType.STRING)
+    private Objective objective;
+
+    @Enumerated(EnumType.STRING)
+    private Location location;
 
 
 }

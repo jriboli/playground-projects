@@ -1,12 +1,8 @@
 package com.helldivers.entity.enemies;
 
-import com.helldivers.entity.matches.Kills;
 import com.helldivers.enums.enemies.Type;
-import com.helldivers.enums.weapons.Trait;
 import jakarta.persistence.*;
 import lombok.Data;
-
-import java.util.List;
 
 @Data
 @Entity

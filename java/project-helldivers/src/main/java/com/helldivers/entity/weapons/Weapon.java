@@ -1,6 +1,5 @@
 package com.helldivers.entity.weapons;
 
-import com.helldivers.entity.matches.Kills;
 import com.helldivers.enums.weapons.Mode;
 import com.helldivers.enums.weapons.Position;
 import com.helldivers.enums.weapons.Trait;
@@ -8,7 +7,6 @@ import com.helldivers.enums.weapons.Type;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.List;
 import java.util.Set;
 
 @Data

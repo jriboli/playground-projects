@@ -1,19 +1,25 @@
 package com.helldivers.controller;
 
-import com.helldivers.entity.matches.Match;
-import com.helldivers.model.Planet;
-import com.helldivers.model.PlanetResponse;
+import com.helldivers.model.matches.*;
+import com.helldivers.service.MatchService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1/match")
+@RequestMapping("/api/v1/matches")
+@Slf4j
 public class MatchesController {
+
+    private MatchService service;
+
+    public MatchesController (MatchService service) {
+        this.service = service;
+    }
 
     @GetMapping("/planets")
     public ResponseEntity<PlanetResponse> getPlanets(
@@ -22,12 +28,12 @@ public class MatchesController {
     {
 
         PlanetResponse response = new PlanetResponse();
-        List<Planet> planets = new ArrayList<>();
-        Planet planet1 = new Planet();
+        List<PlanetData> planets = new ArrayList<>();
+        PlanetData planet1 = new PlanetData();
         planet1.setType("TERMINID");
         planet1.setName("HELLMIRE");
 
-        Planet planet2 = new Planet();
+        PlanetData planet2 = new PlanetData();
         planet2.setType("ATUOMATON");
         planet2.setName("MENKENT");
 
@@ -51,8 +57,18 @@ public class MatchesController {
 
     @PostMapping
     public ResponseEntity<MatchResponse> addMatch(
-            @RequestBody Match match
+            @RequestBody MatchData matchData
+    ) {
+        log.info("Creating Match!");
+        return ResponseEntity.ok(service.saveMatch(matchData));
+    }
+
+    @PostMapping("/{matchId}/kills")
+    public ResponseEntity<KillResponse> addKill(
+            @PathVariable Long matchId,
+            @RequestBody KillData killData
     ) {
 
+        return ResponseEntity.ok(service.addKillToMatch(matchId, killData));
     }
 }
