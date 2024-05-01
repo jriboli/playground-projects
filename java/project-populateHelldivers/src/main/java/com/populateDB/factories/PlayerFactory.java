@@ -2,11 +2,10 @@ package com.populateDB.factories;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.populateDB.service.HelldiverWrapperService;
 import com.populateDB.models.Player;
 import com.populateDB.enums.PlayerType;
-import com.populateDB.models.RandomUser.RandomUser;
-import com.populateDB.models.RandomUser.Results;
+import com.populateDB.models.RandomUserAPI.RandomUser;
+import com.populateDB.models.RandomUserAPI.Results;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Map;

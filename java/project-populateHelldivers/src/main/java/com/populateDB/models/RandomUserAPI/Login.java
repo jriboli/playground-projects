@@ -1,4 +1,4 @@
-package com.populateDB.models.RandomUser;
+package com.populateDB.models.RandomUserAPI;
 
 import lombok.Data;
 

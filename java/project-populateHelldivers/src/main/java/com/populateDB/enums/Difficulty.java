@@ -16,4 +16,14 @@ public enum Difficulty {
     private Difficulty(int value) {
         this.value = value;
     }
+
+    public static Difficulty fromValue(int value) {
+        for (Difficulty difficulty : Difficulty.values()) {
+            if(difficulty.value == value) {
+                return difficulty;
+            }
+        }
+
+        throw new IllegalArgumentException("Invalid integer value: " + value);
+    }
 }

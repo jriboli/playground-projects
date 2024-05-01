@@ -13,8 +13,8 @@ public class Match {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(mappedBy = "match")
-    private List<Kills> kills;
+//    @OneToMany(mappedBy = "match")
+//    private List<Kills> kills;
 
     private String matchType;
     private String location;

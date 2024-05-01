@@ -16,17 +16,19 @@ import java.util.List;
 @SpringBootApplication
 public class PopulateApplication {
     private static HelldiverWrapperService service;
-    private static final int DEFAULT_ENEMY_COUNT = 100;
+    private static final int DEFAULT_ENEMY_COUNT = 10;
     private static final double DEFAULT_DIFFICULTY_MULTIPLIER = 0.25;
     public static void main(String[] args) {
         SpringApplication.run(PopulateApplication.class, args);
 
         List<Player> players = populatePlayers(3);
 
-        players.forEach(p -> p.setMatches(populateMatches(p, 10)));
+        players.forEach(p -> p.setMatches(populateMatches(p, 2)));
 
         players.forEach(p -> p.getMatches()
                 .forEach(m -> m.setKills(populateKills(p, m))));
+
+        System.out.println("Players: " + players);
     }
 
     public static List<Player> populatePlayers(int numOfPlayers) {
@@ -50,7 +52,7 @@ public class PopulateApplication {
     }
 
     public static List<Kill> populateKills(Player player, Match match) {
-        int numOfKills = Integer.parseInt(String.valueOf(DEFAULT_ENEMY_COUNT * (DEFAULT_DIFFICULTY_MULTIPLIER * match.getDifficulty().value)));
+        int numOfKills = (int)(DEFAULT_ENEMY_COUNT * (DEFAULT_DIFFICULTY_MULTIPLIER * match.getDifficulty().value));
         List<Kill> kills = new ArrayList<>();
         for(int i = 0; i < numOfKills; i++) {
             Kill kill = KillFactory.createKill(player, match);
