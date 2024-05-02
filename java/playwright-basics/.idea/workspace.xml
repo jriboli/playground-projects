@@ -5,18 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/resources/db/migration/V1__CreateTabelTasks.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../helldivers-project/src/main/resources/db/migration/V2__TestData.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helldivers-project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../helldivers-project/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/baeldung/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/baeldung/UserApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/baeldung/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/repository/StratagemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helldivers-project/src/main/java/com/helldivers/repository/StratagemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helldivers-project/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../helldivers-project/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helldivers-project/src/test/java/com/baeldung/UserRepositoryIntegrationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helldivers-project/src/test/java/com/helldivers/JPAExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helldivers-project/src/test/java/com/helldivers/JPAExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helldivers-project/src/test/java/com/helldivers/RestAssuredTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helldivers-project/src/test/java/com/helldivers/RestAssuredTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,16 +30,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/test/resources/data&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Justin/Documents/GitHub/playground-projects/java/playwright-basics",
+    "onboarding.tips.debug.path": "C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\data" />
@@ -62,6 +50,19 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.SearchPageTest.searchForItem">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="playwright-basics" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="playwright-basics" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookPageTest.checkFlightDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java-playwright-basics" />
       <extension name="coverage">
