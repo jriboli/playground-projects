@@ -1,11 +1,11 @@
 package com.helldivers.repository;
 
-import com.helldivers.entity.StratagemFlag;
+import com.helldivers.entity.stratagems.Flag;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
-public interface FlagRepository extends JpaRepository<StratagemFlag, Long> {
+public interface FlagRepository extends JpaRepository<Flag, Long> {
 
-    Optional<StratagemFlag> findByName(String name);
+    Optional<Flag> findByName(String name);
 }

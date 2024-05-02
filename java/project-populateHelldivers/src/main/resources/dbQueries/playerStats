@@ -1,0 +1,19 @@
+#SELECT * FROM helldivers.player;
+
+SELECT
+    p.*,
+    SUM(s.shots_fired) as Fired,
+    SUM(s.shots_hit) as Hit,
+    (SUM(s.shots_hit)/SUM(s.shots_fired)) as Accuracy,
+    COUNT(DISTINCT k.match_id) AS matchCount,
+    COUNT(k.id) AS killCount
+FROM
+    player p
+LEFT JOIN
+    stats s ON p.id = s.player_id
+LEFT JOIN
+    kill_records k ON p.id = k.player_id
+WHERE
+	p.type="AVERAGE"
+GROUP BY
+    p.id;
