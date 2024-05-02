@@ -4,8 +4,6 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.helldivers.populate.models.HelldiverAPI.*;
-import com.hilldivers.populate.models.HelldiverAPI.*;
-import com.populateDB.models.HelldiverAPI.*;
 import com.helldivers.populate.models.Kill;
 import com.helldivers.populate.models.Match;
 import com.helldivers.populate.models.Player;
@@ -29,16 +27,12 @@ public class HelldiverWrapperService {
         headers.setContentType(MediaType.APPLICATION_JSON);
     }
 
-    public List<String> getWeapons(WeaponFilters filters) {
+    public List<Weapon> getWeapons() {
         RestTemplate restTemplate = new RestTemplate();
         String response = restTemplate.getForObject(apiBaseUrl + "weapons", String.class);
         try {
             WeaponResponse wResponse = mapper.readValue(response, WeaponResponse.class);
-            List<String> results = wResponse.getWeapons().stream()
-                    .map(Weapon::getName)
-                    .toList();
-
-            return results;
+            return wResponse.getWeapons();
 
         } catch(Exception ex) {
             System.out.println("Something Happened!!");
@@ -49,14 +43,12 @@ public class HelldiverWrapperService {
         return null;
     }
 
-    public List<String> getPlanets(String planetType) {
+    public List<Planet> getPlanets() {
         RestTemplate restTemplate = new RestTemplate();
-        String response = restTemplate.getForObject(apiBaseUrl + "matches/planets?planetType={s1}", String.class, planetType);
+        String response = restTemplate.getForObject(apiBaseUrl + "matches/planets", String.class);
         try {
             PlanetResponse pResponse = mapper.readValue(response, PlanetResponse.class);
-            return pResponse.getPlanets().stream()
-                    .map(Planet::getName)
-                    .toList();
+            return pResponse.getPlanets();
         } catch(Exception ex) {
             System.out.println("Something Happened!!");
             System.out.println(ex.getMessage());
@@ -66,14 +58,12 @@ public class HelldiverWrapperService {
         return null;
     }
 
-    public List<String> getEnemies(String enemyType) {
+    public List<Enemy> getEnemies() {
         RestTemplate restTemplate = new RestTemplate();
-        String response = restTemplate.getForObject(apiBaseUrl + "enemies?type={s1}", String.class, enemyType);
+        String response = restTemplate.getForObject(apiBaseUrl + "enemies?", String.class);
         try {
             EnemyResponse eResponse = mapper.readValue(response, EnemyResponse.class);
-            return eResponse.getEnemies().stream()
-                    .map(Enemy::getName)
-                    .toList();
+            return eResponse.getEnemies();
         } catch(Exception ex) {
             System.out.println("Something Happened!!");
             System.out.println(ex.getMessage());
@@ -100,7 +90,7 @@ public class HelldiverWrapperService {
 
         // Matches
         List<Match> matches = player.getMatches();
-        matches.forEach(m -> m.setId(saveMatch(m)));
+        matches.forEach(m -> m.setId(saveMatchAndStats(player.getId(), m)));
 
         // Kills
         for(Match match : matches) {
@@ -135,6 +125,14 @@ public class HelldiverWrapperService {
         return null;
     }
 
+    private Long saveMatchAndStats(Long playerId, Match matchInfo) {
+        Long matchId = saveMatch(matchInfo);
+        matchInfo.setId(matchId);
+        saveStats(playerId, matchInfo);
+
+        return matchId;
+    }
+
     private Long saveMatch(Match matchInfo) {
         MatchData matchData = new MatchData();
         matchData.setObjective(matchInfo.getObjective());
@@ -155,6 +153,27 @@ public class HelldiverWrapperService {
         }
 
         return null;
+    }
+
+    private void saveStats(Long playerId, Match matchInfo) {
+        StatData statData = new StatData();
+        statData.setShots_fired(matchInfo.getShotsFired());
+        statData.setShots_hit(matchInfo.getShotsHit());
+        statData.setPlayer_id(playerId);
+        statData.setWeapon_name(matchInfo.getWeapons());
+
+        try {
+            String jsonData = mapper.writeValueAsString(statData);
+            HttpEntity<String> request = new HttpEntity<>(jsonData, headers);
+            RestTemplate restTemplate = new RestTemplate();
+            String response = restTemplate.postForObject(apiBaseUrl + "matches/{matchId}/stats", request, String.class, matchInfo.getId());
+            StatResponse sResponse = mapper.readValue(response, StatResponse.class);
+
+        } catch(Exception ex) {
+            System.out.println("Something Happened!!");
+            System.out.println(ex.getMessage());
+            System.out.println(ex.getStackTrace());
+        }
     }
 
     private void saveKill(Long playerId, Long matchId, Kill killInfo) {

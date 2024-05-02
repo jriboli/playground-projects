@@ -1,5 +1,7 @@
 package com.helldivers.populate.factories;
 
+import com.helldivers.populate.enums.EnemyType;
+import com.helldivers.populate.models.HelldiverAPI.Enemy;
 import com.helldivers.populate.models.Match;
 import com.helldivers.populate.models.Player;
 import com.helldivers.populate.service.HelldiverWrapperService;
@@ -11,7 +13,9 @@ import java.util.Random;
 public class KillFactory {
 
     private static final HelldiverWrapperService service = new HelldiverWrapperService();
-    public static Kill createKill(Player player, Match match) {
+    private static List<Enemy> enemyList;
+    public static Kill createKill(Player player, Match match, List<Enemy> enemies) {
+        enemyList = enemies;
 
         String enemy = chooseEnemy(match.getEnemyType());
         String weapon = match.getWeapons();
@@ -25,10 +29,14 @@ public class KillFactory {
     }
 
     private static String chooseEnemy(String enemyType) {
-        List<String> enemies = service.getEnemies(enemyType);
         Random random = new Random();
-        int randomNumber = random.nextInt(enemies.size());
-        return enemies.get(randomNumber);
+
+        List<String> enemyName = enemyList.stream()
+                .filter(e -> e.getType().equals(EnemyType.valueOf(enemyType)))
+                .map(Enemy::getName)
+                .toList();
+        int randomNumber = random.nextInt(enemyName.size());
+        return enemyName.get(randomNumber);
     }
 
     private static String chooseTimeStamp() {

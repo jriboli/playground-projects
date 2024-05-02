@@ -63,6 +63,14 @@ public class MatchesController {
         return ResponseEntity.ok(service.saveMatch(matchData));
     }
 
+    @PostMapping("/{matchId}/stats")
+    public ResponseEntity<StatsResponse> addMatchStats(
+            @PathVariable Long matchId,
+            @RequestBody StatsData statsData
+    ) {
+        return ResponseEntity.ok(service.addStatsToMatch(matchId, statsData));
+    }
+
     @PostMapping("/{matchId}/kills")
     public ResponseEntity<KillResponse> addKill(
             @PathVariable Long matchId,

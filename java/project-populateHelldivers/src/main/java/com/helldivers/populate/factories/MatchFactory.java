@@ -1,5 +1,9 @@
 package com.helldivers.populate.factories;
 
+import com.helldivers.populate.enums.Mode;
+import com.helldivers.populate.enums.Trait;
+import com.helldivers.populate.models.HelldiverAPI.Planet;
+import com.helldivers.populate.models.HelldiverAPI.Weapon;
 import com.helldivers.populate.models.Player;
 import com.helldivers.populate.models.WeaponFilters;
 import com.helldivers.populate.service.HelldiverWrapperService;
@@ -7,25 +11,30 @@ import com.helldivers.populate.enums.Difficulty;
 import com.helldivers.populate.enums.PlayerType;
 import com.helldivers.populate.models.Match;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
 public class MatchFactory {
 
-    private static final HelldiverWrapperService service = new HelldiverWrapperService();
-
     private static final Map<String, Integer> ENEMY_PERCENTAGES = Map.of(
             "TERMINID", 50,
             "AUTOMATON", 50
     );
 
-    public static Match createMatch(Player player) {
+    private static List<Weapon> weaponList;
+    private static List<Planet> planetList;
+
+    public static Match createMatch(Player player, List<Weapon> weapons, List<Planet> planets) {
+        weaponList = weapons;
+        planetList = planets;
+
         String enemyType = chooseEnemyType();
         Difficulty difficulty = Difficulty.valueOf(chooseDifficulty(player.getType()));
         String objective = chooseObjective();
         String planet = choosePlanet(enemyType);
-        String weapon = chooseWeapon(player.getType(), enemyType);
+        String weapon = chooseWeapon(player.getType());
         Integer shotsFired = chooseShotsFired(player.getType(), difficulty);
         Integer shotsHit = chooseShotsHit(player.getType(), shotsFired);
 
@@ -40,34 +49,43 @@ public class MatchFactory {
                 .build();
     }
 
-    private static String chooseWeapon(PlayerType playerType, String enemyType){
+    private static String chooseWeapon(PlayerType playerType){
 
-        WeaponFilters filters = new WeaponFilters();
+        List<Weapon> weapons = new ArrayList<>();
         switch(playerType){
             case NOOB:
-                filters.setTrait("LIGHT_ARMOR_PENETRATING");
-                filters.setMode("AUTOMATIC");
+                weapons = weaponList.stream()
+                        .filter(w -> w.getModes().contains(Mode.AUTOMATIC))
+                        .filter(w -> w.getTraits().contains(Trait.LIGHT_ARMOR_PENETRATING))
+                        .toList();
                 break;
             case AVERAGE:
-                filters.setTrait("LIGHT_ARMOR_PENETRATING");
+                weapons = weaponList.stream()
+                        .filter(w -> w.getTraits().contains(Trait.LIGHT_ARMOR_PENETRATING))
+                        .toList();
                 break;
             case BEAST:
-                filters.setTrait("MEDIUM_ARMOR_PENETRATING");
+                weapons = weaponList.stream()
+                        .filter(w -> w.getTraits().contains(Trait.MEDIUM_ARMOR_PENETRATING))
+                        .toList();
                 break;
             case CHEAT:
+                weapons = weaponList;
                 break;
             default:
                 // Should not happened
                 break;
         }
 
-        List<String> weapons = service.getWeapons(filters);
         // Create a Random object
         Random random = new Random();
 
         // Generate a random number between lower and upper bounds
         int randomNumber = random.nextInt(weapons.size());
-        return weapons.get(randomNumber);
+        List<String> weaponNames = weapons.stream()
+                .map(Weapon::getName)
+                .toList();
+        return weaponNames.get(randomNumber);
 
     }
 
@@ -87,12 +105,15 @@ public class MatchFactory {
     }
 
     private static String choosePlanet(String enemyType) {
-        List<String> planets = service.getPlanets(enemyType);
+        // Create a Random object
+        Random random = new Random();
 
-        // TBD
-        // Only 1 planet at this point
-
-        return planets.get(0);
+        // Generate a random number between lower and upper bounds
+        int randomNumber = random.nextInt(planetList.size());
+        List<String> planetNames = planetList.stream()
+                .map(Planet::getName)
+                .toList();
+        return planetNames.get(randomNumber);
     }
     private static String chooseObjective() {
         // TBD

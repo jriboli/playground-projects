@@ -3,14 +3,12 @@ package com.helldivers.service;
 import com.helldivers.entity.enemies.Enemy;
 import com.helldivers.entity.matches.Kill;
 import com.helldivers.entity.matches.Match;
+import com.helldivers.entity.matches.Stats;
 import com.helldivers.entity.players.Player;
 import com.helldivers.entity.weapons.Weapon;
 import com.helldivers.enums.matches.Location;
 import com.helldivers.enums.matches.Objective;
-import com.helldivers.model.matches.KillData;
-import com.helldivers.model.matches.KillResponse;
-import com.helldivers.model.matches.MatchData;
-import com.helldivers.model.matches.MatchResponse;
+import com.helldivers.model.matches.*;
 import com.helldivers.repository.*;
 import org.springframework.stereotype.Service;
 
@@ -26,14 +24,16 @@ public class MatchService {
 
     private EnemyRepository enemyRepo;
     private WeaponRepository weaponRepo;
+    private StatsRepository statsRepo;
 
     public MatchService(MatchRepository matchRepo, KillRepository killRepo, PlayerRepository playerRepo
-            , WeaponRepository weaponRepo, EnemyRepository enemyRepo) {
+            , WeaponRepository weaponRepo, EnemyRepository enemyRepo, StatsRepository statsRepo) {
         this.matchRepo = matchRepo;
         this.killRepo = killRepo;
         this.playerRepo = playerRepo;
         this.enemyRepo = enemyRepo;
         this.weaponRepo = weaponRepo;
+        this.statsRepo = statsRepo;
     }
 
     public MatchResponse saveMatch(MatchData matchData) {
@@ -118,5 +118,42 @@ public class MatchService {
 
     private Weapon findWeaponByName(String name) {
         return weaponRepo.findByName(name).orElseThrow(() -> new NoSuchElementException("No matching weapon found with that Name."));
+    }
+
+    public StatsResponse addStatsToMatch(Long matchId, StatsData statsData) {
+        Long statsId = statsData.getId();
+        Stats stat = findOrCreateStats(statsId);
+
+        setFieldsInStats(stat, statsData, matchId);
+        return new StatsResponse(new StatsData(statsRepo.save(stat)));
+    }
+
+    private void setFieldsInStats(Stats stat, StatsData data, Long matchId) {
+        Match match = findOrCreateMatch(matchId);
+        Player player = findPlayerById(data.getPlayer_id());
+        Weapon weapon = findWeaponByName(data.getWeapon_name());
+
+        stat.setId(data.getId());
+        stat.setMatch(match);
+        stat.setPlayer(player);
+        stat.setWeapon(weapon);
+        stat.setShotsHit(data.getShots_hit());
+        stat.setShotsFired(data.getShots_fired());
+    }
+
+    private Stats findOrCreateStats(Long statsId) {
+        Stats stat;
+        if(Objects.isNull(statsId)) {
+            stat = new Stats();
+        }
+        else {
+            stat = findStatsById(statsId);
+        }
+
+        return stat;
+    }
+
+    private Stats findStatsById(Long statsId) {
+        return statsRepo.findById(statsId).orElseThrow(() -> new NoSuchElementException("No matching kill found with that Id."));
     }
 }
