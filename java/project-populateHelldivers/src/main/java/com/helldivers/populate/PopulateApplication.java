@@ -19,7 +19,7 @@ import java.util.List;
 @SpringBootApplication
 public class PopulateApplication {
     private static HelldiverWrapperService service = new HelldiverWrapperService();
-    private static final int NUM_OF_PLAYERS = 10; //50;
+    private static final int NUM_OF_PLAYERS = 50;
     private static final int NUM_OF_MATCHES = 20; //50;
     private static final int DEFAULT_ENEMY_COUNT = 50; //100;
     private static final double DEFAULT_DIFFICULTY_MULTIPLIER = 0.10;

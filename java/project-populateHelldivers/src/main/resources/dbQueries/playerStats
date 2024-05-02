@@ -13,7 +13,7 @@ LEFT JOIN
     stats s ON p.id = s.player_id
 LEFT JOIN
     kill_records k ON p.id = k.player_id
-#WHERE
-	#p.type="BEAST"
+WHERE
+	p.type="AVERAGE"
 GROUP BY
     p.id;
