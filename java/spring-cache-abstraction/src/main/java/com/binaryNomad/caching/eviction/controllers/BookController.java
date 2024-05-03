@@ -1,6 +1,6 @@
 package com.binaryNomad.caching.eviction.controllers;
 
-import com.binaryNomad.caching.example.BookService;
+import com.binaryNomad.caching.eviction.service.BookService;
 import com.binaryNomad.caching.model.Book;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

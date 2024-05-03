@@ -1,4 +1,4 @@
-package com.binaryNomad.caching.example;
+package com.binaryNomad.caching.eviction.service;
 
 import com.binaryNomad.caching.eviction.service.CachingService;
 import com.binaryNomad.caching.model.Book;
