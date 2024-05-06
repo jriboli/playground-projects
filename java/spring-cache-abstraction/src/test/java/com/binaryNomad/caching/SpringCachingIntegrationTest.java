@@ -1,6 +1,5 @@
 package com.binaryNomad.caching;
 
-import com.binaryNomad.caching.config.CachingConfig;
 import com.binaryNomad.caching.example.CustomerServiceWithParent;
 import com.binaryNomad.caching.example.CustomerService;
 import com.binaryNomad.caching.model.Customer;

@@ -1,18 +1,22 @@
 package com.binaryNomad.caching.eviction.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Service
+@Component
 public class CachingService {
 
+    @Autowired
     private CacheManager cacheManager;
 
-    public CachingService(CacheManager cacheManager) {
-        this.cacheManager = cacheManager;
-    }
+    //public CachingService(CacheManager cacheManager) {
+    //    this.cacheManager = cacheManager;
+    //}
 
     public void putToCache(String cacheName, String key, String value) {
         cacheManager.getCache(cacheName).put(key, value);
@@ -43,6 +47,8 @@ public class CachingService {
 
     public void evictAllCacheValues(String cacheName) {
         cacheManager.getCache(cacheName).clear();
+        Cache cacheInfo = cacheManager.getCache(cacheName);
+        System.out.println(cacheInfo.toString());
     }
 
     public void evictAllCaches() {

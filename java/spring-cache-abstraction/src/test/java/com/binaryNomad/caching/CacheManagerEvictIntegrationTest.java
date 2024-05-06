@@ -3,6 +3,8 @@ package com.binaryNomad.caching;
 import com.binaryNomad.caching.eviction.service.CachingService;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean;
@@ -11,6 +13,7 @@ import org.springframework.cache.support.SimpleCacheManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +22,8 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.junit.Assert.assertThat;
 
+// This has something to do that helps do Dependency Inject (@RunWith)
+@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
 public class CacheManagerEvictIntegrationTest {
 
@@ -27,7 +32,7 @@ public class CacheManagerEvictIntegrationTest {
 
         @Bean
         public CachingService cachingService() {
-            return new CachingService(new ConcurrentMapCacheManager());
+            return new CachingService();
         }
 
         @Bean
@@ -55,6 +60,7 @@ public class CacheManagerEvictIntegrationTest {
         }
     }
 
+    @Autowired
     CachingService cachingService;
 
     @Before
