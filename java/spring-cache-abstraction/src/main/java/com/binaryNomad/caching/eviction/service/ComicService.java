@@ -50,19 +50,13 @@ public class ComicService {
     @CachePut(cacheNames="comic", condition="#id==1")
     public Comic getComicByIdWithCondition(int id) {
         log.info("Comic By Id - [" + id + "]");
-        return comicList.stream()
-                .filter(b -> b.getId() == id)
-                .findFirst()
-                .orElseThrow(() -> new NoSuchElementException("No comic found with that ID"));
+        return getComicById(id);
     }
 
     @CachePut(cacheNames="comic", unless="#id==2")
     public Comic getComicByIdWithUnless(int id) {
         log.info("Comic By Id - [" + id + "]");
-        return comicList.stream()
-                .filter(b -> b.getId() == id)
-                .findFirst()
-                .orElseThrow(() -> new NoSuchElementException("No comic found with that ID"));
+        return getComicById(id);
     }
 
     public void showCache() {
@@ -78,8 +72,4 @@ public class ComicService {
             System.out.println("Cache Value[" + i + "]: " +cache2.get(i));
         }
     }
-
-
-
-
 }
