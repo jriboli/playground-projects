@@ -4,6 +4,7 @@ import com.binaryNomad.caching.model.Comic;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 
@@ -40,6 +41,24 @@ public class ComicService {
     public Comic getComicById(int id) {
         log.info("Comic By Id - [" + id + "]");
 //        return comics.get(id);
+        return comicList.stream()
+                .filter(b -> b.getId() == id)
+                .findFirst()
+                .orElseThrow(() -> new NoSuchElementException("No comic found with that ID"));
+    }
+
+    @CachePut(cacheNames="comic", condition="#id==1")
+    public Comic getComicByIdWithCondition(int id) {
+        log.info("Comic By Id - [" + id + "]");
+        return comicList.stream()
+                .filter(b -> b.getId() == id)
+                .findFirst()
+                .orElseThrow(() -> new NoSuchElementException("No comic found with that ID"));
+    }
+
+    @CachePut(cacheNames="comic", unless="#id==2")
+    public Comic getComicByIdWithUnless(int id) {
+        log.info("Comic By Id - [" + id + "]");
         return comicList.stream()
                 .filter(b -> b.getId() == id)
                 .findFirst()

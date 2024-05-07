@@ -31,6 +31,20 @@ public class ComicController {
         return ResponseEntity.ok(comicService.getComicById(id));
     }
 
+    @GetMapping("/{id}/condition")
+    public ResponseEntity<Comic> getComicByIdWithCondition(
+            @PathVariable int id
+    ) {
+        return ResponseEntity.ok(comicService.getComicByIdWithCondition(id));
+    }
+
+    @GetMapping("/{id}/unless")
+    public ResponseEntity<Comic> getComicByIdWithUnless(
+            @PathVariable int id
+    ) {
+        return ResponseEntity.ok(comicService.getComicByIdWithUnless(id));
+    }
+
     @GetMapping("/cache")
     public ResponseEntity<String> examineCache() {
         comicService.showCache();
