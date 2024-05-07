@@ -1,14 +1,14 @@
-package com.binaryNomad.message_queue;
+package com.binaryNomad.message_queue.server;
 
-import com.binaryNomad.message_queue.enums.GameEvent;
-import com.binaryNomad.message_queue.model.GameEventMessage;
+import com.binaryNomad.message_queue.server.enums.GameEvent;
+import com.binaryNomad.message_queue.server.model.GameEventMessage;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
 import java.util.Properties;
 
-public class MessageQueueApplication {
+public class GameServer {
     private static final String TOPIC_NAME = "game-events";
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.binaryNomad.message_queue.enums;
+package com.binaryNomad.message_queue.server.enums;
 
 public enum GameEvent {
     PLAYER_MOVE,

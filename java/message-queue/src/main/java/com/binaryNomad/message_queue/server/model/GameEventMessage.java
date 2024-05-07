@@ -1,6 +1,6 @@
-package com.binaryNomad.message_queue.model;
+package com.binaryNomad.message_queue.server.model;
 
-import com.binaryNomad.message_queue.enums.GameEvent;
+import com.binaryNomad.message_queue.server.enums.GameEvent;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
