@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a2a0f19-bfe4-4495-85b2-b08b97368308" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../message-queue-client/src/main/java/com/binaryNomad/message_queue/client/GameClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../message-queue-client/src/main/java/com/binaryNomad/message_queue/client/constant/AppConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../message-queue-client/src/main/java/com/binaryNomad/message_queue/client/service/GameEventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../message-queue-client/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/binaryNomad/message_queue/server/config/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/binaryNomad/message_queue/server/constant/AppConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/binaryNomad/message_queue/server/controller/GameEventController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/binaryNomad/message_queue/server/service/GameEventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/binaryNomad/message_queue/client/GameClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/binaryNomad/message_queue/server/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/binaryNomad/message_queue/server/GameServer.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2g9smb1rTbh7xgdq1oVZmF6ti36" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;message-queue&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Justin/Documents/GitHub/playground-projects/java/message-queue/src/main/java/org/example/Main.java&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GameServer">
+    <configuration name="GameClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.binaryNomad.message_queue.client.GameClient" />
+      <module name="message-queue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.binaryNomad.message_queue.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.binaryNomad.message_queue.server.GameServer" />
+      <module name="message-queue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.binaryNomad.message_queue.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GameServer" />
+        <item itemvalue="Application.GameClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a2a0f19-bfe4-4495-85b2-b08b97368308" name="Changes" comment="" />
+      <created>1715121290182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715121290182</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/binaryNomad/message_queue/server/GameServer.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
