@@ -14,7 +14,7 @@ public class GameServer {
     public static void main(String[] args) {
 
         Properties props = new Properties();
-        props.put("bootstrap.servers", "localhost:9092");
+        props.put("bootstrap.servers", "localhost:29092");
         props.put("acks", "all");
         props.put("retries", 0);
         props.put("batch.size", 16384);
