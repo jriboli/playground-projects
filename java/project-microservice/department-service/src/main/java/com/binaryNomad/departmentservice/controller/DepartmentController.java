@@ -1,5 +1,6 @@
 package com.binaryNomad.departmentservice.controller;
 
+import com.binaryNomad.departmentservice.client.EmployeeClient;
 import com.binaryNomad.departmentservice.model.Department;
 import com.binaryNomad.departmentservice.repository.DepartmentRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -15,9 +16,11 @@ import java.util.List;
 public class DepartmentController {
 
     private DepartmentRepository repository;
+    private EmployeeClient employeeClient;
 
-    public DepartmentController(DepartmentRepository repository) {
+    public DepartmentController(DepartmentRepository repository, EmployeeClient employeeClient) {
         this.repository = repository;
+        this.employeeClient = employeeClient;
     }
 
     @GetMapping("/{department_id}")
@@ -30,6 +33,16 @@ public class DepartmentController {
     public ResponseEntity<List<Department>> getAll() {
         log.info("Department find all");
         return ResponseEntity.ok(repository.findAll());
+    }
+
+    @GetMapping("/with-employees")
+    public ResponseEntity<List<Department>> findAllWithEmployees() {
+        log.info("Department find: All with employees");
+        List<Department> departments = repository.findAll();
+
+        departments.forEach(d -> d.setEmployees(employeeClient.findByDepartment(d.getId())));
+
+        return ResponseEntity.ok(departments);
     }
 
     @PostMapping
