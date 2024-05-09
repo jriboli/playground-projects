@@ -1,5 +1,7 @@
 **CQRS Project: 
 
+https://www.youtube.com/watch?v=XolV-pKjVyA
+
 ***Relationship:
 
 Commands initiate actions: They are sent to the system to request changes.
