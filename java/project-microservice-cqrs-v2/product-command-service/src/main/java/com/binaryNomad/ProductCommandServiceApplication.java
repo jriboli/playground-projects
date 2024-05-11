@@ -1,4 +1,4 @@
-package com.binaryNomad.productcommandservice;
+package com.binaryNomad;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
