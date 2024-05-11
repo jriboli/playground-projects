@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: product-query-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/microProduct
+    username: root
+    password: pass
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:29092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: product-event-group
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: com.binaryNomad.*
+  server:
+    port: 9192
