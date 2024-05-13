@@ -8,6 +8,7 @@ public class BillingSystem {
     private DiscountStrategy discountStrategy;
 
     public void setDiscountStrategy(DiscountStrategy discountStrategy) {
+
         this.discountStrategy = discountStrategy;
     }
 
