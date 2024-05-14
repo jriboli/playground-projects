@@ -1,0 +1,7 @@
+Object has two things:
+- Behavior or Function
+- Properties or State
+
+Think of Procedural Programming - Tight Coupling
+
+OOP - provides data hiding
