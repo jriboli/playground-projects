@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a2a0f19-bfe4-4495-85b2-b08b97368308" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/src/main/java/com/binaryNomad/controller/ProductCommandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/src/main/java/com/binaryNomad/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/src/main/java/com/binaryNomad/events/ProductEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/src/main/java/com/binaryNomad/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/src/main/java/com/binaryNomad/service/ProductCommandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-query-service/src/main/java/com/binaryNomad/controller/ProductQueryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-query-service/src/main/java/com/binaryNomad/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-query-service/src/main/java/com/binaryNomad/events/ProductEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-query-service/src/main/java/com/binaryNomad/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-query-service/src/main/java/com/binaryNomad/service/ProductQueryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/src/main/java/com/binaryNomad/productcommandservice/ProductCommandServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/src/main/java/com/binaryNomad/ProductCommandServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/src/test/java/com/binaryNomad/productcommandservice/ProductCommandServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../project-microservice-cqrs-v2/product-command-service/src/test/java/com/binaryNomad/ProductCommandServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +35,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "microservice-cqrs-v2",
+    "git-widget-placeholder": "design-patterns-strategy",
     "last_opened_file_path": "C:/Users/Justin/Documents/GitHub/playground-projects/java/message-queue-kafka-client",
     "onboarding.tips.debug.path": "C:/Users/Justin/Documents/GitHub/playground-projects/java/message-queue/src/main/java/org/example/Main.java"
   }

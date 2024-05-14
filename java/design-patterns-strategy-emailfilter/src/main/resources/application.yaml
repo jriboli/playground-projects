@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: design-patterns-strategy-emailfilter
+
+server:
+  port: 9132
