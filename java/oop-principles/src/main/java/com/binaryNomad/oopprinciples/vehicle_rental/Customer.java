@@ -1,5 +1,6 @@
 package com.binaryNomad.oopprinciples.vehicle_rental;
 
+import com.binaryNomad.oopprinciples.vehicle_rental.vehicle.Vehicle;
 import lombok.Getter;
 
 import java.util.ArrayList;

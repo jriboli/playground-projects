@@ -5,7 +5,21 @@ import com.binaryNomad.oopprinciples.library_management.books.Book;
 import com.binaryNomad.oopprinciples.library_management.books.CookBook;
 import com.binaryNomad.oopprinciples.library_management.books.Magazine;
 import com.binaryNomad.oopprinciples.library_management.books.ScienceFictionBook;
+import com.binaryNomad.oopprinciples.online_shopping.Cart;
+import com.binaryNomad.oopprinciples.online_shopping.Order;
+import com.binaryNomad.oopprinciples.online_shopping.payment.CreditCard;
+import com.binaryNomad.oopprinciples.online_shopping.payment.GiftCard;
+import com.binaryNomad.oopprinciples.online_shopping.payment.PayPal;
+import com.binaryNomad.oopprinciples.online_shopping.payment.Payment;
+import com.binaryNomad.oopprinciples.online_shopping.product.ActionFigure;
+import com.binaryNomad.oopprinciples.online_shopping.product.Cellphone;
+import com.binaryNomad.oopprinciples.online_shopping.product.GameConsole;
+import com.binaryNomad.oopprinciples.online_shopping.product.Product;
 import com.binaryNomad.oopprinciples.vehicle_rental.*;
+import com.binaryNomad.oopprinciples.vehicle_rental.vehicle.Bike;
+import com.binaryNomad.oopprinciples.vehicle_rental.vehicle.Car;
+import com.binaryNomad.oopprinciples.vehicle_rental.vehicle.Truck;
+import com.binaryNomad.oopprinciples.vehicle_rental.vehicle.Vehicle;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -19,8 +33,8 @@ public class OopPrinciplesApplication {
 		SpringApplication.run(OopPrinciplesApplication.class, args);
 
 		//TestLibrary();
-		TestRental();
-
+		//TestRental();
+		TestOnlineCart();
 
 	}
 
@@ -72,6 +86,29 @@ public class OopPrinciplesApplication {
 		customer.driveVehicle(bike);
 
 		agency.returnVehicle(customer, truck);
+	}
+
+	public static void TestOnlineCart() {
+
+		Product iphone = new Cellphone(1299.95, "Iphone 14", "This is the next greatest thing.", List.of("TMobile", "Verizon", "AT&T"));
+		Product stormtrooper = new ActionFigure(49.50, "Samurai StormTrooper", "A Star Wars stormtrooper in classis samurai armor", "Mint");
+		Product playstation = new GameConsole(499.99, "Playstation 5" , "Playstations latest gaming console", "Sony", 1000);
+
+		Payment giftcard = new GiftCard("123456789876543", "1111", "04/29");
+		Payment creditcard = new CreditCard("111111111111111", "9876", "01/34");
+		Payment payPal = new PayPal("rocket", "123ABC");
+
+		Cart cart = new Cart();
+		cart.addItem(stormtrooper, 1);
+		cart.displayCart();
+
+		Order order = new Order();
+		order.checkOut(cart);
+		order.addPayment(giftcard);
+		order.addShipping("Priority", "123 Main St., Boston, MA");
+		System.out.println("Total Cost: " + order.calculateTotal());
+
+		order.commit();
 	}
 
 }

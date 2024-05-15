@@ -1,4 +1,4 @@
-package com.binaryNomad.oopprinciples.vehicle_rental;
+package com.binaryNomad.oopprinciples.vehicle_rental.vehicle;
 
 import lombok.Getter;
 
