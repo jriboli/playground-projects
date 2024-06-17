@@ -1,12 +1,19 @@
 package com.binaryNomad;
 
+import com.binaryNomad.lambda.basics.StaticMethod_StringHelper;
 import com.binaryNomad.lambda.exercise_001.Employee;
 import com.binaryNomad.lambda.exercise_001.Measurable;
 import com.binaryNomad.lambda.exercise_002.IntSequence;
 import com.binaryNomad.lambda.exercise_002.IntSequenceUtil;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
+        // BASICS
+        staticMethod();
+
         // EXERCISE 001
         Employee[] employees = {
           new Employee("Alice", 50000),
@@ -33,6 +40,13 @@ public class Main {
         for (int i = 0; i < 10; i++) {
             System.out.print(constantSeq.next() + " ");
         }
+    }
+
+    public static void staticMethod() {
+        List<String> messages = Arrays.asList("hello", "revature", "associates!");
+
+        // Using the method reference, that utilizes the :: operator
+        messages.forEach(StaticMethod_StringHelper::printAsCapital);
     }
 
     public static double average(Measurable[] objects) {
