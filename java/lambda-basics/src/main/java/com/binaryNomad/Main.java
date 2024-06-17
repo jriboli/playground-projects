@@ -13,6 +13,7 @@ public class Main {
     public static void main(String[] args) {
         // BASICS
         staticMethod();
+        refInstanceMethodArbitraryObj();
 
         // EXERCISE 001
         Employee[] employees = {
@@ -47,6 +48,16 @@ public class Main {
 
         // Using the method reference, that utilizes the :: operator
         messages.forEach(StaticMethod_StringHelper::printAsCapital);
+    }
+
+    public static void refInstanceMethodArbitraryObj() {
+        List<Integer> nums = Arrays.asList(5,3,50,24,40,2,9,18);
+
+        nums.stream()
+                .sorted(Integer::compareTo) // instead of .soprted((a,b) -> a.compareTo(b))
+                .forEach(System.out::println);
+
+        //nums.forEach(num -> System.out.println(num));
     }
 
     public static double average(Measurable[] objects) {
