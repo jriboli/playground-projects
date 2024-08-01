@@ -1,11 +1,14 @@
 package com.binaryNomad;
 
+import com.binaryNomad.lambda.basics.GreetImplementor;
+import com.binaryNomad.lambda.basics.Greeter;
 import com.binaryNomad.lambda.basics.StaticMethod_StringHelper;
 import com.binaryNomad.lambda.exercise_001.Employee;
 import com.binaryNomad.lambda.exercise_001.Measurable;
 import com.binaryNomad.lambda.exercise_002.IntSequence;
 import com.binaryNomad.lambda.exercise_002.IntSequenceUtil;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
 import java.util.List;
 
@@ -14,6 +17,9 @@ public class Main {
         // BASICS
         staticMethod();
         refInstanceMethodArbitraryObj();
+
+        greeterMethod();
+        greeterLambda();
 
         // EXERCISE 001
         Employee[] employees = {
@@ -58,6 +64,19 @@ public class Main {
                 .forEach(System.out::println);
 
         //nums.forEach(num -> System.out.println(num));
+    }
+
+    public static void greeterMethod() {
+        Greeter greeter = new GreetImplementor();
+        greeter.greet("Rocket");
+    }
+
+    public static void greeterLambda() {
+        Greeter lambda = (name) -> {
+            System.out.println("Hello " + name + " from my Lambda");
+        };
+
+        lambda.greet("Rocket");
     }
 
     public static double average(Measurable[] objects) {
