@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../lambda-basics/src/main/java/com/binaryNomad/lambda/basics/GreetImplementor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lambda-basics/src/main/java/com/binaryNomad/lambda/basics/Greeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-basics/src/test/java/com/binaryNomad/RestAssuredConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-basics/src/test/java/com/binaryNomad/UserTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-basics/src/test/java/com/binaryNomad/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lambda-basics/src/main/java/com/binaryNomad/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lambda-basics/src/main/java/com/binaryNomad/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lambda-basics/src/main/java/com/binaryNomad/lambda/exercise_003/StaticMethodReference2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lambda-basics/src/main/java/com/binaryNomad/lambda/exercise_003/StaticMethodReference2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/main/java/RestUtils/RestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/main/java/reporting/ExtentReportManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/main/java/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/airlines/AirlineAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/airlines/AirlineTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/airlines/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/airlines/Payloads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/resources/airlines/dev/airlinesApiData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/resources/airlines/qa/airlinesApiData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../playwright-for-api/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../playwright-for-api/src/main/java/com/api/data/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restassured-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../restassured-framework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restassured-framework/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
