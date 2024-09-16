@@ -10,7 +10,7 @@ public class Base {
     public static Map<String, Object> dataFromJsonFile;
 
     static {
-        String env = System.getProperty("env") == null ? "qa" : System.getProperty("env");
+        String env = System.getProperty("env") == null ? "airlines/qa" : System.getProperty("env");
         try {
             dataFromJsonFile = JsonUtils.getJsonDataAsMap("airlines/" + env + "/airlinesApiData.json");
         } catch (Exception ex) {

@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/main/java/RestUtils/RestUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/main/java/reporting/ExtentReportManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/main/java/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/airlines/AirlineAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/airlines/AirlineTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/airlines/Base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/airlines/Payloads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/resources/airlines/dev/airlinesApiData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/resources/airlines/qa/airlinesApiData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../restassured-framework/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/petstore/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/petstore/PetFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/petstore/PetStoreAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/petstore/PetStoreTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/petstore/enums/PetStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/petstore/pojos/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/petstore/pojos/PetCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/petstore/pojos/PetTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/resources/petstore/dev/petstoreApiData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../restassured-framework/src/test/resources/petstore/qa/petstoreApiData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restassured-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../restassured-framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../restassured-framework/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restassured-framework/src/main/java/RestUtils/RestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../restassured-framework/src/main/java/RestUtils/RestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restassured-framework/src/test/java/airlines/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/../restassured-framework/src/test/java/airlines/Base.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,11 +168,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.SearchPageTest.searchForItem" />
       <item itemvalue="TestNG.BookPageTest.checkFlightDetails" />
       <item itemvalue="TestNG.BookPageTest.checkTitleTest" />
       <item itemvalue="TestNG.HomePageTest.checkBoxesTest" />
       <item itemvalue="TestNG.HomePageTest.checkTitle" />
+      <item itemvalue="TestNG.SearchPageTest.searchForItem" />
     </list>
     <recent_temporary>
       <list>
