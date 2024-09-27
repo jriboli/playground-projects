@@ -3,17 +3,14 @@ import io.restassured.http.Headers;
 import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
-import io.restassured.specification.RequestLogSpecification;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 
-public class RestAssuredJava {
+public class BasicRestAssuredJava {
 
     private RequestSpecification req;
     private Response res;
