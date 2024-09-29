@@ -1,4 +1,4 @@
-package pojos;
+package pojos.bookstore;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,6 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
-    public String name;
-    public String job;
+
+    private String userName;
+    private String password;
+    private String uuid;
 }

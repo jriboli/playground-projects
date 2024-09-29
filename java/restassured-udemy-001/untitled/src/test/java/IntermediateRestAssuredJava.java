@@ -1,16 +1,15 @@
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
-import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import pojos.Registration;
-import pojos.User;
-import pojos.UserDetails;
+import pojos.reqres.Registration;
+import pojos.reqres.User;
+import pojos.reqres.UserDetails;
 
 public class IntermediateRestAssuredJava {
 
@@ -131,11 +130,11 @@ public class IntermediateRestAssuredJava {
     @Test
     public void LoginSuccessful(){
         Registration reg = new Registration();
-        reg.setUsername("Rocket_Raccoon");
-        reg.setEmail("rocketraccoon99@gmail.com");
-        reg.setPassword("password99");
+        //reg.setUsername("Rocket_Raccoon");
+        reg.setEmail("eve.holt@reqres.in");
+        reg.setPassword("cityslicka");
 
-        res = req.body(reg).post("/login");
+        res = req.header("content-type", "application/json").body(reg).post("/login");
         String resBody = res.getBody().asString();
 
         System.out.println("Response: " + resBody);
