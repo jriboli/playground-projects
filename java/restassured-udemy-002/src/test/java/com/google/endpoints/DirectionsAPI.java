@@ -21,7 +21,7 @@ public class DirectionsAPI {
         parameters.put("destination", destination);
         parameters.put("avoid", avoid);
         parameters.put("mode", mode);
-        parameters.put("key", "AIzaSyDdGHalCPZWAuIuGsYtbpbuVY5-2_LLLKE");
+        parameters.put("key", "");
 
         return RestUtils.performGet(fullEndpoint, parameters);
     }
