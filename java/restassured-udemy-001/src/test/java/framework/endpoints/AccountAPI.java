@@ -1,16 +1,16 @@
-package apis;
+package framework.endpoints;
 
 import RestUtils.RestUtils;
-import factory.UserFactory;
+import framework.factory.UserFactory;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import pojos.bookstore.User;
+import framework.playloads.bookstore.User;
 
 import java.util.HashMap;
 
 import static io.restassured.path.json.JsonPath.from;
 
-public class BookStoreAPI {
+public class AccountAPI {
 
     public static String baseEndpoint = "https://bookstore.toolsqa.com";
 
@@ -53,27 +53,7 @@ public class BookStoreAPI {
     }
 
 
-    // Book related methods
-    public Response retrieveAllBooks() {
-        String endpoint = baseEndpoint + "/bookstore/v1/books";
-        return RestUtils.performGet(endpoint, new HashMap<>(), new HashMap<>());
-    }
-
-    public Response retrieveBook(String isbn) {
-        String endpoint = baseEndpoint + "/bookstore/v1/book";
-        return RestUtils.performGet(endpoint, new HashMap<>(), new HashMap<>());
-    }
-
-    public Response associateBookToUser(String bookIsbn, User user) {
-        // REQUIRED AUTHENTICATION
-        HashMap<String, String> headers = addAuthorizationToken(user);
-        String endpoint = baseEndpoint + "/bookstore/v1/books";
-        return RestUtils.performPost(endpoint, user, headers);
-    }
-
-
-    // Private Methods
-    private HashMap<String, String> addAuthorizationToken(User user) {
+    public HashMap<String, String> addAuthorizationToken(User user) {
         Response res = generateUserToken(user);
         String resBody = res.asString();
         String token = new JsonPath(resBody).getString("token");

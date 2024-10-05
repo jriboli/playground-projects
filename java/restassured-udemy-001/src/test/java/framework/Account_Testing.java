@@ -1,13 +1,16 @@
-import apis.BookStoreAPI;
-import factory.UserFactory;
+package framework;
+
+import framework.endpoints.AccountAPI;
+import framework.endpoints.BookStoreAPI;
+import framework.factory.UserFactory;
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import pojos.bookstore.User;
+import framework.playloads.bookstore.User;
 
 import java.util.List;
 
-public class FrameworkRestAssuredJava extends BookStoreAPI {
+public class Account_Testing extends AccountAPI {
 
     User staticUser = UserFactory.staticUser();
 
@@ -50,16 +53,5 @@ public class FrameworkRestAssuredJava extends BookStoreAPI {
     public void getUserDetails(){
         Response res = retrieveUserDetails(staticUser);
         res.then().statusCode(200);
-    }
-
-    @Test
-    public void getAllBooks(){
-        Response res = retrieveAllBooks();
-        res.then().statusCode(200);
-    }
-
-    @Test
-    public void associateBookToUser(){
-        List<String> bookIsbnList = retrieveAllBooks().jsonPath().getList("books.isbn");
     }
 }

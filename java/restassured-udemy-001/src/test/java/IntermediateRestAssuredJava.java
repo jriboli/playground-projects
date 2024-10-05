@@ -7,9 +7,9 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import pojos.reqres.Registration;
-import pojos.reqres.User;
-import pojos.reqres.UserDetails;
+import payloads.reqres.Registration;
+import payloads.reqres.User;
+import payloads.reqres.UserDetails;
 
 public class IntermediateRestAssuredJava {
 

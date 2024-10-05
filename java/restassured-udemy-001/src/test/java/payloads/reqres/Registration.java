@@ -1,4 +1,4 @@
-package pojos.reqres;
+package payloads.reqres;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,6 +1,6 @@
-package factory;
+package framework.factory;
 
-import pojos.bookstore.User;
+import framework.playloads.bookstore.User;
 
 import java.util.Random;
 

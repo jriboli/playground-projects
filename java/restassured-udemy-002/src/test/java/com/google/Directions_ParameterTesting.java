@@ -56,4 +56,11 @@ public class Directions_ParameterTesting extends DirectionsAPI {
                 .mode("walking")
                 .getDirections();
     }
+
+    @Test
+    public void getRouteWithoutHighways() {
+        Response res = DirectionsAPI.newDirections("Downey, CA", "Burbank, CA")
+                .avoid("highways")
+                .getDirections();
+    }
 }

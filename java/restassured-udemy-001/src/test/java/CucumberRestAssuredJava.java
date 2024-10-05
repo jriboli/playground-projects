@@ -7,7 +7,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.runner.RunWith;
-import pojos.bookstore.User;
+import framework.playloads.bookstore.User;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources")

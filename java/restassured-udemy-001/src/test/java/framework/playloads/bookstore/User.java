@@ -1,4 +1,4 @@
-package pojos.bookstore;
+package framework.playloads.bookstore;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

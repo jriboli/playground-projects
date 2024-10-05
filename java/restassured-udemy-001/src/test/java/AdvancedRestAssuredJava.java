@@ -5,9 +5,9 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import pojos.bookstore.ISBN;
-import pojos.bookstore.UserBookCollection;
-import pojos.bookstore.User;
+import framework.playloads.bookstore.ISBN;
+import framework.playloads.bookstore.UserBookCollection;
+import framework.playloads.bookstore.User;
 
 import java.util.ArrayList;
 import java.util.List;
