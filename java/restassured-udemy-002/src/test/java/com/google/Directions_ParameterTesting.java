@@ -1,6 +1,8 @@
 package com.google;
 
 import com.google.endpoints.DirectionsAPI;
+import com.google.utility.ResponseValidator;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -24,6 +26,7 @@ public class Directions_ParameterTesting extends DirectionsAPI {
         //assertTrue(routes > 1, "Routes should be greater than 1");
         // Use MatcherAssert.assertThat() instead of JUnit's assertTrue() for more descriptive error messages.
         assertThat("Routes should be greater than 1", routes, greaterThan(1));
+        ResponseValidator.validateBasicResponse(res);
     }
 
     @Test
@@ -48,6 +51,7 @@ public class Directions_ParameterTesting extends DirectionsAPI {
         System.out.println("Flat List of Travel Modes: " + travelModesFlat);
 
         assertThat(travelModesFlat, everyItem(equalTo("BICYCLING")));
+        ResponseValidator.validateBasicResponse(res);
     }
 
     @Test
@@ -55,6 +59,11 @@ public class Directions_ParameterTesting extends DirectionsAPI {
         Response res = DirectionsAPI.newDirections("Downey, CA", "Long Beach, CA")
                 .mode("walking")
                 .getDirections();
+
+        res.then()
+                .statusCode(200)
+                .body("routes[0].legs[0].steps[0].travel_mode", equalTo("WALKING"))
+                .contentType(ContentType.JSON);
     }
 
     @Test
@@ -62,5 +71,7 @@ public class Directions_ParameterTesting extends DirectionsAPI {
         Response res = DirectionsAPI.newDirections("Downey, CA", "Burbank, CA")
                 .avoid("highways")
                 .getDirections();
+
+        ResponseValidator.validateBasicResponse(res);
     }
 }

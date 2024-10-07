@@ -1,4 +1,4 @@
-package framework.playloads.bookstore;
+package framework;
 
 import framework.endpoints.BookStoreAPI;
 import io.restassured.response.Response;
