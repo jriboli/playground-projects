@@ -29,6 +29,9 @@ public class RestRequestBuilder {
     private String tokenSecret;
 
     private String bearerToken;
+    private String apiKey;
+    private String apiSecret;
+    private String tokenURL;
 
     public RestRequestBuilder withEndpoint(String endpoint) {
         this.endpoint = endpoint;
@@ -75,8 +78,10 @@ public class RestRequestBuilder {
     }
 
     // OAuth 2.0 Bearer Token Authentication
-    public RestRequestBuilder withOAuth2(String bearerToken) {
-        this.bearerToken = bearerToken;
+    public RestRequestBuilder withOAuth2(String apiKey, String apiSecret, String tokenURL) {
+        this.apiKey = apiKey;
+        this.apiSecret = apiSecret;
+        this.tokenURL = tokenURL;
         this.authType = AuthType.OAUTH2;
         return this;
     }
@@ -91,7 +96,7 @@ public class RestRequestBuilder {
                 applyOAuth1();
                 break;
             case OAUTH2:
-                headers.put("Authorization", "Bearer " + bearerToken);
+                applyOAuth2();
                 break;
             case NONE:
                 // No authentication required
@@ -110,6 +115,17 @@ public class RestRequestBuilder {
         } catch (Exception e) {
             throw new RuntimeException("Failed to apply OAuth 1.0 authentication", e);
         }
+    }
+
+    private void applyOAuth2() {
+        Response res = RestAssured.given().log().all()
+                .auth().preemptive().basic(apiKey, apiSecret)
+                .contentType(ContentType.URLENC)
+                .formParam("grant_type", "client_credentials")
+                .post(tokenURL);
+
+        this.bearerToken = res.jsonPath().getString("access_token");
+        headers.put("Authorization", "Bearer " + bearerToken);
     }
 
     public Response performGet() {

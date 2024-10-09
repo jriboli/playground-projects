@@ -12,4 +12,18 @@ public class Twitter_Testing extends TwitterAPI {
 
         res.then().statusCode(200);
     }
+
+    @Test
+    public void testUserTweetCount() {
+        Response res = getTweetCount("from:naroken", "day");
+
+        res.then().statusCode(200);
+    }
+
+    @Test
+    public void testGetTweetByQuery() {
+        Response res = getTweets("fortnite");
+
+        res.then().statusCode(200);
+    }
 }
