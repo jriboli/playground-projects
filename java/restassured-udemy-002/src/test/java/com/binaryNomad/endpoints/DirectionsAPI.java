@@ -1,10 +1,9 @@
-package com.google.endpoints;
+package com.binaryNomad.endpoints;
 
-import Config.ConfigLoader;
-import RestUtils.RestUtils;
+import com.binaryNomad.config.ConfigLoader;
+import com.binaryNomad.utils.RestRequestBuilder;
 import io.restassured.response.Response;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Properties;
 
@@ -89,7 +88,11 @@ public class DirectionsAPI {
             parameters.put("alternatives", alternatives + "");
             parameters.put("key", props.getProperty("api.key"));
 
-            return RestUtils.performGet(fullEndpoint, parameters);
+            //return RestRequestBuilder.performGet(null, fullEndpoint, parameters);
+            return new RestRequestBuilder()
+                    .withEndpoint(fullEndpoint)
+                    .withQueryParams(parameters)
+                    .performGet();
         }
     }
 

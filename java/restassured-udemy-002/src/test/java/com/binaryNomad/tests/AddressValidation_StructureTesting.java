@@ -1,9 +1,8 @@
-package com.google;
+package com.binaryNomad.tests;
 
-import com.google.endpoints.AddressValidationAPI;
-import com.google.endpoints.DirectionsAPI;
-import com.google.payloads.Address;
-import com.google.utility.ResponseValidator;
+import com.binaryNomad.endpoints.AddressValidationAPI;
+import com.binaryNomad.models.Address;
+import com.binaryNomad.utils.ResponseValidator;
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

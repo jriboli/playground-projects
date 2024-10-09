@@ -1,4 +1,4 @@
-package Config;
+package com.binaryNomad.config;
 
 import java.io.FileInputStream;
 import java.io.IOException;

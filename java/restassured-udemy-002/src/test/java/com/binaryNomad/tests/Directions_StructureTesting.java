@@ -1,6 +1,6 @@
-package com.google;
+package com.binaryNomad.tests;
 
-import com.google.endpoints.DirectionsAPI;
+import com.binaryNomad.endpoints.DirectionsAPI;
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

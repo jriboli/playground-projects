@@ -1,4 +1,4 @@
-package com.google.utility;
+package com.binaryNomad.utils;
 
 import io.restassured.response.Response;
 

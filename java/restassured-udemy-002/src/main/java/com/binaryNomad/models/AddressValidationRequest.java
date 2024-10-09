@@ -1,4 +1,4 @@
-package com.google.payloads;
+package com.binaryNomad.models;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,14 +1,13 @@
-package com.google;
+package com.binaryNomad.tests;
 
-import com.google.endpoints.DirectionsAPI;
-import com.google.utility.ResponseValidator;
+import com.binaryNomad.endpoints.DirectionsAPI;
+import com.binaryNomad.utils.ResponseValidator;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;

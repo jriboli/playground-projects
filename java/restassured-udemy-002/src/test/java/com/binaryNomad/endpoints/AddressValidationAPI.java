@@ -1,9 +1,9 @@
-package com.google.endpoints;
+package com.binaryNomad.endpoints;
 
-import Config.ConfigLoader;
-import RestUtils.RestUtils;
-import com.google.payloads.Address;
-import com.google.payloads.AddressValidationRequest;
+import com.binaryNomad.config.ConfigLoader;
+import com.binaryNomad.models.Address;
+import com.binaryNomad.models.AddressValidationRequest;
+import com.binaryNomad.utils.RestRequestBuilder;
 import io.restassured.response.Response;
 
 import java.util.HashMap;
@@ -33,6 +33,13 @@ public class AddressValidationAPI {
         AddressValidationRequest avr = new AddressValidationRequest();
         avr.setAddress(address);
 
-        return RestUtils.performPostNoEncoding(fullEndpoint, avr, headers, parameters);
+        //return RestRequestBuilder.performPost(null, fullEndpoint, avr, headers, parameters, false);
+        return new RestRequestBuilder()
+                .withEndpoint(fullEndpoint)
+                .withRequestBody(avr)
+                .withHeaders(headers)
+                .withQueryParams(parameters)
+                .enableUrlEncoding(false)
+                .performPost();
     }
 }
