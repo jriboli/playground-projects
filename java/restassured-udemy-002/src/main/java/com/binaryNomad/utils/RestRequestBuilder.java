@@ -12,6 +12,10 @@ import java.util.Map;
 
 public class RestRequestBuilder {
 
+    // NOTES::
+    // May need to change the URI construction. To use .baseUri(), .basePath(), and HTTPS verb ie. .get()
+    // This is because .pathParam() only appears to affect the uri portion in .get()
+
     private String endpoint;
     private Map<String, String> queryParams = new HashMap<>();
     private Map<String, String> headers = new HashMap<>();
@@ -117,6 +121,10 @@ public class RestRequestBuilder {
         }
     }
 
+    // NOTE::
+    // Look into the AuthenticationScheme .. RestAssured.oauth(...)
+    // This is all within the RequestBuilder, that can be passed into
+    // given().spec(reqspec)
     private void applyOAuth2() {
         Response res = RestAssured.given().log().all()
                 .auth().preemptive().basic(apiKey, apiSecret)

@@ -4,16 +4,23 @@ import com.binaryNomad.endpoints.TwitterAPI;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
-public class Twitter_Testing extends TwitterAPI {
+import static org.hamcrest.Matchers.equalTo;
+
+public class Twitter_RequestTesting extends TwitterAPI {
 
     @Test
     public void testUserData() {
         Response res = getUserData("naroken");
 
-        res.then().statusCode(200);
+        // Using a Soft Assertion with .body()
+        res.then()
+                .statusCode(200)
+                .rootPath("data")
+                .body("name", equalTo("Justin"),
+                        "username", equalTo("Naroken"));
     }
 
-    @Test
+    @Test(dependsOnMethods = {"testUserData"})
     public void testUserTweetCount() {
         Response res = getTweetCount("from:naroken", "day");
 
