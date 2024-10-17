@@ -1,3 +1,4 @@
+import pdb
 import sys
 import os
 
@@ -6,10 +7,12 @@ print(sys.path)
 from src.helpers.customers_helper import CustomerHelper
 from src.utilities.genericUtilities import generate_random_email_and_password
 from src.dao.customers_dao import CustomersDAO
+from src.utilities.requestsUtility import RequestsUtility
 import pytest
 import logging as logger
 
 
+@pytest.mark.customers
 @pytest.mark.tcid29
 def test_create_customer_only_email_password():
     logger.info("TEST: Create new customer with email and password only.")
@@ -44,5 +47,25 @@ def test_create_customer_only_email_password():
     assert id_in_api == id_in_db, f"Create customer response 'id' not same as 'ID' in database." \
                                   f"Email: {email}"
 
-    import pdb;
-    pdb.set_trace()
+
+@pytest.mark.customers
+@pytest.mark.tcid47
+def test_create_customer_fail_for_existing_email():
+    # get existing email from db
+    cust_dao = CustomersDAO()
+    existing_customer = cust_dao.get_random_customer_from_db()
+    existing_email = existing_customer[0]['user_email']
+
+    # make the call
+    requests_utility = RequestsUtility()
+    payload = {"email": existing_email, "password": "Password1"}
+    create_user_json = requests_utility.post('customers', payload=payload, expected_status_code=400)
+
+    assert create_user_json['code'] == 'registration-error-email-exists', f"Create customer with" \
+        f"existing user error 'code' is not correct. Expected: 'registration-error-email-exists' " \
+        f"Actualy: {create_user_json['code']}"
+
+    assert create_user_json['message'] == 'An account is already registered with your email address. <a ' \
+        f'href="#" class="showlogin">Please log in.</a>', \
+        f"Create customer with existing user error 'message' is not correct. " \
+        f"Actualy: {create_user_json['message']}"
