@@ -5,31 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/configs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/configs/hosts_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/helpers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/helpers/customers_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/credentialsUtility.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/envUtility.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/genericUtilities.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/requestsUtility.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/ssqaapitest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/customers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/customers/test_create_customers_smoke.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/test_healthcheck.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/demoProject001/pytest_tutorial/assets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/demoProject001/pytest_tutorial/demo_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/demoProject001/pytest_tutorial/pytest.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/credentialsUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/credentialsUtility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/envUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/envUtility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/ssqaapitest.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/ssqaapitest.egg-info/SOURCES.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

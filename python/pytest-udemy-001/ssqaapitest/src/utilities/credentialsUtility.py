@@ -1,5 +1,5 @@
 import os
-from envUtility import EnvUtility
+from src.utilities.envUtility import EnvUtility
 
 
 class CredentialsUtility(object):
@@ -9,11 +9,11 @@ class CredentialsUtility(object):
 
     @staticmethod
     def get_wc_api_keys():
-        env_util = EnvUtility
+        env_util = EnvUtility()
 
         #wc_key = os.environ.get('WC_KEY')
         #wc_secret = os.environ.get('WC_SECRET')
-        wc_key = env_util.get_env_value(key='WC_KEY')
+        wc_key = env_util.get_wc_key()
         wc_secret = env_util.get_env_value(key='WC_SECRET')
 
         if not wc_key or not wc_secret:

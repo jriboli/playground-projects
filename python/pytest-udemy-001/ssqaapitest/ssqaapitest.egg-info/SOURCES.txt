@@ -6,6 +6,7 @@ src/helpers/__init__.py
 src/helpers/customers_helper.py
 src/utilities/__init__.py
 src/utilities/credentialsUtility.py
+src/utilities/envUtility.py
 src/utilities/genericUtilities.py
 src/utilities/requestsUtility.py
 ssqaapitest.egg-info/PKG-INFO
@@ -14,3 +15,5 @@ ssqaapitest.egg-info/dependency_links.txt
 ssqaapitest.egg-info/top_level.txt
 tests/__init__.py
 tests/test_healthcheck.py
+tests/customers/__init__.py
+tests/customers/test_create_customers_smoke.py
