@@ -9,7 +9,7 @@ class EnvUtility(object):
         if env_file:
             env_path = Path(env_file)
         else:
-            env_path = Path('.') / '../.env'
+            env_path = Path(__file__).resolve().parent.parent.parent / '.env'
 
         load_dotenv(dotenv_path=env_path)
 
@@ -21,3 +21,6 @@ class EnvUtility(object):
 
     def get_wc_secret(self):
         return self.get_env_value('WC_SECRET')
+
+    def get_db_user(self):
+        return self.get_env_value('DATABASE_USER')

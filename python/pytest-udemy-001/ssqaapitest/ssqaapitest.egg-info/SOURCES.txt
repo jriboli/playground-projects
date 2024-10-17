@@ -2,10 +2,13 @@ setup.py
 src/__init__.py
 src/configs/__init__.py
 src/configs/hosts_config.py
+src/dao/__init__.py
+src/dao/customers_dao.py
 src/helpers/__init__.py
 src/helpers/customers_helper.py
 src/utilities/__init__.py
 src/utilities/credentialsUtility.py
+src/utilities/dbUtility.py
 src/utilities/envUtility.py
 src/utilities/genericUtilities.py
 src/utilities/requestsUtility.py
