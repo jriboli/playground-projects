@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/dao/products_dao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/products/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/products/test_get_products_smoke.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/helpers/product_helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/products/test_create_products_smoke.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/products/test_get_products_with_filter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/dao/products_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/dao/products_dao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/genericUtilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/genericUtilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/products/test_get_products_smoke.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/products/test_get_products_smoke.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

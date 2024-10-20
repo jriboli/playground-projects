@@ -4,8 +4,9 @@ import logging as logger
 from src.utilities.requestsUtility import RequestsUtility
 from src.dao.products_dao import ProductsDAO
 
+pytestmark = [pytest.mark.products, pytest.mark.smoke]
 
-@pytest.mark.products
+
 @pytest.mark.tcid24
 def test_get_all_products():
     req_helper = RequestsUtility()
@@ -15,7 +16,6 @@ def test_get_all_products():
     assert rs_api, f"Response of list all products is empty."
 
 
-@pytest.mark.products
 @pytest.mark.tcid25
 def test_get_product_by_id():
     # get existing product from db
@@ -30,3 +30,6 @@ def test_get_product_by_id():
     assert rs_api['id'] == existing_id, f"Product id returned from DB did not match. " \
     f"Expected: {existing_id} verses Actual: {rs_api['id']}"
     import pdb; pdb.set_trace()
+
+
+
