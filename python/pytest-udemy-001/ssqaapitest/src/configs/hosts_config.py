@@ -5,6 +5,12 @@ API_HOSTS = {
     "prod": ""
 }
 
+WOO_HOSTS = {
+    "test": "http://localhost:9090",
+    "dev": "",
+    "prod": ""
+}
+
 DB_HOST = {
 
 }
