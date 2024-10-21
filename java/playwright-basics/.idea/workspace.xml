@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/orders/test_update_order.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/configs/hosts_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/configs/hosts_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/dao/orders_dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/dao/orders_dao.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/helpers/orders_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/helpers/orders_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/wooAPIUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/wooAPIUtility.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/orders/test_create_order_smoke.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/orders/test_create_order_smoke.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/orders/test_update_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/orders/test_update_order.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

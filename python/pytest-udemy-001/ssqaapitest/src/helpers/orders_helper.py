@@ -24,8 +24,13 @@ class OrdersHelper(object):
 
         return rs_api
 
-    def update_order(self, order_id, status):
-        payload = {"status": status}
+    def update_order(self, order_id, additional_args=None):
+        payload = dict()
+        # if user adds more info to payload, update
+        if additional_args:
+            assert isinstance(additional_args, dict), f"Parameter 'additional_args' must be a dictionary, but found {type(additional_args)}"
+            payload.update(additional_args)
+
         rs_api = self.woo_helper.put(f"orders/{order_id}", params=payload)
         return rs_api
 
