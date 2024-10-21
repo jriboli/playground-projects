@@ -12,5 +12,7 @@ WOO_HOSTS = {
 }
 
 DB_HOST = {
-
+    "test": {},
+    "dev": "",
+    "prod": ""
 }
