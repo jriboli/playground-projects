@@ -32,9 +32,9 @@ class WooAPIUtility(object):
         self.rs_status_code = rs_api.status_code
         self.expected_status_code = expected_status_code
         self.rs_json = rs_api.json()
-        self.assert_status_code()
-
         logger.debug(f"API GET response: {self.rs_json}")
+
+        self.assert_status_code()
 
         return self.rs_json
 
@@ -44,9 +44,9 @@ class WooAPIUtility(object):
         self.rs_status_code = rs_api.status_code
         self.expected_status_code = expected_status_code
         self.rs_json = rs_api.json()
-        self.assert_status_code()
+        logger.debug(f"API POST response: {self.rs_json}")
 
-        logger.debug(f"API GET response: {self.rs_json}")
+        self.assert_status_code()
 
         return self.rs_json
 
@@ -56,8 +56,8 @@ class WooAPIUtility(object):
         self.rs_status_code = rs_api.status_code
         self.expected_status_code = expected_status_code
         self.rs_json = rs_api.json()
-        self.assert_status_code()
+        logger.debug(f"API PUT response: {self.rs_json}")
 
-        logger.debug(f"API GET response: {self.rs_json}")
+        self.assert_status_code()
 
         return self.rs_json

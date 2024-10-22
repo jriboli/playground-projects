@@ -1,12 +1,14 @@
 
 import logging as logger
 from src.utilities.requestsUtility import RequestsUtility
+from src.utilities.wooAPIUtility import WooAPIUtility
 
 
 class ProductHelper(object):
 
     def __init__(self):
         self.request_utility = RequestsUtility()
+        self.woo_helper = WooAPIUtility()
 
     def get_product_by_id(self, product_id):
         return self.request_utility.get(f"products/{product_id}")
@@ -36,3 +38,12 @@ class ProductHelper(object):
 
         return all_products
 
+    def update_product(self, product_id, additional_args=None):
+        payload = dict()
+        # if user adds more info to payload, update
+        if additional_args:
+            assert isinstance(additional_args, dict), f"Parameter 'additional_args' must be a dictionary, but found {type(additional_args)}"
+            payload.update(additional_args)
+
+        rs_api = self.woo_helper.put(f"products/{product_id}", params=payload)
+        return rs_api

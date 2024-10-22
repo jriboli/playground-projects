@@ -2,6 +2,7 @@ import pytest
 import logging as logger
 from src.dao.products_dao import ProductsDAO
 from src.helpers.orders_helper import OrdersHelper
+from src.helpers.coupon_helper import CouponHelper
 from src.dao.orders_dao import OrdersDao
 from src.helpers.customers_helper import CustomerHelper
 
@@ -55,3 +56,29 @@ def test_create_paid_order_new_created_user(my_orders_smoke_setup):
     order_db = OrdersDao().get_order_by_id(order_json['id'])
     OrdersHelper().verify_order_is_created(order_json=order_json, order_db=order_db,
                                            exp_cust_id=rand_user['id'], exp_product=order_json['line_items'])
+
+@pytest.mark.tcid60
+def test_create_paid_order_with_coupon_50_percent(my_orders_smoke_setup):
+    product_id = my_orders_smoke_setup['product_id']
+    coupon = CouponHelper().get_or_create_coupon()
+
+    # make the call
+    info = {"line_items": [
+        {
+            "product_id": product_id,
+            "quantity": 1
+        }],
+        "coupon_lines": [
+        {
+            "code": coupon['code']
+        }]
+    }
+    order_json = OrdersHelper().create_order(additional_args=info)
+
+    # verify
+    product_cost = order_json['line_items'][0]['subtotal']
+    shipping_cost = order_json['shipping_total']
+    order_total = order_json['total']
+
+    assert float(product_cost) / 2 == float(order_total) + float(shipping_cost), f"The discount was not applied. " \
+        f"Product Cost: {product_cost}, Shipping Cost: {shipping_cost}, Total: {order_total}"
