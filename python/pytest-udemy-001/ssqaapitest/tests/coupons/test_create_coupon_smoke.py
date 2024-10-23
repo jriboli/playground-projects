@@ -40,4 +40,3 @@ def test_create_coupon_with_invalid_discount_type():
         f"Expected: 'Invalid parameter(s): discount_type'"
 
     #logger.debug(rs_api)
-    
