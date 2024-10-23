@@ -1,4 +1,5 @@
 import pytest
+import math
 import logging as logger
 from src.dao.products_dao import ProductsDAO
 from src.helpers.orders_helper import OrdersHelper
@@ -80,5 +81,9 @@ def test_create_paid_order_with_coupon_50_percent(my_orders_smoke_setup):
     shipping_cost = order_json['shipping_total']
     order_total = order_json['total']
 
-    assert float(product_cost) / 2 == float(order_total) + float(shipping_cost), f"The discount was not applied. " \
-        f"Product Cost: {product_cost}, Shipping Cost: {shipping_cost}, Total: {order_total}"
+    # apply some rounding
+    discount_cost = math.ceil(float(product_cost) * (50/100) * 100) / 100
+
+    logger.debug(f"Discount Cost: {discount_cost}, Shipping Cost: {shipping_cost}, Total: {order_total}")
+    assert discount_cost + float(shipping_cost) == float(order_total) , f"The discount was not applied. " \
+        f"Discount Cost: {discount_cost}, Shipping Cost: {shipping_cost}, Total: {order_total}"

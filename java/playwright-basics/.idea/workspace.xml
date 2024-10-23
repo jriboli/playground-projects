@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/dao/coupon_dao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/helpers/coupon_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/products/test_update_products.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/coupons/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/coupons/test_create_coupon_smoke.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/helpers/product_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/helpers/product_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/wooAPIUtility.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/utilities/wooAPIUtility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/helpers/coupon_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/src/helpers/coupon_helper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/orders/test_create_order_smoke.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/pytest-udemy-001/ssqaapitest/tests/orders/test_create_order_smoke.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

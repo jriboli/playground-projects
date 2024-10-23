@@ -3,6 +3,7 @@
 import logging as logger
 
 from src.utilities.wooAPIUtility import WooAPIUtility
+from src.utilities.genericUtilities import generate_random_string
 from src.dao.coupon_dao import CouponDAO
 
 class CouponHelper(object):
@@ -12,11 +13,11 @@ class CouponHelper(object):
 
     def get_or_create_coupon(self, coupon_code=None, coupon_type=None, coupon_amount=None):
         if not coupon_code:
-            coupon_code = "50_percent_off"
+            coupon_code = generate_random_string()
         if not coupon_type:
             coupon_type = "percent"
         if not coupon_amount:
-            coupon_amount = "50"
+            coupon_amount = "1"
 
         # Check if coupon already exists
         coupon_db_check = CouponDAO().get_coupon_with_filter(coupon_code)
@@ -24,8 +25,6 @@ class CouponHelper(object):
             payload = {"code": coupon_code,
                        "discount_type": coupon_type,
                        "amount": coupon_amount,
-                       "individual_use": True,
-                       "exclude_sale_items": True,
                        "minimum_amount": "1.00"}
 
             rs_api = self.woo_helper.post(wc_endpoint="coupons", params=payload, expected_status_code=201)
