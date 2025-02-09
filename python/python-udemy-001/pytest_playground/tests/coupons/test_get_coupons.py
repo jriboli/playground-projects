@@ -16,12 +16,11 @@ def setup():
 
 @pytest.mark.tcid1
 def test_get_all_coupons(setup):
-
     rs_api = setup['coupon_helper'].get_all_coupons()
 
 
 @pytest.mark.tcid2
-def test_gell_all_coupons_with_per_page(setup):
+def test_get_all_coupons_with_per_page(setup):
     per_page_limit = 2
     filter = {'per_page': per_page_limit}
     rs_api = setup['coupon_helper'].get_coupons_with_filter(filter)
