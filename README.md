@@ -6,7 +6,7 @@ Playground Projects Repository
 This repo houses a collection of diverse projects across different programming languages. Whether you're exploring Java, Python, Docker, or others, there's something here for everyone. Each project is categorized by language, and you can jump to any section you're interested in.
 
 # Table of Contents 📚
-- [Overview](overview)
+- [Overview](#overview)
 - [Languages & Projects](language-&-projects)
   - BootStrap
   - Docker
