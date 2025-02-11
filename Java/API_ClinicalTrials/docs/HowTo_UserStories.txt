@@ -1,0 +1,28 @@
+User stories:
+
+AS a <role>
+I want to <goal / task>
+so that <benefit>.
+
+// General form user story
+
+// Example
+Gymnastics
+
+Entities:
+Drill, Skill, Athletes, Events, Users
+
+User Stories: 
+As a user of the system, I want to get a list of all of the know or available events, so that I can get more information.
+// route to accomplish user story
+GET /events
+
+As a user I want to get list of all drills that are associated with an event, so that I can improve.
+GET /events/{event_id}/drills
+
+As an athlete, I want to get a random drill for a particular event so that Ic an improve my skills and get variety.
+GET /events/{event_id}/drills/random
+
+As a coach, I want to build a workout for an athlete, so that it compliments their skill
+POST /athletes/{athlete_id}/workouts
+

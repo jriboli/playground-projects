@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Justin/Documents/GitHub/final-projects/RestAssuredTesting/src/test/java/petstore/PetStoreTests.java">
+        <classes>
+            <class name="petstore.PetStoreTests">
+                <methods>
+                    <include name="createPet" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

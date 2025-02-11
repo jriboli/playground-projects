@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
-<suite name="UserTimeline Suite">
-    <test name="UserTimeline Test">
-        <classes>
-            <class name="org.binaryNomad.statuses.UserTimelineTest"></class>
-        </classes>
-    </test>
-</suite>
