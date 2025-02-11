@@ -7,7 +7,7 @@ This repo houses a collection of diverse projects across different programming l
 
 # Table of Contents 📚
 - [Overview](#overview)
-- [Languages & Projects](language-&-projects)
+- [Languages & Projects](#languages--projects-)
   - BootStrap
   - Docker
   - Java
