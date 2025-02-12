@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @layer base {
-  li{
-    @apply p-4
+  li {
+    @apply p-4;
   }
-  button{
-    @apply text-white border bg-indigo-600
+  button {
+    @apply text-white border bg-indigo-600;
   }
-  ul{
+  ul {
     padding: 0;
     list-style-type: none;
   }
