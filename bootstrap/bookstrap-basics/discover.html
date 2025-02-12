@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSA - Discover</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/custom-style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar-container"></div>
+
+    <!-- HEADER -->
+    <section
+      class="bg-dark text-white p-5 p-lg-0 pt-lg-5 text-center text-md-start"
+    >
+      <div class="container">
+        <!-- d-flex will aline the elements in a row
+        the MD will make it happen until MD size, after which it will stack vertically -->
+        <div class="d-md-flex align-items-center justify-content-center">
+          <!-- <img
+            class="img-fluid w-25 d-none d-md-block"
+            src="img/undraw_file_searching_re_3evy.svg"
+            alt=""
+          /> -->
+          <div>
+            <h1 class="">
+              Welcome to your new island of
+              <span class="text-info">Discovery</span>
+            </h1>
+            <p class="lead my-4">
+              "The real voyage of discovery consists not in seeking new
+              landscapes, but in having new eyes"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+
+    <!-- FILTERS/SORTING -->
+    <section class="p-5">
+      <div class="container">
+        <h3 class="text-center">Filters</h3>
+        <div class="card bg-light border-3">
+          <div class="card-body">
+            <div class="badge text-bg-secondary">Conditions</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDIES -->
+    <section class="p-5 bg-light">
+      <div class="container" id="records-container">
+        <!-- STUDY ONE -->
+        <div class="row p-4">
+          <div class="col">
+            <div class="card rounded-3 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <i class="bi bi-circle-fill text-primary pe-2"></i
+                    ><span class="text-primary fw-bold">RECRUITING</span>
+                  </div>
+                  <div>1 day old</div>
+                </div>
+                <!-- <h3 class="card-title mb-3">
+                    <div class="row">
+                        <div class="col"><span class="text-success">RECRUITING</span></div>
+                        <div class="col">1 day old</div>
+                    </div>
+                </h3> -->
+                <div class="card-text">
+                  <div class="row">
+                    <!-- In LG screen they are side by side
+                        Once you move to MD screen they become stacked-->
+                    <div class="col-lg-8 col-md-12">
+                      <div class="row">
+                        <div class="col">
+                          <div class="card-title fw-bold">
+                            Phase 3 Study of Difelikefalin in Haemodialysis
+                            Chinese Adult Subjects With Moderate-to-Severe
+                            Pruritus
+                          </div>
+                          <p class="card-text">
+                            This a multicentre study that consists of a 12-week
+                            double-blind period, and an optional 14-week
+                            open-label extension period and a 1-week follow-up
+                            period.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row pt-4 pb-2">
+                        <div class="col border-bottom">
+                          <span class="text-capitalize fw-bold"
+                            >Conditions</span
+                          >
+                        </div>
+                      </div>
+                      <div class="row pb-4">
+                        <div class="col">
+                          <span class="badge text-bg-info"
+                            >Atopic Dermatitis</span
+                          >
+                          <span class="badge text-bg-info">AD</span>
+                          <span class="badge text-bg-info">Eczema</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 g-2 pb-4">
+                      <div class="row pb-2">
+                        <div class="col border-bottom">
+                          <span class="text-capitalize fw-bold"
+                            >Expected to Start:</span
+                          >
+                          January 1st, 2024
+                        </div>
+                      </div>
+                      <div class="row pb-2">
+                        <div class="col border-bottom">
+                          <span class="text-capitalize fw-bold"
+                            >Expected to Complete:</span
+                          >
+                          December 15th, 2024
+                        </div>
+                      </div>
+                      <div class="row pg-2">
+                        <div class="col border-bottom">
+                          <span class="text-capitalize fw-bold"
+                            >Last Updated:</span
+                          >
+                          January 1st, 2022
+                        </div>
+                      </div>
+                      <!-- <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="fw-bold">Expected to Start: </span>
+                          January 1, 2024
+                        </li>
+                        <li class="list-group-item">
+                          <span class="fw-bold">Expected to Complete: </span
+                          >December 15, 2026
+                        </li>
+                        <li class="list-group-item">
+                          <span class="fw-bold">Last Updated: </span>January 1,
+                          2022
+                        </li>
+                      </ul> -->
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-start column-gap-2 pt-4">
+                    <a
+                      href="./study-detail.html"
+                      class="btn btn-block btn-primary"
+                      >View Details</a
+                    >
+                    <a
+                      href=""
+                      class="btn btn-block btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      >View Details (2)</a
+                    >
+                    <a href="#" class="btn btn-block btn-outline-primary"
+                      ><i class="bi bi-hand-thumbs-up"></i> Like</a
+                    >
+                    <a href="#" class="btn btn-block btn-outline-primary"
+                      ><i class="bi bi-hand-thumbs-down"></i> Decline</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STUDY TWO -->
+        <div class="row p-4">
+          <div class="col">
+            <div class="card rounded-3 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <i class="bi bi-circle-fill text-primary pe-2"></i
+                    ><span class="text-primary fw-bold">RECRUITING</span>
+                  </div>
+                  <div>1 day old</div>
+                </div>
+                <!-- <h3 class="card-title mb-3">
+                      <div class="row">
+                          <div class="col"><span class="text-success">RECRUITING</span></div>
+                          <div class="col">1 day old</div>
+                      </div>
+                  </h3> -->
+                <div class="card-text">
+                  <div class="row">
+                    <!-- In LG screen they are side by side
+                          Once you move to MD screen they become stacked-->
+                    <div class="col-lg-6 col-md-12">
+                      <div class="row">
+                        <div class="col">
+                          <div class="card-title fw-bold">
+                            Phase 3 Study of Difelikefalin in Haemodialysis
+                            Chinese Adult Subjects With Moderate-to-Severe
+                            Pruritus
+                          </div>
+                          <p class="card-text">
+                            This a multicentre study that consists of a 12-week
+                            double-blind period, and an optional 14-week
+                            open-label extension period and a 1-week follow-up
+                            period.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="row pt-4 pb-2">
+                        <div class="col border-bottom">
+                          <span class="text-capitalize fw-bold"
+                            >Conditions</span
+                          >
+                        </div>
+                      </div>
+                      <div class="row pb-4">
+                        <div class="col">
+                          <span class="badge text-bg-info"
+                            >Uremic Pruritus</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 g-2">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <span class="fw-bold">Expected to Start: </span>
+                          January 1, 2024
+                        </li>
+                        <li class="list-group-item">
+                          <span class="fw-bold">Expected to Complete: </span
+                          >December 15, 2026
+                        </li>
+                        <li class="list-group-item">
+                          <span class="fw-bold">Last Updated: </span>January 1,
+                          2022
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-start column-gap-2">
+                    <a
+                      href="./study-detail.html"
+                      class="btn btn-block btn-primary"
+                      >View Details</a
+                    >
+                    <a
+                      href=""
+                      class="btn btn-block btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      >View Details (2)</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex aling-content-center">
+        <div class="btn btn-block btn-primary" id="load-more-btn">
+          Load More
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Action Required
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            The feature you are attempting to access to only available once you
+            have completed the subscription process. Please head over to
+            subscription and select the plan that works best with you.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Continue Browsing
+            </button>
+            <a
+              class="btn btn-primary"
+              href="./subscription.html"
+              asp-area=""
+              asp-controller="Subscription"
+              asp-action="Subscriptions"
+              >Select Plan</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/studyFunctions.js"></script>
+    <script src="./js/sharedFunctions.js"></script>
+    <script>
+      // JavaScript
+      let currentPageToken = 1; // Initial page token
+
+      // Dummy record for testing
+      const dummyRecord = {
+        name: "Dummy Study",
+        description: "This is a dummy study for testing purposes.",
+        date: "January 1, 2023",
+        conditions: ["Dummy Condition"],
+        expectedStart: "January 1, 2024",
+        expectedComplete: "December 15, 2026",
+        lastUpdated: "January 1, 2022",
+      };
+
+      const fetchAndDisplayRecords = async () => {
+        // In a real scenario, you would fetch records from an API
+        // For testing, we'll use a dummy array with one record
+        const records = [dummyRecord];
+
+        // Call the display function with the dummy records
+        displayComplexRecords(records);
+      };
+
+      // Function to fetch and display records
+      const fetchRecords = async () => {
+        try {
+          const response = await fetch(
+            `/api/records?pageToken=${currentPageToken}`
+          );
+          const data = await response.json();
+          displayComplexRecords(data.records);
+          currentPageToken = data.nextPageToken; // Update current page token
+        } catch (error) {
+          console.error("Error fetching records:", error);
+        }
+      };
+
+      // Function to display records in the container
+      const displayComplexRecords = (records) => {
+        const recordsContainer = document.getElementById("records-container");
+
+        records.forEach((record) => {
+          // Create main container div with classes "row" and "p-4"
+          const mainContainer = document.createElement("div");
+          mainContainer.classList.add("row", "p-4");
+
+          // Create column div with class "col"
+          const columnContainer = document.createElement("div");
+          columnContainer.classList.add("col");
+
+          // Create card div with classes "card", "rounded-3", and "shadow-sm"
+          const cardContainer = document.createElement("div");
+          cardContainer.classList.add("card", "rounded-3", "shadow-sm");
+
+          // Create card body div with class "card-body"
+          const cardBodyContainer = document.createElement("div");
+          cardBodyContainer.classList.add("card-body");
+
+          // Create d-flex div with class "d-flex justify-content-between"
+          const dFlexContainer = document.createElement("div");
+          dFlexContainer.classList.add("d-flex", "justify-content-between");
+
+          // Create left side div
+          const leftSideContainer = document.createElement("div");
+          const leftSideContent = document.createTextNode(`RECRUITING`);
+          leftSideContainer.appendChild(leftSideContent);
+
+          // Create right side div
+          const rightSideContainer = document.createElement("div");
+          const rightSideContent = document.createTextNode(`1 day old`);
+          rightSideContainer.appendChild(rightSideContent);
+
+          // Append left and right side divs to d-flex container
+          dFlexContainer.appendChild(leftSideContainer);
+          dFlexContainer.appendChild(rightSideContainer);
+
+          // Append d-flex container to card body
+          cardBodyContainer.appendChild(dFlexContainer);
+
+          // Create card-text div with class "card-text"
+          const cardTextContainer = document.createElement("div");
+          cardTextContainer.classList.add("card-text");
+
+          // Create row div with class "row"
+          const rowContainer = document.createElement("div");
+          rowContainer.classList.add("row");
+
+          // Create left side content
+          const leftContentContainer = document.createElement("div");
+          leftContentContainer.classList.add("col-lg-6", "col-md-12");
+
+          // Create card title div with class "card-title fw-bold"
+          const cardTitleContainer = document.createElement("div");
+          const cardTitleContent = document.createTextNode(
+            `Phase 3 Study of Difelikefalin in Haemodialysis Chinese Adult Subjects With Moderate-to-Severe Pruritus`
+          );
+          cardTitleContainer.classList.add("card-title", "fw-bold");
+          cardTitleContainer.appendChild(cardTitleContent);
+
+          // Create paragraph with class "card-text"
+          const paragraphContainer = document.createElement("p");
+          const paragraphContent = document.createTextNode(
+            `This is a multicentre study that consists of a 12-week double-blind period, and an optional 14-week open-label extension period and a 1-week follow-up period.`
+          );
+          paragraphContainer.classList.add("card-text");
+          paragraphContainer.appendChild(paragraphContent);
+
+          // Append card title and paragraph to left side content
+          leftContentContainer.appendChild(cardTitleContainer);
+          leftContentContainer.appendChild(paragraphContainer);
+
+          // Create Conditions row
+          const conditionsRowContainer = document.createElement("div");
+          conditionsRowContainer.classList.add("row", "pt-4", "pb-2");
+
+          // Create Conditions column
+          const conditionsColContainer = document.createElement("div");
+          conditionsColContainer.classList.add("col", "border-bottom");
+
+          // Create Conditions span with class "text-capitalize fw-bold"
+          const conditionsSpanContainer = document.createElement("span");
+          const conditionsSpanContent = document.createTextNode(`Conditions`);
+          conditionsSpanContainer.classList.add("text-capitalize", "fw-bold");
+          conditionsSpanContainer.appendChild(conditionsSpanContent);
+
+          // Append Conditions span to Conditions column
+          conditionsColContainer.appendChild(conditionsSpanContainer);
+
+          // Append Conditions column to Conditions row
+          conditionsRowContainer.appendChild(conditionsColContainer);
+
+          // Create Conditions badge
+          const conditionsBadgeContainer = document.createElement("div");
+          conditionsBadgeContainer.classList.add("row", "pb-4");
+
+          // Create badge with class "badge text-bg-info"
+          const conditionsBadge = document.createElement("span");
+          const conditionsBadgeContent =
+            document.createTextNode(`Uremic Pruritus`);
+          conditionsBadge.classList.add("badge", "text-bg-info");
+          conditionsBadge.appendChild(conditionsBadgeContent);
+
+          // Append badge to Conditions badge container
+          conditionsBadgeContainer.appendChild(conditionsBadge);
+
+          // Append left side content, Conditions row, and Conditions badge to row
+          rowContainer.appendChild(leftContentContainer);
+          rowContainer.appendChild(conditionsRowContainer);
+          rowContainer.appendChild(conditionsBadgeContainer);
+
+          // Create right side content
+          const rightContentContainer = document.createElement("div");
+          rightContentContainer.classList.add("col-lg-6", "col-md-12", "g-2");
+
+          // Create list group with classes "list-group" and "list-group-flush"
+          const listGroupContainer = document.createElement("ul");
+          listGroupContainer.classList.add("list-group", "list-group-flush");
+
+          // Create list items
+          const listItem1 = document.createElement("li");
+          const listItemContent1 = document.createTextNode(
+            `Expected to Start: January 1, 2024`
+          );
+          listItem1.classList.add("list-group-item");
+          listItem1.appendChild(listItemContent1);
+
+          const listItem2 = document.createElement("li");
+          const listItemContent2 = document.createTextNode(
+            `Expected to Complete: December 15, 2026`
+          );
+          listItem2.classList.add("list-group-item");
+          listItem2.appendChild(listItemContent2);
+
+          const listItem3 = document.createElement("li");
+          const listItemContent3 = document.createTextNode(
+            `Last Updated: January 1, 2022`
+          );
+          listItem3.classList.add("list-group-item");
+          listItem3.appendChild(listItemContent3);
+
+          // Append list items to list group
+          listGroupContainer.appendChild(listItem1);
+          listGroupContainer.appendChild(listItem2);
+          listGroupContainer.appendChild(listItem3);
+
+          // Append list group to right side content
+          rightContentContainer.appendChild(listGroupContainer);
+
+          // Append left and right side content to row
+          rowContainer.appendChild(leftContentContainer);
+          rowContainer.appendChild(rightContentContainer);
+
+          // Create button container
+          const buttonContainer = document.createElement("div");
+          buttonContainer.classList.add(
+            "d-flex",
+            "justify-content-start",
+            "column-gap-2"
+          );
+
+          // Create "View Details" button
+          const viewDetailsButton = document.createElement("a");
+          viewDetailsButton.href = "./study.html";
+          viewDetailsButton.classList.add("btn", "btn-block", "btn-primary");
+          viewDetailsButton.textContent = "View Details";
+
+          // Create "View Details (2)" button
+          const viewDetails2Button = document.createElement("a");
+          viewDetails2Button.href = "";
+          viewDetails2Button.classList.add("btn", "btn-block", "btn-primary");
+          viewDetails2Button.setAttribute("data-bs-toggle", "modal");
+          viewDetails2Button.setAttribute("data-bs-target", "#exampleModal");
+          viewDetails2Button.textContent = "View Details (2)";
+
+          // Append buttons to button container
+          buttonContainer.appendChild(viewDetailsButton);
+          buttonContainer.appendChild(viewDetails2Button);
+
+          // Append row and button container to card text container
+          cardTextContainer.appendChild(rowContainer);
+          cardTextContainer.appendChild(buttonContainer);
+
+          // Append card text container to card body
+          cardBodyContainer.appendChild(cardTextContainer);
+
+          // Append card body to card
+          cardContainer.appendChild(cardBodyContainer);
+
+          // Append card to column
+          columnContainer.appendChild(cardContainer);
+
+          // Append column to main container
+          mainContainer.appendChild(columnContainer);
+
+          // Append main container to records container
+          recordsContainer.appendChild(mainContainer);
+        });
+      };
+
+      // Event listener for the "Load More" button
+      document
+        .getElementById("load-more-btn")
+        .addEventListener("click", fetchAndDisplayRecords);
+
+      // Initial load
+      //fetchRecords();
+    </script>
+  </body>
+</html>

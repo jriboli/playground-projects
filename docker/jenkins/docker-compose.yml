@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  jenkins:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    image: jenkins-jdk-17
+    container_name: jenkins-jdk-17
+    privileged: true
+    user: root
+    restart: always
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /c/Users/Justin/Documents/GitHub/projects-for-learning/Docker/Jenkins/run/docker.sock:/var/run/docker.sock
+      #- /c/Program Files/Docker/docker:/usr/bin/docker
+
+volumes:
+  jenkins_home:
+    name: jenkins_home
