@@ -1,32 +1,48 @@
 import React from "react";
 import { coding_background } from "../assets";
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
+import ReactMarkdown from "react-markdown"
 
-const BlogContent = () => {
-  const {id}=useParams()
+const BlogContent = ({ blogs }) => {
+  const { id } = useParams();
 
-  const blog = {
-    id: 1,
-    title: "Blog 1",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni temporibus ipsa veniam modi aliquam dignissimos obcaecati, labore culpa quasi eum optio reiciendis eligendi animi nihil ab beatae nam! Voluptatibus, eveniet.",
-    coverImg: coding_background,
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro adipisci, placeat et alias iste, quas sed minus delectus deleniti, dignissimos rem tenetur enim facere dolore qui totam provident distinctio?",
+  let blog = {};
+  if (blog) {
+    let arr = blogs.filter((blog) => blog.id == id);
+    blog = arr[0];
+  } else {
+    blog = {};
+  }
 
-    authorName: "Rocket Raccoon",
-    authorImg: "",
-    authorDesc: "Software Developer",
-  };
+  console.log(blog);
+
+  // const blog = {
+  //   id: 1,
+  //   title: "Blog 1",
+  //   desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni temporibus ipsa veniam modi aliquam dignissimos obcaecati, labore culpa quasi eum optio reiciendis eligendi animi nihil ab beatae nam! Voluptatibus, eveniet.",
+  //   coverImg: coding_background,
+  //   content:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro adipisci, placeat et alias iste, quas sed minus delectus deleniti, dignissimos rem tenetur enim facere dolore qui totam provident distinctio?",
+
+  //   authorName: "Rocket Raccoon",
+  //   authorImg: "",
+  //   authorDesc: "Software Developer",
+  // };
 
   return (
     <div className="w-full pb-10 bg-[#f9f9f9]">
       <div className="max-w-[1240px] mx-auto">
         <div className="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-y-8 px-4 sm:pt-20 md:mt-0 ss:pt-20 text-black">
           <div className="col-span-2 gap-x-8 gap-y-8">
-            <img className="h-56 w-full object-cover" src={blog.coverImg} />
-            <h1 className="font-bold text-2xl my-1 pt-5">{id}--{blog.title}</h1>
+            <img
+              className="h-56 w-full object-cover"
+              src={`http://127.0.0.1:1337${blog.coverImg[0].url}`}
+            />
+            <h1 className="font-bold text-2xl my-1 pt-5">
+              {id}--{blog.blogTitle}
+            </h1>
             <div className="pt-5">
-              <p>{blog.content}</p>
+              <ReactMarkdown>{blog.blogContent}</ReactMarkdown>
             </div>
           </div>
 
@@ -37,10 +53,10 @@ const BlogContent = () => {
                 src=""
               />
               <h1 className="font-bold text-2xl text-center text-gray-900 pt-3">
-                {blog.authorName}
+                Rocket Raccoon
               </h1>
               <p className="text-center text-gray-900 font-medium">
-                {blog.authorDesc}
+                "Guardian of the Galaxy"
               </p>
             </div>
           </div>

@@ -1,11 +1,11 @@
 import React from "react";
 import { Navbar, BlogContent, Footer } from "../components";
 
-const BlogContentPage = () => {
+const BlogContentPage = ({blogs}) => {
   return (
     <div>
       <Navbar />
-      <BlogContent />
+      <BlogContent blogs={blogs ? blogs : ""}/>
       <Footer />
     </div>
   );
