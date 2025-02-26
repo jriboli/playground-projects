@@ -1,9 +1,12 @@
 import React from "react";
 import { coding_background } from "../assets";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-const Blogs = () => {
-  const blogs = [
+const Blogs = ({ blogs }) => {
+  console.log("BlogPage");
+  console.log(blogs);
+
+  const blogs1 = [
     {
       id: 1,
       title: "Blog 1",
@@ -28,8 +31,22 @@ const Blogs = () => {
     <div className="w-full bg-[#f9f9f9] py-[50px]">
       <div className="max-w-[1240px] mx-auto">
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8 px-4 text-black">
-          {blogs.map((blog) => 
+          {blogs.map((blog) => (
+            <Link key={blog.id} to={`/blog/${blog.id}`}>
+              <div className="bg-white rounded-xl overflow-hidden drop-shadow-md">
+                <img
+                  className="h-56 w-full object-cover"
+                  src={`http://127.0.0.1:1337${blog.coverImg[0].url}`}
+                />
+                <div className="p-8 ">
+                  <h3 className="font-bold text-2xl my-1">{blog.blogTitle}</h3>
+                  <p className="text-gray-600 text-xl">{blog.blogDesc}</p>
+                </div>
+              </div>
+            </Link>
+          ))}
 
+          {/* {blogs1.map((blog) => (
             <Link key={blog.id} to={`/blog/${blog.id}`}>
               <div className="bg-white rounded-xl overflow-hidden drop-shadow-md">
                 <img className="h-56 w-full object-cover" src={blog.coverImg} />
@@ -39,8 +56,7 @@ const Blogs = () => {
                 </div>
               </div>
             </Link>
-            
-          )}
+          ))} */}
         </div>
       </div>
     </div>

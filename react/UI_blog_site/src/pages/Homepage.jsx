@@ -1,11 +1,14 @@
 import React from "react";
 import { Navbar, Blogs, Footer } from "../components";
 
-const Homepage = () => {
+const Homepage = ({ blogs }) => {
+  // console.log("HomePage");
+  // console.log(blogs);
+
   return (
     <div>
       <Navbar />
-      <Blogs />
+      <Blogs blogs={blogs ? blogs : ""} />
       <Footer />
     </div>
   );
