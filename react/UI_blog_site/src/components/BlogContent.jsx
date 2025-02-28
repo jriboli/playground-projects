@@ -16,19 +16,6 @@ const BlogContent = ({ blogs }) => {
 
   console.log(blog);
 
-  // const blog = {
-  //   id: 1,
-  //   title: "Blog 1",
-  //   desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni temporibus ipsa veniam modi aliquam dignissimos obcaecati, labore culpa quasi eum optio reiciendis eligendi animi nihil ab beatae nam! Voluptatibus, eveniet.",
-  //   coverImg: coding_background,
-  //   content:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro adipisci, placeat et alias iste, quas sed minus delectus deleniti, dignissimos rem tenetur enim facere dolore qui totam provident distinctio?",
-
-  //   authorName: "Rocket Raccoon",
-  //   authorImg: "",
-  //   authorDesc: "Software Developer",
-  // };
-
   return (
     <div className="w-full pb-10 bg-[#f9f9f9]">
       <div className="max-w-[1240px] mx-auto">
@@ -41,6 +28,9 @@ const BlogContent = ({ blogs }) => {
             <h1 className="font-bold text-2xl my-1 pt-5">
               {id}--{blog.blogTitle}
             </h1>
+            <p className="text-sm text-gray-400">
+              Published: {new Date(blog.createdAt).toLocaleDateString()}
+            </p>
             <div className="pt-5">
               <ReactMarkdown>{blog.blogContent}</ReactMarkdown>
             </div>

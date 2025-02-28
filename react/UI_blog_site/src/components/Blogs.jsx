@@ -1,63 +1,91 @@
-import React from "react";
-import { coding_background } from "../assets";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Blogs = ({ blogs }) => {
-  console.log("BlogPage");
-  console.log(blogs);
+const Blogs = ({
+  showPagination = true,
+  customHeader = "Recent Blogs",
+  category,
+}) => {
+  const [blogs, setBlogs] = useState([]);
 
-  const blogs1 = [
-    {
-      id: 1,
-      title: "Blog 1",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni temporibus ipsa veniam modi aliquam dignissimos obcaecati, labore culpa quasi eum optio reiciendis eligendi animi nihil ab beatae nam! Voluptatibus, eveniet.",
-      coverImg: coding_background,
-    },
-    {
-      id: 2,
-      title: "Blog 2",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni temporibus ipsa veniam modi aliquam dignissimos obcaecati, labore culpa quasi eum optio reiciendis eligendi animi nihil ab beatae nam! Voluptatibus, eveniet.",
-      coverImg: coding_background,
-    },
-    {
-      id: 3,
-      title: "Blog 3",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni temporibus ipsa veniam modi aliquam dignissimos obcaecati, labore culpa quasi eum optio reiciendis eligendi animi nihil ab beatae nam! Voluptatibus, eveniet.",
-      coverImg: coding_background,
-    },
-  ];
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      let url = `http://127.0.0.1:1337/blogs`;
+
+      const params = new URLSearchParams();
+      if (category)
+        params.append("[category]=", category.replace("-", " ")); // Convert URL slug to normal text
+
+      try {
+        const response = await fetch(`${url}?${params.toString()}`);
+        const data = await response.json();
+        setBlogs(data);
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+      }
+    };
+
+    fetchBlogs();
+  }, [category]);
+
+  // For pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const blogsPerPage = 3;
+
+  const indexOfLastBlog = currentPage * blogsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+  const currentBlogs = blogs?.slice(indexOfFirstBlog, indexOfLastBlog) || [];
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div className="w-full bg-[#f9f9f9] py-[50px]">
       <div className="max-w-[1240px] mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-6">
+          {category ? `${category.replace("-", " ")} Blogs` : customHeader}
+        </h2>
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8 px-4 text-black">
-          {blogs.map((blog) => (
-            <Link key={blog.id} to={`/blog/${blog.id}`}>
-              <div className="bg-white rounded-xl overflow-hidden drop-shadow-md">
-                <img
-                  className="h-56 w-full object-cover"
-                  src={`http://127.0.0.1:1337${blog.coverImg[0].url}`}
-                />
-                <div className="p-8 ">
-                  <h3 className="font-bold text-2xl my-1">{blog.blogTitle}</h3>
-                  <p className="text-gray-600 text-xl">{blog.blogDesc}</p>
+          {currentBlogs.length > 0 ? (
+            currentBlogs.map((blog) => (
+              <Link key={blog.id} to={`/blog/${blog.id}`}>
+                <div className="bg-white rounded-xl overflow-hidden drop-shadow-md">
+                  <img
+                    className="h-56 w-full object-cover"
+                    src={`http://127.0.0.1:1337${blog.coverImg[0].url}`}
+                  />
+                  <div className="p-8 ">
+                    <h3 className="font-bold text-2xl my-1">
+                      {blog.blogTitle}
+                    </h3>
+                    <p className="text-gray-600 text-xl">{blog.blogDesc}</p>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          ))}
-
-          {/* {blogs1.map((blog) => (
-            <Link key={blog.id} to={`/blog/${blog.id}`}>
-              <div className="bg-white rounded-xl overflow-hidden drop-shadow-md">
-                <img className="h-56 w-full object-cover" src={blog.coverImg} />
-                <div className="p-8 ">
-                  <h3 className="font-bold text-2xl my-1">{blog.title}</h3>
-                  <p className="text-gray-600 text-xl">{blog.desc}</p>
-                </div>
-              </div>
-            </Link>
-          ))} */}
+              </Link>
+            ))
+          ) : (
+            <p className="text-center">No blog posts available</p>
+          )}
         </div>
+        {showPagination && (
+          <div className="flex justify-center mt-4 space-x-2">
+            {Array.from(
+              { length: Math.ceil(blogs.length / blogsPerPage) },
+              (_, i) => (
+                <button
+                  key={i + 1}
+                  onClick={() => setCurrentPage(i + 1)}
+                  className={`px-4 py-2 rounded-md ${
+                    currentPage === i + 1
+                      ? "bg-orange-500 text-white"
+                      : "bg-gray-300 text-black"
+                  }`}
+                >
+                  {i + 1}
+                </button>
+              )
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
-import Homepage from './Homepage'
+import HomePage from './HomePage'
+import BlogsPage from './BlogsPage'
 import BlogContentPage from './BlogContentPage'
 
 export {
-    Homepage,
+    HomePage,
+    BlogsPage,
     BlogContentPage
 }

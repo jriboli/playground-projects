@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { menu, close, logo } from "../assets";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -8,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-[80px] z-10 bg-white fixed drop-shadow-lg relative">
       <div className="flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto">
-        <div className="flex items-cneter">
+        <div className="flex items-center">
           <img
             src={logo}
             alt="logo"
@@ -16,18 +17,34 @@ const Navbar = () => {
           ></img>
         </div>
         <div className="flex items-center">
-          <ul className="hidden md:flex">
-            <li>Home</li>
-            <li>About</li>
-            <li>Support</li>
-            <li>Platform</li>
+          <ul className="hidden md:flex text-3xl font-bold">
+            <li>
+              <a href="/blogs" className="hover:text-orange-400">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-orange-400">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
-        <div className="hidden md:flex sm:mr-10 md:mr-10">
-          <button className="border-none bg-transparent text-black mr-4">
-            Login
-          </button>
-          <button className="px-8 py-3 rounded-md">Sign Up</button>
+        <div className="hidden md:flex space-x-6 sm:mr-10 md:mr-10">
+          <a
+            href="https://www.linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="w-6 h-6 text-white hover:text-orange-400" />
+          </a>
+          <a
+            href="https://github.com/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="w-6 h-6 text-white hover:text-orange-400" />
+          </a>
         </div>
 
         <div className="md:hidden" onClick={handleClick}>
@@ -41,19 +58,21 @@ const Navbar = () => {
 
       <ul
         className={
-          toggle ? "absolute bg-white w-full px-8 md:hidden" : "hidden"
+          toggle
+            ? "absolute bg-white w-full px-8 md:hidden font-bold"
+            : "hidden"
         }
       >
-        <li>Home</li>
-        <li>About</li>
-        <li>Support</li>
-        <li>Platform</li>
-        <div className="flex flex-col my-4">
-          <button className="bg-transparent text-black mb-4 py-3 px-8">
-            Login
-          </button>
-          <button className="px-8 py-3">Sign Up</button>
-        </div>
+        <li>
+          <a href="/blogs" className="hover:text-orange-400">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="#contact" className="hover:text-orange-400">
+            Contact
+          </a>
+        </li>
       </ul>
     </div>
   );

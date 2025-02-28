@@ -1,14 +1,13 @@
 import React from "react";
-import { Navbar, Blogs, Footer } from "../components";
+import { Navbar, Blogs, Footer, AboutMe } from "../components";
 
-const Homepage = ({ blogs }) => {
-  // console.log("HomePage");
-  // console.log(blogs);
+const Homepage = () => {
 
   return (
     <div>
       <Navbar />
-      <Blogs blogs={blogs ? blogs : ""} />
+      <AboutMe />
+      <Blogs showPagination={false} customHeader="Recent Blogs"/>
       <Footer />
     </div>
   );
