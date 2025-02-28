@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const Blogs = ({
   showPagination = true,
@@ -10,19 +9,12 @@ const Blogs = ({
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      let url = `http://127.0.0.1:1337/blogs`;
+      const params = category
+        ? { "filters[category][$eq]": category.replace("-", " ") }
+        : {};
 
-      const params = new URLSearchParams();
-      if (category)
-        params.append("[category]=", category.replace("-", " ")); // Convert URL slug to normal text
-
-      try {
-        const response = await fetch(`${url}?${params.toString()}`);
-        const data = await response.json();
-        setBlogs(data);
-      } catch (error) {
-        console.error("Error fetching blogs:", error);
-      }
+      const data = await StrapiService.get("blogs", params);
+      setBlogs(data ? data.data : []);
     };
 
     fetchBlogs();

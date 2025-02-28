@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom'; // If you're using React Router for navigation
 
 const CategoriesList = () => {
@@ -9,8 +8,8 @@ const CategoriesList = () => {
     // Fetch categories from Strapi
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('https://your-strapi-api-url/api/categories'); // Replace with your Strapi endpoint
-        const categoriesData = response.data.data;
+        const response = await fetch('https://your-strapi-api-url/api/categories'); // Replace with your Strapi endpoint
+        const categoriesData = await response.json;
         
         // Randomly shuffle the categories and pick the first 6
         const shuffledCategories = categoriesData.sort(() => 0.5 - Math.random()).slice(0, 6);
