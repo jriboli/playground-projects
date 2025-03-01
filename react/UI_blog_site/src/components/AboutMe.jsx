@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const words = ["Programmer.", "Tester.", "Thinker.", "Dog Lover.", "DIYer.", "Gamer."];
+const words = ["Code Alchemist.", "Automation Enthusiast.", "Lifelong Learner.", "Pawsome Adventurer.", "Weekend Maker.", "Pixel Warrior."];
 
 function AboutMe() {
   const [index, setIndex] = useState(0);
@@ -30,19 +30,19 @@ function AboutMe() {
   }, [text, isDeleting, index]);
 
   return (
-    <div>
-      <div className="w-full text-center mt-8 text-xl md:text-2xl text-gray-700">
-        <p>
-          Join me on this adventure as we approach topics from the novice perspective.
-        </p>
-      </div>
-
-      {/* Top Section with Changing Text */}
-      <div className="w-full h-[40vh] flex justify-center items-center bg-gray-800 text-white md:text-6xl text-4xl font-bold">
+    <div className="w-full h-[50vh] flex flex-col justify-center items-center bg-gray-800 text-white px-4">
+      {/* Changing Text Section */}
+      <div className="flex items-center md:text-6xl text-4xl font-bold">
         <span className="md:mr-4 mr-2">I am a</span>
         <span className="text-orange-400 underline">{text}</span>
         <span className="text-white">|</span>
       </div>
+
+      {/* Summary Text - Now inside the same background */}
+      <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl text-center">
+        Welcome to my corner of the internet, where curiosity leads the way! 
+        Too often, the <span className="text-orange-400 font-bold">novice perspective</span> is overlooked—but here, we embrace the beginner’s mindset, where every challenge is an opportunity, every mistake is a lesson, and every success is worth celebrating.
+      </p>
     </div>
   );
 }

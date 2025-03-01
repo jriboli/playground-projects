@@ -11,15 +11,17 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const Footer = () => {
   return (
-    <div id="contact" className="w-full bg-gray-900 text-white py-8 px-4 md:px-10">
-      <div className="max-w-[1240px] mx-auto flex flex-col md:flex-row justify-between items-center md:items-center">
-        {/* Left Side - Text */}
-        <div className="w-full md:w-1/2 text-lg font-bold flex justify-center items-center h-full">
-          <p>Let's discuss</p>
+    <div id="contact" className="w-full bg-gray-900 text-white py-4 px-4 md:px-10">
+      <div className="max-w-[1240px] mx-auto flex flex-col md:flex-row justify-between items-center md:items-center py-10 px-4">
+        {/* Left Side - Text (35%) */}
+        <div className="w-full md:w-3/5 text-lg font-bold flex justify-center items-center h-full text-center p-10">
+          <p>
+            Have questions, thoughts, or topics to discuss? Send us an email — we’d love to hear from you!
+          </p>
         </div>
 
-        {/* Right Side - Contact Form */}
-        <div className="w-full md:w-1/2 flex flex-col space-y-4">
+        {/* Right Side - Contact Form (65%) */}
+        <div className="w-full md:w-2/5 flex flex-col space-y-4">
           <input
             type="email"
             placeholder="Your Email"
@@ -33,7 +35,7 @@ const Footer = () => {
           <div className="flex justify-center">
             <ReCAPTCHA sitekey="YOUR_RECAPTCHA_SITE_KEY" />
           </div>
-          <button className="bg-orange-500 text-white py-2 rounded hover:bg-orange-600 transition">
+          <button className="bg-orange-500 text-white py-2 px-6 rounded hover:bg-orange-600 transition">
             Submit
           </button>
         </div>
