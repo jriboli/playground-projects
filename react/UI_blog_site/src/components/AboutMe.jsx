@@ -31,6 +31,12 @@ function AboutMe() {
 
   return (
     <div>
+      <div className="w-full text-center mt-8 text-xl md:text-2xl text-gray-700">
+        <p>
+          Join me on this adventure as we approach topics from the novice perspective.
+        </p>
+      </div>
+
       {/* Top Section with Changing Text */}
       <div className="w-full h-[40vh] flex justify-center items-center bg-gray-800 text-white md:text-6xl text-4xl font-bold">
         <span className="md:mr-4 mr-2">I am a</span>

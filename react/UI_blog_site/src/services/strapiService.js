@@ -1,8 +1,8 @@
-const API_URL = process.env.REACT_APP_STRAPI_URL;
+//const API_URL = process.env.REACT_APP_STRAPI_URL;
 
 class StrapiService {
     constructor() {
-      this.baseURL = API_URL;
+      this.baseURL = "http://127.0.0.1:1337";
     }
   
     async get(endpoint, params = {}) {

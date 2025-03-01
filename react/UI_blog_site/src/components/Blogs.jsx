@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import StrapiService from "../services/strapiService";
+import { FaClock, FaTag } from "react-icons/fa";
 
 const Blogs = ({
   showPagination = true,
@@ -14,7 +17,7 @@ const Blogs = ({
         : {};
 
       const data = await StrapiService.get("blogs", params);
-      setBlogs(data ? data.data : []);
+      setBlogs(data);
     };
 
     fetchBlogs();
@@ -22,13 +25,19 @@ const Blogs = ({
 
   // For pagination
   const [currentPage, setCurrentPage] = useState(1);
-  const blogsPerPage = 3;
-
+  const blogsPerPage = 6;
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
   const currentBlogs = blogs?.slice(indexOfFirstBlog, indexOfLastBlog) || [];
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  // Function to calculate reading time (Assumes 200 words per minute)
+  const calculateReadingTime = (text) => {
+    const wordsPerMinute = 200;
+    const words = text?.split(" ").length || 0;
+    return Math.ceil(words / wordsPerMinute);
+  };
 
   return (
     <div className="w-full bg-[#f9f9f9] py-[50px]">
@@ -41,6 +50,12 @@ const Blogs = ({
             currentBlogs.map((blog) => (
               <Link key={blog.id} to={`/blog/${blog.id}`}>
                 <div className="bg-white rounded-xl overflow-hidden drop-shadow-md">
+                  <div className="absolute top-4 left-4 bg-orange-500 text-white text-sm font-bold px-3 py-1 rounded-full">
+                    {new Date(blog.created_at).toLocaleDateString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric"}) }
+                  </div>
                   <img
                     className="h-56 w-full object-cover"
                     src={`http://127.0.0.1:1337${blog.coverImg[0].url}`}
@@ -49,7 +64,34 @@ const Blogs = ({
                     <h3 className="font-bold text-2xl my-1">
                       {blog.blogTitle}
                     </h3>
-                    <p className="text-gray-600 text-xl">{blog.blogDesc}</p>
+                    {/* <p className="text-gray-600 text-xl">{blog.blogDesc}</p> */}
+                    {/* Bottom Section */}
+                    <div className="flex justify-between items-center text-gray-500 text-sm">
+                      {/* Category Link as Animated Button */}
+                      {blog.category && (
+                        <Link
+                          to={`/blogs/category/${blog.category}`}
+                          className="relative group flex items-center px-4 py-2 border border-orange-500 text-orange-500 rounded-full overflow-hidden transition-all duration-300 ease-in-out"
+                        >
+                          {/* Tag Icon */}
+                          <FaTag className="mr-2 text-orange-500 transition-all duration-300 ease-in-out group-hover:text-black" />
+
+                          {/* Category Name with Dynamic Color Change */}
+                          <span className="relative z-10 transition-all duration-300 ease-in-out group-hover:text-black">
+                            {blog.category}
+                          </span>
+
+                          {/* Background Fill Animation */}
+                          <span className="absolute left-0 bottom-0 w-full h-0 bg-orange-500 transition-all duration-300 ease-in-out group-hover:h-full"></span>
+                        </Link>
+                      )}
+
+                      {/* Clock Icon & Reading Time */}
+                      <div className="flex items-center">
+                        <FaClock className="mr-2" />
+                        <span>{calculateReadingTime(blog.blogContent)} min read</span>
+                      </div>                      
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -58,7 +100,7 @@ const Blogs = ({
             <p className="text-center">No blog posts available</p>
           )}
         </div>
-        {showPagination && (
+        {currentBlogs.length > 0 && showPagination && (
           <div className="flex justify-center mt-4 space-x-2">
             {Array.from(
               { length: Math.ceil(blogs.length / blogsPerPage) },

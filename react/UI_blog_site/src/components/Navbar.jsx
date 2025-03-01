@@ -36,14 +36,14 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="w-6 h-6 text-white hover:text-orange-400" />
+            <FaLinkedin className="w-6 h-6 text-black hover:text-orange-400" />
           </a>
           <a
             href="https://github.com/yourprofile"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="w-6 h-6 text-white hover:text-orange-400" />
+            <FaGithub className="w-6 h-6 text-black hover:text-orange-400" />
           </a>
         </div>
 
