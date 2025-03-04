@@ -18,7 +18,7 @@ const Footer = () => {
     e.preventDefault();
 
     if (!email || !message) {
-      setStatus("Please fill in all fields.");
+      setStatus("Please fill in all the fields.");
       return;
     }
 
