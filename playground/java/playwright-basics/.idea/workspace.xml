@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../python/python-udemy-001/pytest_playground/src/dao/coupon_dao.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../python/python-udemy-001/pytest_playground/tests/products/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/python-udemy-001/pytest_playground/src/helpers/coupon_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/python-udemy-001/pytest_playground/src/helpers/coupon_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/python-udemy-001/pytest_playground/src/helpers/product_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/python-udemy-001/pytest_playground/src/helpers/product_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/python-udemy-001/pytest_playground/tests/coupons/test_get_coupons.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/python-udemy-001/pytest_playground/tests/coupons/test_get_coupons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/python-udemy-001/pytest_playground/tests/products/test_get_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/python-udemy-001/pytest_playground/tests/products/test_get_products.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2e0eEeEX2UCAz3ezbiZV7hYjKut" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Justin/Documents/GitHub/playground-projects/java/playwright-basics&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Justin/Documents/GitHub/projects-for-learning/Java/java-playwright-basics/src/main/java/org/example/Main.java&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\data" />
+      <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\java\org\example\testng" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Justin\Documents\GitHub\projects-for-learning\Java\java-playwright-basics\src\test\resources\testFiles" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.SearchPageTest.searchForItem">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="playwright-basics" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="playwright-basics" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookPageTest.checkFlightDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.BookPageTest" />
+      <option name="METHOD_NAME" value="checkFlightDetails" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookPageTest.checkTitleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.makemytrip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.makemytrip" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.makemytrip.BookPageTest" />
+      <option name="METHOD_NAME" value="checkTitleTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.checkBoxesTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.tizag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.tizag" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.tizag.HomePageTest" />
+      <option name="METHOD_NAME" value="checkBoxesTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.checkTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.tizag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.tizag" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.tizag.HomePageTest" />
+      <option name="METHOD_NAME" value="checkTitle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchPageTest.searchForItem" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-playwright-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assignments.amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assignments.amazon" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assignments.amazon.SearchPageTest" />
+      <option name="METHOD_NAME" value="searchForItem" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.BookPageTest.checkFlightDetails" />
+      <item itemvalue="TestNG.BookPageTest.checkTitleTest" />
+      <item itemvalue="TestNG.HomePageTest.checkBoxesTest" />
+      <item itemvalue="TestNG.HomePageTest.checkTitle" />
+      <item itemvalue="TestNG.SearchPageTest.searchForItem" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.SearchPageTest.searchForItem" />
+        <item itemvalue="TestNG.HomePageTest.checkTitle" />
+        <item itemvalue="TestNG.HomePageTest.checkBoxesTest" />
+        <item itemvalue="TestNG.BookPageTest.checkTitleTest" />
+        <item itemvalue="TestNG.BookPageTest.checkFlightDetails" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="638677d8-2d8b-4c8b-abc4-d0a44ee8b23e" name="Changes" comment="" />
+      <created>1711045815334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711045815334</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/playwright/Main.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/SearchPage.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/SearchPage.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/assignments/makemytrip/SearchPageTest.java</url>
+          <line>44</line>
+          <properties class="org.example.assignments.makemytrip.SearchPageTest" method="LAXtoNYCFlight">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/assignments/makemytrip/ResultsPage.java</url>
+          <line>17</line>
+          <properties class="org.example.assignments.makemytrip.ResultsPage">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

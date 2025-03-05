@@ -1,0 +1,10 @@
+
+ fastapi
+ uvicorn
+ sqlalchemy
+ pymysql
+ celery
+ redis
+ flower
+ python-dotenv
+ requests

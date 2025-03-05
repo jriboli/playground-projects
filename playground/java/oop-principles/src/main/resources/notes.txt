@@ -1,0 +1,57 @@
+Object has two things:
+- Behavior or Function
+- Properties or State
+
+Think of Procedural Programming - Tight Coupling
+
+OOP - provides data hiding
+
+
+Library Management System:
+
+Classes: Book, Author, Library, Member
+Relationships: Book has an Author, Library contains Books, Member borrows Books
+Abstraction: Define abstract classes/interfaces for library items, users, etc.
+Encapsulation: Hide internal details of classes using access modifiers and getter/setter methods.
+Inheritance: Create subclasses for different types of Books (e.g., Fiction, Non-Fiction).
+Polymorphism: Implement methods like displayDetails() differently for each subclass.
+
+
+Vehicle Rental System:
+
+Classes: Vehicle, Car, Bike, Truck, RentalAgency, Customer
+Relationships: Agency rents Vehicles to Customers
+Abstraction: Define abstract class Vehicle and extend it for specific vehicle types.
+Encapsulation: Hide internal vehicle details like engine capacity, mileage, etc.
+Inheritance: Subclasses Car, Bike, Truck inherit common properties from Vehicle.
+Polymorphism: Use method overriding for vehicle-specific behaviors (e.g., accelerate, brake).
+
+
+Online Shopping System:
+
+Classes: Product, Customer, Cart, Order, Payment
+Relationships: Customer adds Products to Cart, places Orders, makes Payments
+Abstraction: Define interfaces for Payment methods (e.g., CreditCard, PayPal).
+Encapsulation: Protect sensitive data like credit card information within Payment class.
+Inheritance: Different types of Products (e.g., Electronics, Clothing) inherit from Product.
+Polymorphism: Implement different payment methods using a common interface.
+
+
+Bank Account Management System:
+
+Classes: Account, SavingsAccount, CurrentAccount, Customer, Transaction
+Relationships: Customer owns Accounts, makes Transactions
+Abstraction: Define abstract class Account with common methods like deposit, withdraw.
+Encapsulation: Protect account balance and other details using private fields and methods.
+Inheritance: Subclasses SavingsAccount and CurrentAccount inherit from Account.
+Polymorphism: Override methods like withdraw to implement specific behavior for each account type.
+
+
+Restaurant Management System:
+
+Classes: Menu, Dish, Order, Chef, Customer
+Relationships: Customer places Orders, Chef prepares Dishes
+Abstraction: Define interfaces for food preparation (e.g., Cookable, Orderable).
+Encapsulation: Hide implementation details of dish recipes and order processing logic.
+Inheritance: Subclasses of Dish for different types of cuisine (e.g., Italian, Chinese).
+Polymorphism: Implement different cooking techniques for each type of cuisine.
