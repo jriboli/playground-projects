@@ -1,3 +1,4 @@
+import os
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 import pickle
@@ -10,9 +11,15 @@ def train_model(X_train, y_train, X_test, y_test):
     predictions = model.predict(X_test)
     print("Model Accuracy:", accuracy_score(y_test, predictions))
 
-    with open("models/titanic_model.pkl", "wb") as f:
-        pickle.dump(model, f)  # Save trained model
+    # Ensure 'models/' directory exists
+    os.makedirs("models", exist_ok=True)
 
+    # Save the trained model
+    model_path = "models/titanic_model.pkl"
+    with open(model_path, "wb") as f:
+        pickle.dump(model, f)
+
+    print(f"Model saved to {model_path}")
     return model
 
 if __name__ == "__main__":
