@@ -1,0 +1,158 @@
+-------- Clinical Study Connections --------
+
+---------- Relationships: -------------------------------
+Owner :
+ One to Many Sites
+ 
+Sites :
+ Many to One Onwer
+ One to Many Doctors
+ Many to Many Specialties
+ Many to Many Studies
+ 
+Doctors:
+ Many to One Site
+ 
+Study: 
+ Many to Many Sites
+ Many to Many Patients
+
+Patients:
+ Many to Many Studies
+
+---------- User Stories: -------------------------------
+************************
+******** OWNER *********
+************************
+As an admin I want to be able to get a list of all Owners
+GET /owners
+
+As an admin I want to be get info on a specific Owner
+GET /owners/{owner_id}
+
+As an admin I want to be able to create a new Owner
+POST /owners
+
+As an admin I want to be able to update details for a specific Owner
+PUT /owners/{owner_id}
+
+As an admin I want to be able to delete an Owner
+DELETE /owners/{owner_id}
+- Removes the associated SITEs and DOCTORs
+
+As basic user all methods should be blocked from using
+
+As owner, I want to get a list of active Studies being handled by my Sites
+GET /owners/{owner_id}/studies
+
+
+************************
+******** SITE **********
+************************
+As the owner I want to get a list of all Sites I have
+GET /owners/{owner_id}/sites
+
+As the owner I want to get details on a specific Site
+GET /owners/{owner_id}/sites/{site_id}
+
+As the owner I want to register a new Site
+POST /owners/{owner_id}/sites
+
+As the owner I want to update details on a specific Site
+PUT /owners/{owner_id}/sites/{site_id}
+
+As the owner I want to delete a specific Site
+DELETE /owners/{owner_id}/sites/{site_id}
+- Cant delete a SITE associated in an ACTIVE study
+
+As owner, I want to get a list of patients for my Site
+GET /owner/{owner_id}/sites/{siteId}/patients
+
+As owner, I want to get a list of Studies by Site
+GET /owners/{ownerId}/sites/{siteId}/studies
+
+
+
+************************
+******* DOCTOR *********
+************************
+As the owner I want to get a list of all Doctors
+GET /owners/{owner_id}/doctors
+
+As the owner I want to get details on a specific Doctor
+GET /owners/{owner_id}/doctors/{doctor_id}
+
+As the owner I want to add a new Doctor
+POST /owners/{owner_id}/doctors
+
+As the owner I want to update details on a specific Doctor
+PUT /owners/{owner_id}/doctors/{doctor_id}
+
+As the owner I want to delete a specific Doctor
+DELETE /owners/{owner_id}/doctors/{doctor_id}
+- Cant delete a DOCTOR that is associated with a SITE, remove from SITE first
+
+
+
+************************
+******** STUDY *********
+************************
+As a user I want to get a list of available Studies
+GET /studies
+
+AS a user I want to filter a list of Studies by specialty
+GET /studies?specialty="TBD"
+
+AS a user I want to filter a list of Studies by status
+GET /studies?status="TBD"
+
+As a user I want to get details on a specific Study
+GET /studies/{study_id}
+
+AS an admin I want to create a new Study
+POST /studies
+
+As an admin I want to update a Study
+PUT /studies/{study_id}
+
+As an admin I want to delete a Study
+DELETE /studies/{study_id}
+- Can be deleted at any time
+
+As an owner, I want to enlist a Site to participate in a Study
+POST /studies/{study_id}/enlistSite/{site_id}
+
+As an owner, I want to remove a Site from a Study
+DELETE /studies/{study_id}/enlistSite/{site_id}
+- Can not delete if patients are associated with the Site
+
+As a patient, I want to enroll in a Study
+POST /studies/{study_id}/patient/{patient_id}
+
+As a patient, I want to withdrawal from a Study
+DELETE /studies/{study_id}/patient/{patient_id}
+
+
+
+************************
+******* PATIENT ********
+************************ 
+As a admin I want to get a list of registered Patients
+GET /patients
+
+As an admin I want to get patient record
+GET /patients/{patient_id}
+
+AS a user I want to enroll as a patient
+POST /patients
+
+As a patient I want to update my information
+PUT /patients/{patient_id}
+
+
+
+
+
+
+
+

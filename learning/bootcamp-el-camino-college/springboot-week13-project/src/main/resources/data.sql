@@ -1,0 +1,3 @@
+INSERT INTO pet_store (address, city, state, zip, name, phone) VALUES ('123 Main St', 'NoWhere', 'CA', '91111', 'Pawtastic', '310-444-5566')
+INSERT INTO pet_store (address, city, state, zip, name, phone) VALUES ('999 Elm St', 'Hell', 'CA', '96661', 'Wagging Tails', '310-999-5666')
+INSERT INTO pet_store (address, city, state, zip, name, phone) VALUES ('2 Second Ave', 'Secondary', 'CA', '92222', 'Number Two', '310-222-2222')

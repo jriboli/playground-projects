@@ -1,0 +1,37 @@
+
+In the context of JPA (Java Persistence API), the terms "owning side" and "inverse side" refer to the two sides of a bidirectional relationship between entities. 
+Let's explore these concepts and their significance:
+
+1. Unidirectional Relationship:
+	In a unidirectional relationship, only one entity knows about the relationship. For example, in a @ManyToOne or @OneToMany unidirectional relationship, 
+	only the entity with the @ManyToOne annotation knows about the association.
+	
+	In SQL terms, this might be represented by a foreign key in the table corresponding to the owning entity.
+
+2. Bidirectional Relationship:
+	In a bidirectional relationship, both entities are aware of the association. This is achieved using @ManyToOne and @OneToMany annotations on one side
+	and mappedBy on the other side.
+	
+	Owning Side:	
+	The owning side is the side that manages the foreign key in the database. It is the side annotated with @ManyToOne (owning side) or @OneToOne.
+	
+	Inverse Side:	
+	The inverse side is the side that doesn't manage the foreign key. It is the side annotated with mappedBy in JPA.
+	
+3. Importance of Owning and Inverse Side:
+	Database Schema:
+	
+	In SQL databases, the owning side usually corresponds to the entity with a foreign key column. The owning side controls the relationship in terms of the database schema.
+	Cascading Operations:
+	
+	The owning side typically controls cascading operations. For example, if you delete an entity on the owning side, it might automatically delete related entities (depending on the cascade type).
+	Queries and Joins:
+	
+	The owning side is often used in queries and joins. When querying for entities, JPA often starts from the owning side.
+	
+	
+Notes from Week 16: 
+- Create method adding Response object in response to return to user/request
+
+- Create custom input models to just be the fields need for the request, to simplify for the user
+
