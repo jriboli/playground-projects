@@ -27,6 +27,9 @@ replay_pid*
 *.env
 venv/
 
+# Want to ignore data folders
+*data/
+
 #Justin for JAVA 
 **/videos/
 **/screenshots/
