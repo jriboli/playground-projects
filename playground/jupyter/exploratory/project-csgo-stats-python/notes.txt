@@ -1,0 +1,1 @@
+https://www.kaggle.com/datasets/patrasaurabh/csgo-player-and-team-stats?select=team_stats.csv
