@@ -8,13 +8,14 @@ services:
         restart: always
         env_file: .env
         environment:
-          - WORDPRESS_DB_HOST=mysql-mysql-1:${MYSQL_PORT}
+          - WORDPRESS_DB_HOST=mysql:${MYSQL_PORT}
           - WORDPRESS_DB_USER=${MYSQL_USER}
           - WORDPRESS_DB_PASSWORD=${MYSQL_PASSWORD}
           - WORDPRESS_DB_NAME=${MYSQL_DATABASE}
         networks:
-          - my-network
+          - mysqldb_default
 volumes:
   wp_data:
 networks:
-  my-network:
+  mysqldb_default:
+    external: true
