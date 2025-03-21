@@ -1,0 +1,23 @@
+app/: Contains the FastAPI application code, including routes, services, models, authentication, and database-related files.
+    main.py: The entry point for your FastAPI app.
+    models.py: Contains SQLAlchemy ORM models for database tables.
+    api/: This folder houses your FastAPI route definitions (users.py, cheatsheets.py, flashcards.py).
+    services/: Contains the business logic of your app (e.g., user creation, cheat sheet handling).
+    db/: Handles database connections and session management.
+    auth/: Deals with JWT token generation and authentication logic.
+    config.py: Contains configuration values such as database URL and API secrets.
+test/: This folder holds unit and integration tests for your application.
+    unit/: Contains unit tests for isolated components.
+    integration/: Contains integration tests that check the interaction between components.
+    fixtures/: Mock data or setup for testing, such as DB fixtures.
+Dockerfile: If you want to containerize the API, this file defines the Docker image.
+
+
+DB Migration: 
+command -- python init_db.py
+
+Run the server:
+command -- uvicorn app.main:app
+
+Install requirements:
+command -- pip install -r requirements.txt

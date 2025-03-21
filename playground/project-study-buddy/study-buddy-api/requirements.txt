@@ -1,0 +1,11 @@
+fastapi[all]
+uvicorn
+sqlalchemy
+pymysql
+python-jose[cryptography] 
+passlib[bcrypt] 
+fastapi-users
+pytest
+# pytest-database
+pytest-asyncio
+python-dotenv
