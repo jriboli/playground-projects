@@ -1,6 +1,8 @@
 from pydantic import BaseModel
 
-class CheatSheetResponse(BaseModel):
+from typing import List
+
+class CheatSheetRecord(BaseModel):
     id: int
     topic: str
     package: str
@@ -10,3 +12,7 @@ class CheatSheetResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+class CheatSheetResponse(BaseModel):
+    records: List[CheatSheetRecord]

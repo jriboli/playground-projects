@@ -2,7 +2,9 @@ from pydantic import BaseModel
 
 class FlashcardResponse(BaseModel):
     id: int
-    cheat_sheet_id: int
+    topic: str
+    package: str
+    method: str
     question: str
     answer: str
 

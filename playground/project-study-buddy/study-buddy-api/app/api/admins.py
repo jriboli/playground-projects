@@ -7,6 +7,8 @@ from app.db.database import get_db
 from app.auth import check_role, hash_password
 from app.models import User, CheatSheet, Flashcard
 from app.enums.user_role import UserRole
+from app.responses import CheatSheetResponse
+from app.services.cheat_sheet_service import create_cheat_sheet_in_db
 
 router = APIRouter()
 
@@ -62,18 +64,23 @@ def get_all_cheatsheets(db: Session = Depends(get_db), current_user: User = Depe
     cheat_sheets = db.query(CheatSheet).all()
     return cheat_sheets
 
-@router.post("/cheatsheets")
-def create_cheatsheet(topic: str, package: str, method: str, description: str, code_example: str, db: Session = Depends(get_db), current_user: User = Depends(check_role(UserRole.admin))):
-    new_cheatsheet = CheatSheet(
-        topic=topic,
-        package=package,
-        method=method,
-        description=description,
-        code_example=code_example
-    )
-    db.add(new_cheatsheet)
-    db.commit()
-    return {"message": "Cheat sheet created successfully"}
+@router.post("/", response_model=CheatSheetResponse)
+def create_cheat_sheet(sheet: CheatSheet, db: Session = Depends(get_db)):
+    cheat_sheet = create_cheat_sheet_in_db(sheet, db)
+    return cheat_sheet
+
+# @router.post("/cheatsheets")
+# def create_cheatsheet(topic: str, package: str, method: str, description: str, code_example: str, db: Session = Depends(get_db), current_user: User = Depends(check_role(UserRole.admin))):
+#     new_cheatsheet = CheatSheet(
+#         topic=topic,
+#         package=package,
+#         method=method,
+#         description=description,
+#         code_example=code_example
+#     )
+#     db.add(new_cheatsheet)
+#     db.commit()
+#     return {"message": "Cheat sheet created successfully"}
 
 @router.put("/cheatsheets/{cheatsheet_id}")
 def update_cheatsheet(cheatsheet_id: int, topic: str, package: str, method: str, description: str, code_example: str, db: Session = Depends(get_db), current_user: User = Depends(check_role(UserRole.admin))):

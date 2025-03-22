@@ -4,16 +4,16 @@ from sqlalchemy.orm import Session
 from sqlalchemy.sql.expression import func
 from fastapi.exceptions import RequestValidationError
 from sqlalchemy.exc import SQLAlchemyError
+from datetime import timedelta
 
 # Local Stuff
 from app.auth import authenticate_user, create_access_token, hash_password, check_role
 from app.models import User
 from app.enums.user_role import UserRole
-from app.api import users, cheatsheets, flashcards, admins
+from app.api import users, cheatsheets, flashcards, admins, quizzes
 from app.errors.exception_handlers import validation_exception_handler, sqlalchemy_exception_handler, general_exception_handler
 from app.db.database import SessionLocal
 
-from datetime import timedelta
 
 app = FastAPI()
 
@@ -35,6 +35,7 @@ app.include_router(users.router, prefix="/users", tags=["users"])
 app.include_router(cheatsheets.router, prefix="/cheatsheets", tags=["cheatsheets"])
 app.include_router(flashcards.router, prefix="/flashcards", tags=["flashcards"])
 app.include_router(admins.router, prefix="/admin", tags=["admins"])
+app.include_router(quizzes.router, prefix="/quizzes", tags=["quizzes"])
 # ----------------- Potentially Add QUIZ -----------------
 
 # Register new user

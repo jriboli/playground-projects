@@ -1,3 +1,4 @@
+from sqlalchemy import func
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
 
@@ -9,8 +10,8 @@ def get_flashcard_from_db(db: Session):
 
 def create_flashcard_in_db(data: dict, db: Session):
     # Validate the input 
-    if "topic" not in data or "method" not in data:
-        raise HTTPException(status_code=400, detail="MIssing required fields")
+    if "topic" not in data or "package" not in data:
+        raise HTTPException(status_code=400, detail="Missing required fields")
     
     new_cheat_sheet = Flashcard(**data)
     db.add(new_cheat_sheet)

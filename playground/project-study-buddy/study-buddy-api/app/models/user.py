@@ -1,7 +1,8 @@
 from sqlalchemy import Column, Integer, String, Boolean, Enum
 
 # Local Stuff
-from app.db.database import Base
+#from app.db.database import Base
+from app.models.base import Base
 from app.enums.user_role import UserRole
 
 class User(Base):
