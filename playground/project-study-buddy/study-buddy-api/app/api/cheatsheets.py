@@ -7,7 +7,7 @@ from app.db.database import get_db
 from app.auth import check_role
 from app.enums.user_role import UserRole
 from app.models import CheatSheetRecord, User
-from app.responses import CheatSheetResponse
+from app.responses import CheatSheetResponse, CheatSheetRecordSchema
 
 router = APIRouter()
 
@@ -17,14 +17,15 @@ def get_cheat_sheets(topic: str, package: str, db: Session = Depends(get_db)):
     if not cheat_sheets:
         raise HTTPException(status_code=404, detail="No cheat sheets records found")
     
-    response = CheatSheetResponse
-    response.records = cheat_sheets
-    return response
+    records = [CheatSheetRecordSchema.model_validate(record) for record in cheat_sheets]
+    return CheatSheetResponse(records=records)
 
-@router.post("/", response_model=CheatSheetResponse)
-def create_cheat_sheet_record(sheet: CheatSheetRecord, db: Session = Depends(get_db)):
-    cheat_sheet = save_record_in_db(sheet, db)
-    return cheat_sheet
+# @router.post("/", response_model=CheatSheetResponse)
+# def create_cheat_sheet_record(sheet: CheatSheetRecord, db: Session = Depends(get_db)):
+#     cheat_sheet = save_record_in_db(sheet, db)
+    
+#     records = [CheatSheetRecordSchema.model_validate(record) for record in cheat_sheet]
+#     return CheatSheetResponse(records=records)
 
 @router.put("/{cheatsheet_id}")
 def update_cheatsheet(sheet: CheatSheetRecord, db: Session = Depends(get_db)):
@@ -38,9 +39,6 @@ def delete_cheatsheet(cheatsheet_id: int, db: Session = Depends(get_db), current
     cheatsheet = delete_cheatsheet(cheatsheet_id, db)
     if not cheatsheet:
         raise HTTPException(status_code=404, detail="Cheat sheet not found")
-    
-    db.delete(cheatsheet)
-    db.commit()
     return {"message": "Cheat sheet deleted successfully"}
 
 @router.get("/all")

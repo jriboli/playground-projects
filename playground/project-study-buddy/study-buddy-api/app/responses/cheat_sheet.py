@@ -1,8 +1,8 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 from typing import List
 
-class CheatSheetRecord(BaseModel):
+class CheatSheetRecordSchema(BaseModel):
     id: int
     topic: str
     package: str
@@ -10,9 +10,8 @@ class CheatSheetRecord(BaseModel):
     description: str
     code_example: str
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class CheatSheetResponse(BaseModel):
-    records: List[CheatSheetRecord]
+    records: List[CheatSheetRecordSchema]
