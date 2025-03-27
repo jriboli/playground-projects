@@ -47,3 +47,9 @@ plt.xlabel("Successful Shots")
 plt.ylabel("Probability Density")
 plt.legend()
 plt.show()
+
+
+# Mean (μ): 350.0
+# Standard Deviation (σ): 10.25
+# Z-Score for X = 375: 2.44
+# Probability of making more than 375 shots: 0.0073 (or 0.73%)
