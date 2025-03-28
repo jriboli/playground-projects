@@ -26,9 +26,10 @@ replay_pid*
 # Want to ignore all .env files
 *.env
 venv/
+myenv/
 
-# Want to ignore data folders
-*data/
+# Ignore .hidden folders
+*.hidden/
 
 #Justin for JAVA 
 **/videos/
