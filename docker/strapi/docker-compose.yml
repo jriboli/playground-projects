@@ -9,26 +9,21 @@ services:
       - .env
     ports:
       - "1337:1337"
-    depends_on:
-      - postgres
     volumes:
       - strapi_app:/srv/app
-
-  postgres:
-    image: postgres:14
-    container_name: strapi_db
-    restart: unless-stopped
-    env_file:
-      - .env
     environment:
-      POSTGRES_DB: ${DATABASE_NAME}
-      POSTGRES_USER: ${DATABASE_USERNAME}
-      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
-    ports:
-      - "5432:5432"
-    volumes:
-      - pgdata:/var/lib/postgresql/data
+      DATABASE_CLIENT: mysql
+      DATABASE_HOST: ${DATABASE_HOST}
+      DATABASE_PORT: ${DATABASE_PORT}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+    networks:
+      - mysqldb_default
 
 volumes:
-  pgdata:
   strapi_app:
+
+networks:
+  mysqldb_default:
+    external: true
