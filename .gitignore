@@ -36,3 +36,6 @@ myenv/
 **/screenshots/
 **/traces/
 **/test-output/
+
+#Justin for Visual Studio
+.vs/
