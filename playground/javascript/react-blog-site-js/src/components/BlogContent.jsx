@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { coding_background } from "../assets";
 import { useParams } from "react-router-dom";
 import StrapiService from "../services/strapiService";
-import ReactMarkdown from "react-markdown"
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const BlogContent = () => {
   const [blog, setBlog] = useState(null); // Store a single blog object
@@ -44,8 +45,10 @@ const BlogContent = () => {
             <p className="text-sm text-gray-400">
               Published: {new Date(blog.createdAt).toLocaleDateString()}
             </p>
-            <div className="pt-5">
-              <ReactMarkdown>{blog.blogContent}</ReactMarkdown>
+            <div className="pt-5 prose prose-orange max-w-none">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {blog.blogContent}
+              </ReactMarkdown>
             </div>
           </div>
 
