@@ -8,13 +8,25 @@
     ".NETCoreApp,Version=v8.0": {
       "ReqnrollTestProject/1.0.0": {
         "dependencies": {
+          "BoDi": "1.5.0",
+          "FluentAssertions": "8.2.0",
           "Microsoft.NET.Test.Sdk": "17.10.0",
+          "Microsoft.Playwright": "1.51.0",
+          "Microsoft.Playwright.NUnit": "1.51.0",
           "NUnit3TestAdapter": "4.5.0",
           "Reqnroll.NUnit": "2.2.1",
           "NUnit": "3.14.0"
         },
         "runtime": {
           "ReqnrollTestProject.dll": {}
+        }
+      },
+      "BoDi/1.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/BoDi.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
+          }
         }
       },
       "Cucumber.CucumberExpressions/17.1.0": {
@@ -25,11 +37,27 @@
           }
         }
       },
+      "FluentAssertions/8.2.0": {
+        "runtime": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "assemblyVersion": "8.2.0.0",
+            "fileVersion": "8.2.0.0"
+          }
+        }
+      },
       "Gherkin/30.0.0": {
         "runtime": {
           "lib/net8.0/Gherkin.dll": {
             "assemblyVersion": "30.0.0.0",
             "fileVersion": "30.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
           }
         }
       },
@@ -57,6 +85,46 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.Playwright/1.51.0": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.ComponentModel.Annotations": "5.0.0",
+          "System.Text.Json": "6.0.10"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Playwright.dll": {
+            "assemblyVersion": "1.51.0.0",
+            "fileVersion": "1.51.0.0"
+          }
+        }
+      },
+      "Microsoft.Playwright.NUnit/1.51.0": {
+        "dependencies": {
+          "Microsoft.NET.Test.Sdk": "17.10.0",
+          "Microsoft.Playwright": "1.51.0",
+          "Microsoft.Playwright.TestAdapter": "1.51.0",
+          "NUnit": "3.14.0",
+          "NUnit3TestAdapter": "4.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Playwright.NUnit.dll": {
+            "assemblyVersion": "1.51.0.0",
+            "fileVersion": "1.51.0.0"
+          }
+        }
+      },
+      "Microsoft.Playwright.TestAdapter/1.51.0": {
+        "dependencies": {
+          "Microsoft.Playwright": "1.51.0",
+          "Microsoft.TestPlatform.ObjectModel": "17.10.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Playwright.TestAdapter.dll": {
+            "assemblyVersion": "1.51.0.0",
+            "fileVersion": "1.51.0.0"
+          }
+        }
+      },
       "Microsoft.TestPlatform.ObjectModel/17.10.0": {
         "dependencies": {
           "System.Reflection.Metadata": "1.6.0"
@@ -369,6 +437,7 @@
           }
         }
       },
+      "System.ComponentModel.Annotations/5.0.0": {},
       "System.IO/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -401,6 +470,7 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "System.Runtime.Loader/4.3.0": {
         "dependencies": {
           "System.IO": "4.3.0",
@@ -413,6 +483,17 @@
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "System.Text.Json/6.0.10": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0"
         }
       },
       "System.Threading.Tasks/4.3.0": {
@@ -430,6 +511,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "BoDi/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CzIPzdIAFSd2zuLxI+0K9s48Qv3HQDbWiApn9h96j284rHs2bSPrn/PMca3mi4q3xLSEqOp+GUJ6+mXDD9prKg==",
+      "path": "bodi/1.5.0",
+      "hashPath": "bodi.1.5.0.nupkg.sha512"
+    },
     "Cucumber.CucumberExpressions/17.1.0": {
       "type": "package",
       "serviceable": true,
@@ -437,12 +525,26 @@
       "path": "cucumber.cucumberexpressions/17.1.0",
       "hashPath": "cucumber.cucumberexpressions.17.1.0.nupkg.sha512"
     },
+    "FluentAssertions/8.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Gh4jkECcrR0i17ofCVqsiVz2+lxC+p5TYFPCrbZFi7eQQWGEZhvCDwvhycBKX1Kmtbd+H2CW/ugW7wdH9Br9NQ==",
+      "path": "fluentassertions/8.2.0",
+      "hashPath": "fluentassertions.8.2.0.nupkg.sha512"
+    },
     "Gherkin/30.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-jZM9zm9eg62vRSAOtYvcmQh4w0oYqjP6myKxMaJAlQq9VCKm4wnTfHhS5QRnLhx/sH3R5jTaoQAKLs5hhjuq7g==",
       "path": "gherkin/30.0.0",
       "hashPath": "gherkin.30.0.0.nupkg.sha512"
+    },
+    "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg==",
+      "path": "microsoft.bcl.asyncinterfaces/6.0.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.10.0": {
       "type": "package",
@@ -478,6 +580,27 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Playwright/1.51.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4nOOBtTwXyB+cE+XwkjnQGJVmjbrTrZ+nuKzLz+oCnv5z1FiB7PQLT9FH8wETmHLSawzXh/ucPdBeGA8mRGJEw==",
+      "path": "microsoft.playwright/1.51.0",
+      "hashPath": "microsoft.playwright.1.51.0.nupkg.sha512"
+    },
+    "Microsoft.Playwright.NUnit/1.51.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KUzpFKgEfG9+s5NXJzMiKIlf43hksioZpMF8jJJul9eFUQpA6y3+C5gvtE8aOlMpfzp/BEYsvPAeY0uKApIOEg==",
+      "path": "microsoft.playwright.nunit/1.51.0",
+      "hashPath": "microsoft.playwright.nunit.1.51.0.nupkg.sha512"
+    },
+    "Microsoft.Playwright.TestAdapter/1.51.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mIMT46Sbg5gIxBD8NB8crmpAQK5YfgjEv7QrV29CdQV94T224s5GEx64V8n/Q6im6RoMod0Jlo5/0S9yXoN9nA==",
+      "path": "microsoft.playwright.testadapter/1.51.0",
+      "hashPath": "microsoft.playwright.testadapter.1.51.0.nupkg.sha512"
     },
     "Microsoft.TestPlatform.ObjectModel/17.10.0": {
       "type": "package",
@@ -549,6 +672,13 @@
       "path": "specflow.internal.json/1.0.8",
       "hashPath": "specflow.internal.json.1.0.8.nupkg.sha512"
     },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    },
     "System.IO/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -584,6 +714,13 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
     "System.Runtime.Loader/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -597,6 +734,20 @@
       "sha512": "sha512-BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
+      "path": "system.text.encodings.web/6.0.0",
+      "hashPath": "system.text.encodings.web.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Json/6.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NSB0kDipxn2ychp88NXWfFRFlmi1bst/xynOutbnpEfRCT9JZkZ7KOmF/I/hNKo2dILiMGnqblm+j1sggdLB9g==",
+      "path": "system.text.json/6.0.10",
+      "hashPath": "system.text.json.6.0.10.nupkg.sha512"
     },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
