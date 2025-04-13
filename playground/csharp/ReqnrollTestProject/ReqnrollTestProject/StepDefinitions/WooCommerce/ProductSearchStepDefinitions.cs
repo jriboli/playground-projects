@@ -1,14 +1,14 @@
 ﻿using Microsoft.Playwright;
 using NUnit.Framework;
-using ReqnrollTestProject.Pages;
 using ReqnrollTestProject.Support;
+using ReqnrollTestProject.Support.Pages.WooCommerce;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReqnrollTestProject.StepDefinitions
+namespace ReqnrollTestProject.StepDefinitions.WooCommerce
 {
     [Binding]
     public class ProductSearchSteps

@@ -19,9 +19,8 @@
 
   <ItemGroup>
     <Folder Include="Drivers\" />
-    <Folder Include="Flows\" />
-    <Folder Include="Pages\SauceDemo\" />
-    <Folder Include="Pages\WooCommerce\" />
+    <Folder Include="Screenshots\" />
+    <Folder Include="Support\Pages\SauceDemo\" />
   </ItemGroup>
 
 </Project>

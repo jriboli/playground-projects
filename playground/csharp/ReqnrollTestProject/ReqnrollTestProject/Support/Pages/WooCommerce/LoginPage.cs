@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReqnrollTestProject.Pages
+namespace ReqnrollTestProject.Support.Pages.WooCommerce
 {
     public class LoginPage : BasePage
     {

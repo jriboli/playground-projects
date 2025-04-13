@@ -1,4 +1,4 @@
-namespace ReqnrollTestProject.StepDefinitions
+namespace ReqnrollTestProject.StepDefinitions.Calculator
 {
     [Binding]
     public sealed class CalculatorStepDefinitions

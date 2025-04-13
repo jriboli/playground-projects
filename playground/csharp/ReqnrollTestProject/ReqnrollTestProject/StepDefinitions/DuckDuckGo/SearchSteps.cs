@@ -1,5 +1,5 @@
 ﻿using Microsoft.Playwright;
-using ReqnrollTestProject.Pages.DuckDuckGo;
+using ReqnrollTestProject.Support.Pages.DuckDuckGo;
 using System;
 using System.Collections.Generic;
 using System.Linq;

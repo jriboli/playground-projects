@@ -2,9 +2,9 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.Playwright;
 using Reqnroll;
-using ReqnrollTestProject.Pages;
+using ReqnrollTestProject.Support.Pages.WooCommerce;
 
-namespace ReqnrollTestProject.StepDefinitions
+namespace ReqnrollTestProject.StepDefinitions.WooCommerce
 {
     [Binding]
     public class LoginStepDefinitions

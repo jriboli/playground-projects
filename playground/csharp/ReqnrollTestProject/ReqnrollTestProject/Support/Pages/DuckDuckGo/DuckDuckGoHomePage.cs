@@ -5,8 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ReqnrollTestProject.Utilities;
 
-namespace ReqnrollTestProject.Pages.DuckDuckGo
+namespace ReqnrollTestProject.Support.Pages.DuckDuckGo
 {
     // Follow this patter with POMs 
     // - Constructors
@@ -22,8 +23,15 @@ namespace ReqnrollTestProject.Pages.DuckDuckGo
             _user = hooks.User;
         }
 
-        private ILocator SearchInput => _user.Locator("input[id='searchbox_input']");
+        private ILocator SearchInput;
+        //private ILocator SearchInput => _user.Locator("input[id='searchbox_input']");
+        //private async Task<ILocator> SearchInput => await LocatorHelper.FindFirstVisibleLocatorAsync(_user, "input[id='searchbox_input']");
         private ILocator SearchButton => _user.Locator("button[type='submit']");
+
+        public async void LoadPageLocators()
+        {
+            SearchInput = await LocatorHelper.FindFirstVisibleLocatorAsync(_user, "input[id='searchbox_input']");
+        }
 
         public async Task AssertPageContent()
         {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReqnrollTestProject.Pages
+namespace ReqnrollTestProject.Support.Pages.WooCommerce
 {
-    internal class ProductPage
+    internal class CheckoutPage
     {
     }
 }

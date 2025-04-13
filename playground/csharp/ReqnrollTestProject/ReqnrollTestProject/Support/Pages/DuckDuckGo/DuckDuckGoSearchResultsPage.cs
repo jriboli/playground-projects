@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ReqnrollTestProject.Pages.DuckDuckGo
+namespace ReqnrollTestProject.Support.Pages.DuckDuckGo
 {
     public class DuckDuckGoSearchResultsPage
     {
