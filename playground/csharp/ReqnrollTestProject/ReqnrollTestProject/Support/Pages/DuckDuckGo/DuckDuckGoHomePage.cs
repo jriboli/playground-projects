@@ -18,7 +18,7 @@ namespace ReqnrollTestProject.Support.Pages.DuckDuckGo
     {
         private readonly IPage _user;
 
-        public DuckDuckGoHomePage(Hooks.Hooks hooks)
+        public DuckDuckGoHomePage(Support.Hooks hooks)
         {
             _user = hooks.User;
         }

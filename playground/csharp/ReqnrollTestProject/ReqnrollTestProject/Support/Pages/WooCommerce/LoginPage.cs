@@ -16,7 +16,6 @@ namespace ReqnrollTestProject.Support.Pages.WooCommerce
         private ILocator Submit => Page.Locator("button[type='submit']");
 
 
-
         public async Task<HomePage> LoginAsync(string user, string pass)
         {
             await Username.FillAsync(user);

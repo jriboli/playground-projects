@@ -27,7 +27,21 @@ namespace ReqnrollTestProject.Support.Pages.WooCommerce
 
         public async void AddProductToCart(int position)
         {
+            ILocator ProductAddToCartButton = Page.Locator("(button[@data-wp-on--click='actions.addCartItem'])[1]");
+            await ProductAddToCartButton.ClickAsync();
+        }
 
+        public async void ClickViewCart()
+        {
+            ILocator CartBadge = Page.Locator("wc-block-mini-cart__quantity-badge");
+            await CartBadge.ClickAsync();
+
+            ILocator CartBlock = Page.Locator("wp-block-woocommerce-empty-mini-cart-contents-block");
+        }
+
+        public async void CheckItemInCart()
+        {
+             ILocator CartBlock = Page.Locator("wp-block-woocommerce-empty-mini-cart-contents-block");
         }
     }
 }
