@@ -12,9 +12,9 @@ namespace ReqnrollTestProject.Support.Pages.WooCommerce
         protected readonly IPage Page;
         private readonly string _baseUrl;
 
-        public BasePage(IPage page)
+        public BasePage(Support.Hooks hooks)
         {
-            Page = page;
+            Page = hooks.User;
             _baseUrl = Environment.GetEnvironmentVariable("BASE_URL") ?? throw new InvalidOperationException("BASE_URL not set in environment variables.");
         }
 

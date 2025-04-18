@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace ReqnrollTestProject.Features
+namespace ReqnrollTestProject.Features.DuckDuckGo
 {
     using Reqnroll;
     using System;
@@ -28,7 +28,7 @@ namespace ReqnrollTestProject.Features
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "SearchOnDuckDuckGo", "Search for Playwright on DuckDuckGo and go to the Playwright website from the sea" +
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/DuckDuckGo", "SearchOnDuckDuckGo", "Search for Playwright on DuckDuckGo and go to the Playwright website from the sea" +
                 "rch results", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
 #line 1 "SearchOnDuckDuckGo.feature"

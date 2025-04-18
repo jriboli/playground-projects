@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ReqnrollTestProject.Support.Pages.WooCommerce
 {
-    internal class ProductPage : BasePage
+    public class ProductDetailsPage : BasePage
     {
         // Constructor
-        public ProductPage(IPage page) : base(page) { }
+        public ProductDetailsPage(Support.Hooks hooks) : base(hooks) { }
 
         // Locators
         

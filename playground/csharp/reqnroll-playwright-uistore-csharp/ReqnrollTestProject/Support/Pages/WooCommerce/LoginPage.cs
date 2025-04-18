@@ -9,7 +9,7 @@ namespace ReqnrollTestProject.Support.Pages.WooCommerce
 {
     public class LoginPage : BasePage
     {
-        public LoginPage(IPage page) : base(page) { }
+        public LoginPage(Support.Hooks hooks) : base(hooks) { }
 
         private ILocator Username => Page.Locator("#username");
         private ILocator Password => Page.Locator("#password");

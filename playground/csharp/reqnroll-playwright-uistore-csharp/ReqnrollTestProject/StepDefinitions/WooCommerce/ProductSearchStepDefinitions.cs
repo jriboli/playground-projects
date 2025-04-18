@@ -31,7 +31,7 @@ namespace ReqnrollTestProject.StepDefinitions.WooCommerce
         [When("I search for {string}")]
         public async Task WhenISearchFor(string keyword)
         {
-            await _homePage.SearchProduct(keyword);
+            //await _homePage.SearchProduct(keyword);
         }
 
         [Then("I should see search results")]

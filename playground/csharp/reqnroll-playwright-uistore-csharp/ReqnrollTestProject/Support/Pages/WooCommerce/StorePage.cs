@@ -18,11 +18,11 @@ namespace ReqnrollTestProject.Support.Pages.WooCommerce
 
 
         // Actions
-        public async Task<ProductPage> SelectProduct(int position)
+        public async Task<ProductDetailsPage> SelectProduct(int position)
         {
             ILocator ProductImage = Page.Locator("(img[@data-testid='product-image'])[1]");
             await ProductImage.ClickAsync();
-            return new ProductPage(Page);
+            return new ProductDetailsPage(Page);
         }
 
         public async void AddProductToCart(int position)
@@ -42,6 +42,16 @@ namespace ReqnrollTestProject.Support.Pages.WooCommerce
         public async void CheckItemInCart()
         {
              ILocator CartBlock = Page.Locator("wp-block-woocommerce-empty-mini-cart-contents-block");
+        }
+
+        public bool IsPageValid() 
+        {
+            return true;
+        }
+
+        public async void CaptureScreenShot()
+        {
+            await Page.ScreenshotAsync(new() { Path = "StorePage_Base.png" });
         }
     }
 }

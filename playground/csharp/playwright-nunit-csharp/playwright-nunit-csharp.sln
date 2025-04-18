@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "playwright-nunit-csharp", "playwright-nunit-csharp.csproj", "{640731BB-B95C-705C-2D0F-0CA7E3A08AAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{640731BB-B95C-705C-2D0F-0CA7E3A08AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640731BB-B95C-705C-2D0F-0CA7E3A08AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640731BB-B95C-705C-2D0F-0CA7E3A08AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640731BB-B95C-705C-2D0F-0CA7E3A08AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8E8B80A-DD12-45F4-83B8-13639D761C33}
+	EndGlobalSection
+EndGlobal

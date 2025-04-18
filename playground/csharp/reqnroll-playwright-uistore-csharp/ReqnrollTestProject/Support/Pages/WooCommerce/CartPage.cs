@@ -9,9 +9,7 @@ namespace ReqnrollTestProject.Support.Pages.WooCommerce
 {
     public class CartPage : BasePage
     {
-        public CartPage(IPage page) : base(page)
-        {
-        }
+        public CartPage(Support.Hooks hooks) : base(hooks) { }
 
         private ILocator cartMessage => Page.GetByRole(AriaRole.Heading, new() { Name = "Your cart is empty" });
         private ILocator cartBlock => Page.Locator("div[data-block-name='woocommerce/cart']");

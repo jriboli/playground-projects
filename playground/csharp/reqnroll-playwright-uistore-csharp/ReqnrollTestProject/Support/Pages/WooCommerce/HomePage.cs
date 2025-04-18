@@ -9,11 +9,13 @@ namespace ReqnrollTestProject.Support.Pages.WooCommerce
 {
     public class HomePage : BasePage
     {
-        public HomePage(IPage page) : base(page) { }
+        public HomePage(Support.Hooks hooks) : base(hooks) { }
 
         private ILocator LoginButton => Page.Locator("a[aria-label='Login']");
-        private ILocator StoreButton => Page.Locator("a[normalize-space(text())='Shop']");
+        private ILocator ShopButton => Page.Locator("a[normalize-space(text())='Shop']");
         private ILocator CartButton => Page.GetByRole(AriaRole.Navigation, new() { Name = "Cart" });
+        private ILocator CheckoutButton => Page.GetByRole(AriaRole.Navigation, new() { Name = "Checkout" });
+        private ILocator MyAccountButton => Page.GetByRole(AriaRole.Navigation, new() { Name = "My account" });
 
         public async Task<LoginPage> GoToLogin()
         {
@@ -23,7 +25,7 @@ namespace ReqnrollTestProject.Support.Pages.WooCommerce
 
         public async Task<StorePage> GoToShop()
         {
-            await StoreButton.ClickAsync();
+            await ShopButton.ClickAsync();
             return new StorePage(Page);
         }
 
@@ -31,6 +33,18 @@ namespace ReqnrollTestProject.Support.Pages.WooCommerce
         {
             await CartButton.ClickAsync();
             return new CartPage(Page);
+        }
+
+        public async Task<CheckoutPage> GoToCheckout()
+        {
+            await CheckoutButton.ClickAsync();
+            return new CheckoutPage(Page);
+        }
+
+        public async Task<MyAccountPage> GoToMyAccount()
+        {
+            await MyAccountButton.ClickAsync();
+            return new MyAccountPage(Page);
         }
     }
 }
