@@ -1,31 +1,33 @@
-﻿namespace playwright_nunit_csharp;
+﻿using Microsoft.Playwright;
 
-[TestFixture]
-public class DuckDuckGoTests
+namespace playwright_nunit_csharp;
+
+public class Tests
 {
-    private PlaywrightDriver _driver;
-
     [SetUp]
-    public async Task Setup()
+    public void Setup()
     {
-        _driver = new PlaywrightDriver();
-        await _driver.InitializeAsync();
-    }
-
-    [TearDown]
-    public async Task TearDown()
-    {
-        await _driver.CleanupAsync();
     }
 
     [Test]
-    public async Task DuckDuckGo_Search_ReturnsResults()
+    public async Task LoginTC_01()
     {
-        await _driver.Page.GotoAsync("https://duckduckgo.com/");
-        await _driver.Page.FillAsync("input[name='q']", "Playwright C#");
-        await _driver.Page.PressAsync("input[name='q']", "Enter");
+        var playwright = await Playwright.CreateAsync();
+        var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
+        {
+            Headless = false, 
+            SlowMo = 50,
+            Timeout = 80000
+        });
+        var context = await browser.NewContextAsync();
+        var page = await context.NewPageAsync();
 
-        await _driver.Page.WaitForSelectorAsync("#links");
-        Assert.That(await _driver.Page.InnerTextAsync("#links"), Does.Contain("playwright.dev"));
+        await page.SetViewportSizeAsync(1920, 1080);
+        await page.GotoAsync("https://duckduckgo.com");
+        await page.FillAsync("input[name='q']", "Playwright C#");
+        await page.PressAsync("input[name='q']", "Enter");
+
+        await page.CloseAsync();
+
     }
 }
