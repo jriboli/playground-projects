@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameters Suite">
+    <parameter name="URL" value ="http://localhost:9090/"/>
+    <parameter name="Task" value="Download File"/>
+    <test name="Pass Parameters Test">
+        <parameter name="Username" value="rocket"/>
+        <parameter name="Password" value="l3iBmkszkYuxlA(IfkzUjNO&amp;"/>
+        <classes>
+            <class name="DemoTestNG.Parameterized_By_XML_Test" />
+        </classes>
+    </test>
+    <test name="Invalid Password Parameters Test">
+        <parameter name="Username" value="rocket"/>
+        <parameter name="Password" value=""/>
+        <classes>
+            <class name="DemoTestNG.Parameterized_By_XML_Test" />
+        </classes>
+    </test>
+    <test name="Invalid Username Parameters Test">
+        <parameter name="Username" value=""/>
+        <parameter name="Password" value="l3iBmkszkYuxlA(IfkzUjNO&amp;"/>
+        <classes>
+            <class name="DemoTestNG.Parameterized_By_XML_Test" />
+        </classes>
+    </test>
+</suite>

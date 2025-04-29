@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameters Suite">
+    <parameter name="URL" value ="http://localhost:9090/"/>
+    <parameter name="Task" value="Download File"/>
+    <test name="Pass Parameters Test">
+        <parameter name="Username" value="rocket"/>
+        <parameter name="Password" value="l3iBmkszkYuxlA(IfkzUjNO&amp;"/>
+        <classes>
+            <class name="DemoTestNG.Take_Failed_Screenshots" />
+        </classes>
+    </test>
+</suite>
