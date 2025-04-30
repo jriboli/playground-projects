@@ -7,21 +7,21 @@
         <parameter name="Username" value="rocket"/>
         <parameter name="Password" value="l3iBmkszkYuxlA(IfkzUjNO&amp;"/>
         <classes>
-            <class name="DemoTestNG.Parameterized_By_XML_Test" />
+            <class name="DemoTestNG.Test005_Parameterized_By_XML" />
         </classes>
     </test>
     <test name="Invalid Password Parameters Test">
         <parameter name="Username" value="rocket"/>
         <parameter name="Password" value=""/>
         <classes>
-            <class name="DemoTestNG.Parameterized_By_XML_Test" />
+            <class name="DemoTestNG.Test005_Parameterized_By_XML" />
         </classes>
     </test>
     <test name="Invalid Username Parameters Test">
         <parameter name="Username" value=""/>
         <parameter name="Password" value="l3iBmkszkYuxlA(IfkzUjNO&amp;"/>
         <classes>
-            <class name="DemoTestNG.Parameterized_By_XML_Test" />
+            <class name="DemoTestNG.Test005_Parameterized_By_XML" />
         </classes>
     </test>
 </suite>

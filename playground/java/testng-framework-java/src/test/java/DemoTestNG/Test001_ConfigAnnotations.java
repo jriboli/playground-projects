@@ -2,7 +2,7 @@ package DemoTestNG;
 
 import org.testng.annotations.*;
 
-public class ConfigAnnotations_1 {
+public class Test001_ConfigAnnotations {
 
     @BeforeMethod
     public void setup() {

@@ -9,9 +9,9 @@
 
         </groups>
         <classes>
-            <class name="DemoTestNG.ConfigAnnotations_1">
+            <class name="DemoTestNG.Test001_ConfigAnnotations">
             </class>
-            <class name="DemoTestNG.ConfigAnnotations_2">
+            <class name="DemoTestNG.Test002_ConfigAnnotations">
             </class>
         </classes>
 

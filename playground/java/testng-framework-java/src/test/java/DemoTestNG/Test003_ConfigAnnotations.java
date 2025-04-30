@@ -7,7 +7,7 @@ import org.testng.ITestResult;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
-public class ConfigAnnotations_3 {
+public class Test003_ConfigAnnotations {
 
     @BeforeMethod(alwaysRun = true)
     public void setup(Method method, ITestResult result) {

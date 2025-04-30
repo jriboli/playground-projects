@@ -8,7 +8,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class Parameterized_By_XML_Test {
+public class Test005_Parameterized_By_XML {
     private Playwright playwright;
     private Browser browser;
     private Page page;

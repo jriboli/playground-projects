@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.nio.file.Paths;
 
-public class Take_Failed_Screenshots {
+public class Test006_Take_Failed_Screenshots {
     private Playwright playwright;
     private Browser browser;
     private Page page;
@@ -44,7 +44,7 @@ public class Take_Failed_Screenshots {
     public void takeScreenshotForFailures(ITestResult testResult) {
         if(ITestResult.FAILURE == testResult.getStatus()) {
             page.screenshot(new Page.ScreenshotOptions()
-                    .setPath(Paths.get("failure_" + testResult.getName() + ".png"))
+                    .setPath(Paths.get("./resources/screenshots/failure_" + testResult.getName() + ".png"))
                     .setFullPage(true));
         }
     }

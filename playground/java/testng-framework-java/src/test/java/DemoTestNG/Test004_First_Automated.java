@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
-public class First_Automated_Test {
+public class Test004_First_Automated {
     private Playwright playwright;
     private Browser browser;
     private Page page;

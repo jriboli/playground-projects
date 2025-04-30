@@ -7,7 +7,7 @@
         <parameter name="Username" value="rocket"/>
         <parameter name="Password" value="l3iBmkszkYuxlA(IfkzUjNO&amp;"/>
         <classes>
-            <class name="DemoTestNG.Take_Failed_Screenshots" />
+            <class name="DemoTestNG.Test006_Take_Failed_Screenshots" />
         </classes>
     </test>
 </suite>

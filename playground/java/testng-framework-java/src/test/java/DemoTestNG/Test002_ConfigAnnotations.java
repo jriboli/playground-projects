@@ -3,7 +3,7 @@ package DemoTestNG;
 import org.testng.annotations.*;
 
 @Test(groups = "e2e")
-public class ConfigAnnotations_2 {
+public class Test002_ConfigAnnotations {
     @BeforeMethod
     public void setup() {
         System.out.println("    (4) Execute before each Test Method");
