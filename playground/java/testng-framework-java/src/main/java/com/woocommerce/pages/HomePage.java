@@ -36,7 +36,8 @@ public class HomePage extends BasePage{
         return new LoginPage(page);
     }
 
-    public void clickCart() {
+    public CartPage clickCart() {
         cartButton.click();
+        return new CartPage(page);
     }
 }

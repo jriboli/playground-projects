@@ -10,5 +10,9 @@ public class BasePage {
         BasePage.playwright = playwright;
     }
 
+    protected String getTitle() {
+        return "";
+    }
+
 
 }

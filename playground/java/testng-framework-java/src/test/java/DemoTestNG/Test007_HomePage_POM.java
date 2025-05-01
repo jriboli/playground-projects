@@ -44,6 +44,7 @@ public class Test007_HomePage_POM {
         DebugUtil.printLocatorInfo(footer, "FOOTER");
     }
 
+    // Transition Method - moves to new page - best to return the new Page and show change
     @Test
     public void testLoginButton() {
 
