@@ -16,6 +16,7 @@ public class HomePage extends BasePage{
     Locator header;
     Locator loginButton;
     Locator cartButton;
+    Locator footer;
 
     // Constructor
     public HomePage(Page page) {
@@ -23,6 +24,7 @@ public class HomePage extends BasePage{
         header = page.getByRole(AriaRole.BANNER).getByRole(AriaRole.PARAGRAPH);
         loginButton = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Login"));
         cartButton = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Cart"));
+        footer = page.getByRole(AriaRole.CONTENTINFO);
     }
 
     // Actions
@@ -39,5 +41,9 @@ public class HomePage extends BasePage{
     public CartPage clickCart() {
         cartButton.click();
         return new CartPage(page);
+    }
+
+    public boolean isFooterVisible() {
+        return footer.isVisible();
     }
 }

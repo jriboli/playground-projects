@@ -30,7 +30,7 @@ public class CartItem {
         itemDecreaseQuantity = root.getByRole(AriaRole.BUTTON,
                 new Locator.GetByRoleOptions().setName(Pattern.compile("\\bDecrease\\b")));
         itemQuantity = root.locator("input[type='number']");
-        itemRemove = root.getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName("Remove item"));
+        itemRemove = root.getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName(Pattern.compile("\\bRemove\\b")));
     }
 
     public String getProductName() {

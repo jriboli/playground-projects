@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="The POM Tests" parallel="classes" thread-count="5">
+    <test name="Run POM Tests">
+        <packages>
+            <package name="POMTestNG" />
+        </packages>
+    </test>
+</suite>
