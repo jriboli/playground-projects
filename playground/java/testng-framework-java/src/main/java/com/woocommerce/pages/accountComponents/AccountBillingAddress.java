@@ -19,7 +19,7 @@ public class AccountBillingAddress extends AccountShippingAddress {
         super(root);
         this.root = root;
 
-        
+
     }
 
     public void assertVisible() {

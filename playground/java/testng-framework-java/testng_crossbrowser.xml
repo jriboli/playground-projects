@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="The POM Tests" parallel="tests" thread-count="3">
+    <test name="Chromium">
+        <parameter name="browser" value="chromium" />
+        <packages>
+            <package name="CrossBrowserTestNG" />
+        </packages>
+    </test>
+    <test name="Firefox">
+        <parameter name="browser" value="firefox" />
+        <packages>
+            <package name="CrossBrowserTestNG" />
+        </packages>
+    </test>
+    <test name="Webkit">
+        <parameter name="browser" value="webkit" />
+        <packages>
+            <package name="CrossBrowserTestNG" />
+        </packages>
+    </test>
+</suite>
