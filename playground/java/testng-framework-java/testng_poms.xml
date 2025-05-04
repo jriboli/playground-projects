@@ -3,7 +3,7 @@
 <suite name="The POM Tests" parallel="classes" thread-count="5">
     <test name="Run POM Tests">
         <packages>
-            <package name="T002_POMTestNG" />
+            <package name="T002_POMwithPlaywright" />
         </packages>
     </test>
 </suite>

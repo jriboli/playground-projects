@@ -3,10 +3,10 @@
 <suite name="Annotations">
     <test name="Run Class Annotations">
         <classes>
-            <class name="T001_DemoTestNG.Test001_ConfigAnnotations">
+            <class name="T001_AnnotationswithTestNG.Test001_ConfigAnnotations">
 
             </class>
-            <class name="T001_DemoTestNG.Test002_ConfigAnnotations">
+            <class name="T001_AnnotationswithTestNG.Test002_ConfigAnnotations">
 
             </class>
         </classes>
