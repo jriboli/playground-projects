@@ -4,19 +4,19 @@
     <test name="Chromium">
         <parameter name="browser" value="chromium" />
         <packages>
-            <package name="CrossBrowserTestNG" />
+            <package name="T005_CrossBrowserTestNG" />
         </packages>
     </test>
     <test name="Firefox">
         <parameter name="browser" value="firefox" />
         <packages>
-            <package name="CrossBrowserTestNG" />
+            <package name="T005_CrossBrowserTestNG" />
         </packages>
     </test>
     <test name="Webkit">
         <parameter name="browser" value="webkit" />
         <packages>
-            <package name="CrossBrowserTestNG" />
+            <package name="T005_CrossBrowserTestNG" />
         </packages>
     </test>
 </suite>

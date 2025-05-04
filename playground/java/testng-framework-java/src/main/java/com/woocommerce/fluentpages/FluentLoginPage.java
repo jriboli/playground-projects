@@ -5,6 +5,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import com.woocommerce.pages.LostPasswordPage;
 
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 public class FluentLoginPage {
@@ -42,12 +43,16 @@ public class FluentLoginPage {
     }
 
     public FluentLoginPage setUsername(String username) {
-        usernameTxtBx.fill(username);
+        if(Objects.nonNull(username)) {
+            usernameTxtBx.fill(username);
+        }
         return this;
     }
 
     public FluentLoginPage setPassword(String password) {
-        passwordTxtBx.fill(password);
+        if(Objects.nonNull(password)) {
+            passwordTxtBx.fill(password);
+        }
         return this;
     }
 

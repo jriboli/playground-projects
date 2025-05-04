@@ -1,0 +1,22 @@
+{
+  "responses": [
+    {
+      "body": {
+        "code": "woocommerce_rest_cart_coupon_error",
+        "message": "Coupon &quot;{{COUPON_CODE}}&quot; does not exist!",
+        "data": {
+          "status": 400
+        }
+      },
+      "status": 400,
+      "headers": {
+        "Nonce": "{{NONCE}}",
+        "Nonce-Timestamp": 1746390465,
+        "User-ID": 2,
+        "Cart-Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMiIsImV4cCI6MTc0NjU2MzI2NSwiaXNzIjoid2NcL3N0b3JlXC92MSIsImlhdCI6MTc0NjM5MDQ2NX0.ykre43MH4kSyX1EUKmi0YIA1T73aDYmXoAoOBWinRjo",
+        "Cart-Hash": "f43186e893b4bfecfa57ae03042f4204",
+        "Allow": "POST"
+      }
+    }
+  ]
+}
