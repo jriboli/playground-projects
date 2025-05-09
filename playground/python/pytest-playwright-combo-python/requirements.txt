@@ -1,0 +1,7 @@
+pytest
+playwright
+appium-python-client
+requests
+python-dotenv
+
+pytest-rerunfailures
